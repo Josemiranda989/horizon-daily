@@ -10,7 +10,7 @@ future: true # Allow future posts to be published
 plugins:
   - jekyll-feed
 feed:
-  path: feed.xml
+  path: feed-en.xml
 exclude:
   - ".github"
   - "node_modules"
