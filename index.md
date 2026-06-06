@@ -3,11 +3,11 @@ layout: default
 title: Horizon Daily
 ---
 
-# 🌅 Horizon Daily
+# 🌅 Horizon Diario
 
-AI-curated daily digest of tech, AI, and self-hosting news — fetched from Hacker News, Reddit, and RSS feeds.
+Resumen diario de noticias tech, AI y self-hosting — extraído de Hacker News, Reddit y RSS.
 
-## Latest Briefings
+## Últimos Briefings
 
 <ul>
 {% for post in site.posts limit:7 %}
@@ -18,8 +18,8 @@ AI-curated daily digest of tech, AI, and self-hosting news — fetched from Hack
 {% endfor %}
 </ul>
 
-[Subscribe via RSS]({{ '/feed-en.xml' | relative_url }})
+[Suscribirse vía RSS]({{ '/feed-en.xml' | relative_url }})
 
 ---
 
-<small>Powered by [Horizon](https://github.com/Thysrael/Horizon) · Automated daily at 9 AM (UTC-3)</small>
+<small>Generado con [Horizon](https://github.com/Thysrael/Horizon) · Automático todos los días a las 9 AM (UTC-3)</small>
