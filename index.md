@@ -13,12 +13,12 @@ Resumen diario de noticias tech, AI y self-hosting — extraído de Hacker News,
 {% for post in site.posts limit:7 %}
   <li>
     <strong><a href="{{ post.url | relative_url }}">{{ post.title }}</a></strong>
-    <br><small>{{ post.date | date: "%B %d, %Y" }}</small>
+    <br><small>{{ post.date | date: "%d/%m/%Y" }}</small>
   </li>
 {% endfor %}
 </ul>
 
-[Suscribirse vía RSS]({{ '/feed-en.xml' | relative_url }})
+[Suscribirse vía RSS]({{ '/feed.xml' | relative_url }})
 
 ---
 

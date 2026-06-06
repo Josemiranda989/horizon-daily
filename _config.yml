@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
-title: Horizon Daily
-description: AI-curated daily digest of tech and research news
+title: Horizon Diario
+description: Resumen diario de noticias tech, AI y self-hosting — curado por IA
 baseurl: "/horizon-daily"
 url: "https://josemiranda989.github.io"
 
@@ -10,7 +10,7 @@ future: true # Allow future posts to be published
 plugins:
   - jekyll-feed
 feed:
-  path: feed-en.xml
+  path: feed.xml
 exclude:
   - ".github"
   - "node_modules"
