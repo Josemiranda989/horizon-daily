@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Horizon Summary: 2026-06-06 (ES)"
+date: 2026-06-06
+lang: es
+---
+
 # Horizon Diario - 2026-06-06
 
 > De 14 artículos, 7 fueron seleccionados por relevancia
