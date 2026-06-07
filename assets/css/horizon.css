@@ -1,82 +1,318 @@
-/* ===== Horizon Custom Styles ===== */
+/* ===== Horizon Daily — Design System =====
+   Palette: sunrise over mountains — indigo → rose → gold
+   Font: Inter (Google Fonts), system fallback
+   Theme: Cayman base, custom overrides
+*/
 
-/* --- CSS Variables & Dark Mode (Horizon Dawn) --- */
-/* Palette derived from horizon-header.svg sunrise:
-   #312e81 deep indigo · #be185d rose · #f97316 orange · #fbbf24 gold
-   #4c1d95 mountain purple · #701a75 distant purple                  */
+/* --- CSS Variables --- */
 :root {
-  --hz-bg: #faf8f5;          /* warm parchment white */
-  --hz-surface: #f3f0eb;     /* slightly warm gray */
-  --hz-border: #e0dbd3;      /* warm border */
-  --hz-text: #2d2a3e;        /* deep indigo-ink */
-  --hz-text-muted: #7c7891;  /* muted lavender gray */
-  --hz-link: #6d4aaa;        /* mountain purple, lighter */
-  --hz-code-bg: #f0ede7;     /* warm code bg */
-  --hz-accent: #e0652e;      /* sunrise orange, toned down */
+  --hz-bg: #faf9f6;
+  --hz-surface: #ffffff;
+  --hz-border: #e8e4dd;
+  --hz-border-strong: #d4cfc6;
+  --hz-text: #1e1b2e;
+  --hz-text-secondary: #5c5870;
+  --hz-text-muted: #8b86a0;
+  --hz-link: #6a3fc0;
+  --hz-link-hover: #5230a0;
+  --hz-accent: #e0683a;
+  --hz-accent-soft: #fef0ea;
+  --hz-gold: #d4a017;
+  --hz-rose: #be185d;
+  --hz-indigo: #312e81;
+  --hz-card-hover: #f5f2ec;
+  --hz-shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+  --hz-shadow-md: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --hz-bg: #1a1726;        /* pre-dawn deep purple-black */
-    --hz-surface: #231f33;   /* night sky surface */
-    --hz-border: #342f4a;    /* indigo border */
-    --hz-text: #e8e4f0;      /* moonlight white-lavender */
-    --hz-text-muted: #8c86a0; /* muted twilight */
-    --hz-link: #f0a848;      /* dawn gold */
-    --hz-code-bg: #211d30;   /* deep code bg */
-    --hz-accent: #e87040;    /* sunrise orange-coral */
+    --hz-bg: #12101c;
+    --hz-surface: #1a1726;
+    --hz-border: #2a2540;
+    --hz-border-strong: #3d3658;
+    --hz-text: #e8e4f0;
+    --hz-text-secondary: #a39db8;
+    --hz-text-muted: #706b88;
+    --hz-link: #c49bff;
+    --hz-link-hover: #d9bbff;
+    --hz-accent: #f08050;
+    --hz-accent-soft: #2a1a14;
+    --hz-gold: #f0c040;
+    --hz-rose: #e85080;
+    --hz-indigo: #6a5acd;
+    --hz-card-hover: #1f1b30;
+    --hz-shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
+    --hz-shadow-md: 0 2px 8px rgba(0,0,0,0.3);
   }
 }
 
-/* Apply variables to base elements */
+/* --- Typography --- */
 body {
-  background-color: var(--hz-bg) !important;
+  font-family: "Inter", system-ui, -apple-system, sans-serif !important;
+  background: var(--hz-bg) !important;
   color: var(--hz-text) !important;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Inter", system-ui, -apple-system, sans-serif !important;
+  font-weight: 700 !important;
+  color: var(--hz-text) !important;
+  letter-spacing: -0.02em;
 }
 
 a {
   color: var(--hz-link) !important;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+a:hover {
+  color: var(--hz-link-hover) !important;
 }
 
 code {
-  background-color: var(--hz-code-bg) !important;
-  color: var(--hz-text) !important;
+  font-family: "JetBrains Mono", "Fira Code", ui-monospace, monospace;
+  background: var(--hz-accent-soft) !important;
+  color: var(--hz-accent) !important;
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+  font-size: 0.88em;
 }
 
 pre {
-  background-color: var(--hz-code-bg) !important;
+  background: var(--hz-surface) !important;
   color: var(--hz-text) !important;
   border: 1px solid var(--hz-border) !important;
+  border-radius: 6px;
 }
 
 hr {
-  border-color: var(--hz-border) !important;
+  border: none;
+  border-top: 1px solid var(--hz-border);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--hz-text) !important;
-  font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Helvetica Neue", Arial, sans-serif !important;
-  font-weight: 800 !important;
-}
-
-/* Override Cayman header gradient — Horizon sunrise from SVG */
+/* --- Cayman Header Override --- */
 .page-header {
-  background: linear-gradient(120deg, #312e81, #be185d, #f97316) !important;
+  background: linear-gradient(135deg, #312e81 0%, #5a3f9a 25%, #be185d 55%, #e0683a 85%, #f0a040 100%) !important;
+  padding: 3rem 1rem 2.5rem !important;
 }
 
-.page-header h1,
-.page-header h2,
-.page-header .project-tagline,
-.page-header a {
+.page-header h1 {
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
   color: #fff !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
 
-/* --- Score Badge --- */
+.page-header h2,
+.page-header .project-tagline {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  color: rgba(255,255,255,0.85) !important;
+  margin-top: 0.5rem !important;
+}
+
+/* Hide Cayman's "View on GitHub" button */
+.page-header .btn {
+  display: none !important;
+}
+
+/* --- Main Content Area --- */
+.main-content {
+  max-width: 800px !important;
+  padding: 2rem 1.5rem 3rem !important;
+}
+
+.main-content h1:first-child {
+  margin-top: 0;
+}
+
+/* --- Hero Section (index page) --- */
+.hero {
+  text-align: center;
+  padding: 1rem 0 2rem;
+}
+
+.hero h1 {
+  font-size: 2rem !important;
+  font-weight: 800 !important;
+  margin-bottom: 0.5rem !important;
+  background: linear-gradient(135deg, var(--hz-indigo), var(--hz-rose), var(--hz-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-size: 1rem;
+  color: var(--hz-text-secondary);
+  max-width: 520px;
+  margin: 0 auto 1.2rem;
+  line-height: 1.5;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--hz-text-muted);
+}
+
+.stat strong {
+  color: var(--hz-text);
+  font-weight: 700;
+}
+
+/* --- Briefing Cards Grid --- */
+.briefings-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.briefing-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.2rem;
+  background: var(--hz-surface);
+  border: 1px solid var(--hz-border);
+  border-radius: 8px;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: all 0.15s ease;
+  box-shadow: var(--hz-shadow-sm);
+}
+
+.briefing-card:hover {
+  border-color: var(--hz-border-strong);
+  background: var(--hz-card-hover);
+  box-shadow: var(--hz-shadow-md);
+  transform: translateY(-1px);
+}
+
+/* Date Pill */
+.card-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, var(--hz-indigo), var(--hz-rose));
+  border-radius: 8px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.date-day {
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.date-month {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0.85;
+  line-height: 1;
+}
+
+/* Card Body */
+.card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-title {
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  margin: 0 0 0.25rem !important;
+  color: var(--hz-text) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-excerpt {
+  font-size: 0.85rem;
+  color: var(--hz-text-muted);
+  margin: 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-arrow {
+  font-size: 1.2rem;
+  color: var(--hz-text-muted);
+  flex-shrink: 0;
+  transition: transform 0.15s, color 0.15s;
+}
+
+.briefing-card:hover .card-arrow {
+  transform: translateX(4px);
+  color: var(--hz-accent);
+}
+
+/* --- Page Footer --- */
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--hz-border);
+  font-size: 0.83rem;
+  color: var(--hz-text-muted);
+}
+
+.rss-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--hz-text-muted) !important;
+  font-weight: 600;
+  font-size: 0.83rem;
+  transition: color 0.15s;
+}
+
+.rss-link:hover {
+  color: #f26522 !important;
+}
+
+.rss-link svg {
+  opacity: 0.6;
+}
+
+.footer-note {
+  text-align: right;
+}
+
+.footer-note a {
+  color: var(--hz-link) !important;
+}
+
+/* Hide Cayman's default site-footer */
+.site-footer {
+  display: none !important;
+}
+
+/* --- Score Badge (post pages) --- */
 .score-badge {
   display: inline-block;
-  padding: 0.1em 0.5em;
-  border-radius: 3px;
-  font-family: monospace;
+  padding: 0.15em 0.55em;
+  border-radius: 4px;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 0.75em;
   font-weight: 700;
   color: #fff;
@@ -84,39 +320,39 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
 }
 
-.score-badge[data-tier="high"] { background: #be185d; } /* rose — from SVG */
-.score-badge[data-tier="good"] { background: #e0652e; } /* sunrise orange */
-.score-badge[data-tier="mid"]  { background: #d4a017; } /* warm gold */
-.score-badge[data-tier="low"]  { background: #7c7891; } /* muted lavender */
+.score-badge[data-tier="high"] { background: var(--hz-rose); }
+.score-badge[data-tier="good"] { background: var(--hz-accent); }
+.score-badge[data-tier="mid"]  { background: var(--hz-gold); }
+.score-badge[data-tier="low"]  { background: var(--hz-text-muted); }
 
-/* --- Tag Pills --- */
+/* --- Tag Pills (post pages) --- */
 .tag-line code {
-  border-radius: 3px;
-  padding: 0.1em 0.5em;
-  font-size: 0.8em;
+  border-radius: 4px;
+  padding: 0.15em 0.55em;
+  font-size: 0.82em;
   background: var(--hz-accent) !important;
   color: #fff !important;
 }
 
 @media (prefers-color-scheme: dark) {
   .tag-line code {
-    background: #342f4a !important;   /* indigo border */
-    color: #f0a848 !important;        /* dawn gold */
+    background: var(--hz-border) !important;
+    color: var(--hz-gold) !important;
   }
 }
 
-/* --- Source Line --- */
+/* --- Source Line (post pages) --- */
 .source-line {
   font-size: 0.85em;
   color: var(--hz-text-muted);
   border-left: 2px solid var(--hz-accent);
-  padding-left: 0.6em;
+  padding-left: 0.7em;
 }
 
-/* --- Collapsible References --- */
+/* --- Collapsible Details (post pages) --- */
 .main-content details {
   border: 1px solid var(--hz-border);
-  border-radius: 4px;
+  border-radius: 6px;
   margin: 0.8em 0;
 }
 
@@ -132,60 +368,67 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-/* --- TOC Ordered List --- */
+/* --- TOC Ordered List (post pages) --- */
 .main-content > ol {
   border: 1px solid var(--hz-border);
-  border-radius: 4px;
-  padding: 0.8em 0.8em 0.8em 2em;
+  border-radius: 6px;
+  padding: 0.8em 1em 0.8em 2.2em;
   background: var(--hz-surface);
 }
 
 .main-content > ol > li {
-  padding: 0.3em 0;
+  padding: 0.35em 0;
 }
 
-/* --- Summary Blockquote --- */
+/* --- Summary Blockquote (post pages) --- */
 .main-content > blockquote:first-of-type {
-  border-left-color: var(--hz-accent);
-  color: var(--hz-text-muted);
+  border-left: 3px solid var(--hz-accent);
+  color: var(--hz-text-secondary);
   font-style: normal;
+  background: var(--hz-accent-soft);
+  padding: 0.6em 1em;
+  border-radius: 0 6px 6px 0;
 }
 
-/* --- Language Toggle (fixed top-right) --- */
-.lang-toggle {
-  position: fixed;
-  top: 12px;
-  right: 16px;
-  z-index: 1000;
-  display: flex;
-  gap: 0;
-}
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  .page-header {
+    padding: 2rem 1rem 1.5rem !important;
+  }
 
-.lang-toggle button {
-  padding: 0.3em 1em;
-  border: 1px solid rgba(255,255,255,0.4);
-  background: rgba(0,0,0,0.15);
-  color: #fff;
-  font-size: 0.8em;
-  cursor: pointer;
-  backdrop-filter: blur(4px);
-}
+  .page-header h1 {
+    font-size: 1.6rem !important;
+  }
 
-.lang-toggle button:first-child {
-  border-radius: 3px 0 0 3px;
-}
+  .main-content {
+    padding: 1.5rem 1rem 2rem !important;
+  }
 
-.lang-toggle button:last-child {
-  border-radius: 0 3px 3px 0;
-  border-left: none;
-}
+  .hero h1 {
+    font-size: 1.5rem !important;
+  }
 
-.lang-toggle button.active {
-  background: var(--hz-accent);
-  color: #fff;
-  border-color: var(--hz-accent);
-}
+  .hero-stats {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
 
-.lang-section.hidden {
-  display: none;
+  .briefing-card {
+    padding: 0.85rem 1rem;
+    gap: 0.75rem;
+  }
+
+  .card-date {
+    min-width: 44px;
+    height: 44px;
+  }
+
+  .date-day {
+    font-size: 1.05rem;
+  }
+
+  .page-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
