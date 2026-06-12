@@ -5,151 +5,201 @@ date: 2026-06-06
 lang: es
 ---
 
-# Horizon Diario - 2026-06-06
-
-> De 14 artículos, 7 fueron seleccionados por relevancia
+> De 16 artículos, 10 fueron seleccionados por relevancia
 
 ---
 
-1. [La integración de DeepSeek V4 Flash en llama.cpp muestra gran potencial](#item-1) ⭐️ 8.0/10
-2. [Usuario de GrapheneOS reportado a autoridades por usar el SO](#item-2) ⭐️ 7.0/10
-3. [Buscando alternativas económicas a Backblaze para backups off-site](#item-3) ⭐️ 7.0/10
-4. [Integración de Home Assistant facilita la limpieza de entidades huérfanas](#item-4) ⭐️ 7.0/10
-5. [Comparación de los últimos modelos locales para GPUs 3×3090](#item-5) ⭐️ 6.0/10
-6. [Fusión sin censura Qwen3.6-35B-A3B mejora codificación y razonamiento](#item-6) ⭐️ 6.0/10
-7. [Reutilicé una pantalla táctil de señalización digital antigua como un enorme panel físico de Home Assistant, con una tarjeta Lovelace personalizada para cine en casa.](#item-7) ⭐️ 6.0/10
+1. [Ejecutar código Python en un sandbox con MicroPython y WASM](#item-1) ⭐️ 8.0/10
+2. [Modo Bloqueo de OpenAI previene la exfiltración de datos](#item-2) ⭐️ 8.0/10
+3. [Altavoz USB hackeado por Bluetooth para infectar PC](#item-3) ⭐️ 8.0/10
+4. [Primera prueba en EE. UU. de reactor modular alcanza criticidad](#item-4) ⭐️ 8.0/10
+5. [Fuga de aire en la ISS empeora, astronautas se refugian](#item-5) ⭐️ 8.0/10
+6. [S&P 500 niega entrada rápida a SpaceX, bloquea a empresas de IA](#item-6) ⭐️ 7.0/10
+7. [Plan gigante de centro de datos reducido a la mitad tras protestas](#item-7) ⭐️ 7.0/10
+8. [Explosión de Blue Origin proporciona datos valiosos de sobrepresión](#item-8) ⭐️ 7.0/10
+9. [Microbios antiguos de Ötzi, el Hombre de Hielo, aún vivos](#item-9) ⭐️ 6.0/10
+10. [FDA aún desconoce la causa del brote de botulismo infantil](#item-10) ⭐️ 6.0/10
 
 ---
 
 <a id="item-1"></a>
-## [La integración de DeepSeek V4 Flash en llama.cpp muestra gran potencial](https://www.reddit.com/r/LocalLLaMA/comments/1tyb3np/deepseek_v4_flash_is_amazing_wip_llamacpp_pr_24162/) ⭐️ 8.0/10
+## [Ejecutar código Python en un sandbox con MicroPython y WASM](https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything) ⭐️ 8.0/10
 
-Una solicitud de incorporación de cambios en progreso (PR #24162) agrega soporte para el modelo DeepSeek V4 Flash de mezcla de expertos (MoE) a llama.cpp, permitiendo la inferencia local de un modelo de 284 mil millones de parámetros a velocidades lentas (5-6 tokens por segundo). Esta integración lleva la inteligencia de modelos de frontera al hardware local, comparable a los mejores modelos en la nube, lo que podría democratizar el acceso a modelos de lenguaje de última generación para investigadores y entusiastas. La cuantización híbrida nativa FP4-FP8 también reduce los requisitos de memoria, haciendo más factible la inferencia local de alto rendimiento. El PR se encuentra en etapas tempranas con soporte limitado de GPU y atención flash, y el modelo se ejecuta a 5-6 tokens por segundo actualmente. La arquitectura del modelo utiliza un diseño de mezcla de expertos (MoE) con 284 mil millones de parámetros totales, pero solo 13 mil millones activados por token, y admite una ventana de contexto de 1 millón de tokens.
+Simon Willison lanzó un paquete alpha llamado micropython-wasm que compila MicroPython a WebAssembly y creó un plugin para Datasette Agent para ejecutar código de forma segura. Este enfoque proporciona un sandbox seguro para ejecutar código Python no confiable dentro de aplicaciones como Datasette, evitando que plugins maliciosos o con errores accedan a archivos o recursos de red, al tiempo que permite una ejecución flexible de código. El paquete micropython-wasm utiliza MicroPython compilado a WebAssembly, lo que inherentemente proporciona límites de memoria y CPU, así como acceso restringido a archivos. Actualmente está en alpha y se integra como un plugin para Datasette Agent.
 
-reddit · r/LocalLLaMA · /u/Lowkey_LokiSN · jun 6, 07:56
+rss · Simon Willison · jun 6, 03:53
 
-**Contexto**: DeepSeek V4 Flash es un modelo de lenguaje de mezcla de expertos (MoE) desarrollado por DeepSeek con 284 mil millones de parámetros totales y 13 mil millones activados, optimizado para eficiencia. llama.cpp es una implementación de código abierto de inferencia de modelos de lenguaje en C/C++ que se ejecuta en CPU y GPU. La cuantización reduce el uso de memoria; la cuantización híbrida FP4-FP8 permite que el modelo se ejecute en hardware de consumo manteniendo la calidad.
+**Contexto**: MicroPython es una implementación ligera de Python 3 diseñada para microcontroladores y entornos limitados, mientras que WebAssembly es un formato de instrucciones binarias que ejecuta código en un entorno aislado. Al compilar MicroPython a WebAssembly, el código Python puede ejecutarse con fuertes garantías de aislamiento. Esta combinación aborda la necesidad de ejecución segura de plugins en aplicaciones Python como Datasette.
 
 <details><summary>Referencias</summary>
 <ul>
-<li><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash">deepseek-ai/DeepSeek-V4-Flash · Hugging Face</a></li>
-<li><a href="https://rcrtech.com/semiconductor-news/llms-quantization-fp8-fp4-int8/">LLMs and quantization: FP8, FP4, and INT8 explained</a></li>
+<li><a href="https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/">Running Python code in a sandbox with MicroPython and WASM</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MicroPython">MicroPython</a></li>
 
 </ul>
 </details>
 
-**Etiquetas**: `#DeepSeek V4 Flash`, `#llama.cpp`, `#inferencia local`, `#modelos de lenguaje`, `#cuantización`
+**Etiquetas**: `#Python`, `#WebAssembly`, `#Sandbox`, `#Seguridad`, `#MicroPython`
 
 ---
 
 <a id="item-2"></a>
-## [Usuario de GrapheneOS reportado a autoridades por usar el SO](https://discuss.grapheneos.org/d/36134-grapheneos-user-reported-to-authorities-for-using-grapheneos) ⭐️ 7.0/10
+## [Modo Bloqueo de OpenAI previene la exfiltración de datos](https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/#atom-everything) ⭐️ 8.0/10
 
-Un usuario de GrapheneOS fue reportado a las autoridades del Reino Unido por Yoti, un servicio de verificación de identidad, únicamente por usar el sistema operativo móvil GrapheneOS, generando controversia sobre la elaboración de perfiles de privacidad. Este incidente resalta el estigma y la sospecha que rodean a las tecnologías centradas en la privacidad, lo que podría disuadir a los usuarios de adoptar herramientas que protejan sus datos. También genera preocupación sobre los sistemas automatizados de reporte que pueden marcar medidas de seguridad legítimas como sospechosas. El mensaje de Yoti indicaba que, debido a preocupaciones de seguridad pasadas, cualquier dispositivo que ejecute GrapheneOS se marca automáticamente y se reporta a las autoridades y a su equipo de seguridad. El usuario había realizado múltiples intentos de verificación, lo que también contribuyó al marcado.
+OpenAI ha lanzado el Modo Bloqueo, una función de seguridad para ChatGPT que limita las solicitudes de red salientes para evitar la exfiltración de datos por ataques de inyección de prompts. Esto es importante porque aborda directamente la vulnerabilidad de la 'tríada letal' donde los LLM con datos privados, contenido no confiable y vectores de exfiltración pueden ser explotados. Al cortar la pata de exfiltración, el Modo Bloqueo hace que ChatGPT sea más seguro para usuarios y empresas. El Modo Bloqueo no evita que las inyecciones de prompts aparezcan en el contenido procesado, solo restringe las transferencias de datos salientes. Se está implementando en cuentas personales y cuentas de negocio de ChatGPT, incluyendo los niveles Free, Go, Plus y Pro.
 
-hackernews · Cider9986 · jun 6, 08:43 · [Discusión](https://news.ycombinator.com/item?id=48422798)
+rss · Simon Willison · jun 5, 23:56
 
-**Contexto**: GrapheneOS es un sistema operativo móvil de código abierto basado en Android que se centra en mejoras de seguridad y privacidad. Está disponible para dispositivos Google Pixel y tiene alrededor de 400,000 usuarios activos. El sistema incluye características de hardening como un mejor sandboxing y controles de permisos, lo que puede dificultar que los servicios rastreen a los usuarios. Sin embargo, su asociación con la privacidad ha llevado a algunos servicios a tratarlo como sospechoso.
+**Contexto**: La inyección de prompts es una explotación de seguridad donde entradas maliciosas provocan comportamientos no deseados en modelos de lenguaje grandes. La exfiltración de datos es la transferencia no autorizada de datos de un sistema. La 'tríada letal' ocurre cuando un sistema LLM tiene acceso a datos privados, exposición a contenido no confiable y una forma de robar datos. El Modo Bloqueo busca bloquear esa tercera pata limitando las solicitudes de red salientes.
 
 <details><summary>Referencias</summary>
 <ul>
-<li><a href="https://en.wikipedia.org/wiki/GrapheneOS">GrapheneOS</a></li>
-<li><a href="https://grapheneos.org/">GrapheneOS : the private and secure mobile OS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Prompt_injection_attack">Prompt injection attack</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Prompt_injection">Prompt injection - Wikipedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Data_exfiltration">Data exfiltration</a></li>
 
 </ul>
 </details>
 
-**Discusión**: Los comentarios en el foro expresaron indignación y sarcasmo, señalando un usuario la tendencia del Reino Unido a criminalizar las prácticas de ciberseguridad. Otro comentarista analizó el mensaje de Yoti, sugiriendo que la parte 'reportado a las autoridades' podría ser una plantilla. Algunos compararon desfavorablemente la situación con China, donde usar cualquier sistema operativo no tiene tales consecuencias.
-
-**Etiquetas**: `#privacidad`, `#seguridad`, `#GrapheneOS`, `#reporte`, `#sospecha`
+**Etiquetas**: `#seguridad`, `#OpenAI`, `#inyección de prompts`, `#ChatGPT`, `#privacidad`
 
 ---
 
 <a id="item-3"></a>
-## [Buscando alternativas económicas a Backblaze para backups off-site](https://www.reddit.com/r/selfhosted/comments/1tya8o4/currently_using_backblaze_for_backups_but_its/) ⭐️ 7.0/10
+## [Altavoz USB hackeado por Bluetooth para infectar PC](https://arstechnica.com/security/2026/06/highly-reviewed-speaker-can-be-hacked-over-the-air-to-infect-connected-devices/) ⭐️ 8.0/10
 
-Un usuario en r/selfhosted pregunta por soluciones de backup fuera del sitio más asequibles, gastando actualmente unas £50 al mes en Backblaze para almacenar entre 3 y 4 TB de datos personales, incluyendo fotos familiares y documentos de la empresa. Esto resalta un problema común entre quienes hacen autoalojamiento: equilibrar la confiabilidad de las copias de seguridad con el costo, especialmente a medida que crecen los volúmenes de datos. La discusión ofrece estrategias del mundo real que pueden ayudar a otros a reducir gastos manteniendo la seguridad de los datos. El usuario utiliza TrueNAS en un HP Microserver con 4 discos de 6 TB y considera colocar un segundo Microserver en un garaje separado más una unidad USB en una caja fuerte ignífuga para mayor protección.
+El investigador de seguridad 'nns' demostró que el altavoz Creative Sound Blaster Katana V2X puede ser explotado mediante Bluetooth para inyectar firmware malicioso y enviar comandos arbitrarios por USB, permitiendo el secuestro remoto del PC sin acceso físico. Esto destaca un novedoso vector de ataque donde los dispositivos USB con capacidades inalámbricas pueden ser comprometidos de forma remota, eludiendo las suposiciones de seguridad tradicionales. Podría afectar a una amplia gama de usuarios que poseen estos dispositivos híbridos. El ataque aprovecha Bluetooth Low Energy (BLE) para enviar comandos que normalmente requieren un protocolo de enlace por USB, evitando completamente la autenticación. El exploit se denomina 'Pwnd Blaster', y Creative (el vendedor) no considera este comportamiento como una vulnerabilidad.
 
-reddit · r/selfhosted · /u/CrappyTan69 · jun 6, 07:06
+rss · Ars Technica · jun 5, 21:00
 
-**Contexto**: Las copias de seguridad fuera del sitio son fundamentales para protegerse contra amenazas físicas como incendios, robos o fallos de hardware. Muchos autohosters utilizan servicios en la nube como Backblaze, pero los costos pueden dispararse con varios terabytes; las alternativas incluyen sincronización entre pares, servidores remotos autoalojados o configuraciones híbridas local/nube.
+**Contexto**: Muchos dispositivos USB tienen firmware que puede actualizarse o configurarse a través de USB. Este altavoz también incluye conectividad Bluetooth, permitiendo comandos inalámbricos. Si el firmware Bluetooth acepta comandos sin la autenticación adecuada, un atacante puede inyectar instrucciones maliciosas que luego se retransmiten por USB al PC conectado, ejecutando potencialmente código arbitrario. Esto es similar a los ataques de inyección HID pero realizados a través de un altavoz.
 
-**Etiquetas**: `#backups`, `#almacenamiento`, `#autoalojamiento`, `#backups off-site`, `#ahorro de costos`
+<details><summary>Referencias</summary>
+<ul>
+<li><a href="https://www.simplenews.ai/news/creative-sound-blaster-katana-v2x-enables-remote-pc-hijacking-via-bluetooth-3znj">Creative Sound Blaster Katana V2X Enables Remote PC Hijacking</a></li>
+<li><a href="https://gigazine.net/gsc_news/en/20260604-creative-pwnd-blaster/">An exploit called 'Pwnd Blaster' has been discovered that uses</a></li>
+<li><a href="https://www.aivanet.com/2022/09/creatives-katana-v2x-pc-soundbar-promises-the-same-sound-in-a-smaller-footprint/">Creative’s Katana V2X PC soundbar promises the same sound in</a></li>
+
+</ul>
+</details>
+
+**Etiquetas**: `#seguridad`, `#USB`, `#vulnerabilidad`, `#altavoz inteligente`, `#ciberataque`
 
 ---
 
 <a id="item-4"></a>
-## [Integración de Home Assistant facilita la limpieza de entidades huérfanas](https://www.reddit.com/r/homeassistant/comments/1tya8f7/orphan_entity_cleaner/) ⭐️ 7.0/10
+## [Primera prueba en EE. UU. de reactor modular alcanza criticidad](https://arstechnica.com/science/2026/06/first-us-test-of-modular-reactor-reaches-criticality/) ⭐️ 8.0/10
 
-Una nueva integración personalizada llamada Orphan Entity Cleaner, creada por el usuario Franz646, permite a los usuarios de Home Assistant eliminar entidades huérfanas a través de una interfaz gráfica sencilla. La herramienta es instalable mediante HACS y ofrece múltiples opciones de limpieza. Las entidades huérfanas se acumulan con el tiempo a partir de dispositivos o integraciones eliminados, saturando el sistema y afectando potencialmente el rendimiento. Esta integración simplifica el proceso de limpieza, haciéndolo accesible para usuarios que no se sienten cómodos con la edición manual de la base de datos o la configuración YAML. Orphan Entity Cleaner escanea las entidades que ya no están activas y las presenta en una interfaz de usuario para su eliminación selectiva. Se distribuye como una integración personalizada y se puede agregar mediante HACS desde el repositorio de GitHub Franz646/orphan-cleaner.
+Antares, una startup nuclear, alcanzó la criticidad en la primera prueba estadounidense de un reactor modular pequeño en junio de 2026, aunque el reactor aún no genera electricidad. Este hito demuestra el avance en la tecnología de reactores modulares pequeños (SMR), que promete energía nuclear más barata, segura y escalable para energía limpia y centros de datos. La criticidad significa que se logró una reacción nuclear en cadena sostenida, pero el reactor aún no está conectado a una turbina para generar electricidad. La prueba valida la capacidad del diseño del reactor para mantener la fisión.
 
-reddit · r/homeassistant · /u/False-Assistance2111 · jun 6, 07:06
+rss · Ars Technica · jun 5, 19:23
 
-**Contexto**: En Home Assistant, una entidad representa un sensor, interruptor u otro componente. Cuando se elimina un dispositivo o integración, sus entidades asociadas pueden quedar huérfanas, permaneciendo en la base de datos y causando desorden. HACS (Home Assistant Community Store) es una herramienta popular para instalar integraciones personalizadas y elementos de interfaz.
+**Contexto**: Los reactores modulares pequeños (SMR) son reactores nucleares avanzados con una potencia inferior a 300 MWe, diseñados para fabricación en fábrica e instalación modular. Incorporan características de seguridad pasiva y buscan reducir costos y plazos de construcción en comparación con los reactores convencionales.
 
 <details><summary>Referencias</summary>
 <ul>
-<li><a href="https://community.home-assistant.io/t/help-removing-orphans/936745">Help removing orphans - Home Assistant Community</a></li>
-<li><a href="https://hacs.xyz/">HACS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Small_modular_nuclear_reactor">Small modular nuclear reactor</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nuclear_criticality_safety">Nuclear criticality safety</a></li>
+<li><a href="https://www.iaea.org/newscenter/news/what-are-small-modular-reactors-smrs">What are Small Modular Reactors (SMRs)? | IAEA</a></li>
 
 </ul>
 </details>
 
-**Etiquetas**: `#Home Assistant`, `#integración`, `#limpieza`, `#entidades huérfanas`, `#utilidad`
+**Etiquetas**: `#energía nuclear`, `#reactores modulares`, `#tecnología energética`, `#sostenibilidad`, `#startups`
 
 ---
 
 <a id="item-5"></a>
-## [Comparación de los últimos modelos locales para GPUs 3×3090](https://www.reddit.com/r/LocalLLaMA/comments/1tya05j/aa_comparison_of_the_latest_local_models/) ⭐️ 6.0/10
+## [Fuga de aire en la ISS empeora, astronautas se refugian](https://arstechnica.com/space/2026/06/work-on-russias-leaky-space-station-module-causes-astronauts-to-take-shelter/) ⭐️ 8.0/10
 
-Un usuario de Reddit publicó una comparación práctica de los modelos recientes de lenguaje grandes locales que pueden ejecutarse en tres GPUs NVIDIA RTX 3090, señalando que los modelos MiniMax y Step funcionan bien incluso con cuantización Q3. Esta comparación ayuda a la comunidad de LLM local a identificar qué modelos son viables en hardware de consumo, guiando a los usuarios en la elección de modelos que equilibren rendimiento y requisitos de recursos. El autor excluyó modelos de más de 300 mil millones de parámetros y sugirió omitir la mayoría de los modelos de 200B, pero destacó que los modelos MiniMax y Step son rápidos incluso con cuantización Q3. Gemma-4 12B no estaba incluido en la comparación.
+El viernes, los astronautas a bordo de la Estación Espacial Internacional se vieron obligados a refugiarse debido a una fuga de aire en aumento en un módulo ruso, lo que llevó a la NASA a expresar su disposición a colaborar con Roscosmos para solucionar las fugas. Esto es importante porque la ISS es una plataforma crítica para la investigación y la cooperación internacional, y una fuga de aire persistente plantea riesgos de seguridad para la tripulación y podría afectar las operaciones de la estación, lo que subraya la necesidad de una colaboración efectiva entre las agencias espaciales. La fuga que empeora está asociada con un módulo ruso en la ISS, y los trabajos de reparación en ese módulo llevaron a la decisión de refugiar a la tripulación. La NASA ha declarado que espera trabajar con Roscosmos en una estrategia conjunta para mitigar las fugas.
 
-reddit · r/LocalLLaMA · /u/jacek2023 · jun 6, 06:53
+rss · Ars Technica · jun 5, 19:03
 
-**Contexto**: Los modelos locales son modelos de lenguaje grandes que se pueden ejecutar en hardware personal en lugar de servidores en la nube. Las técnicas de cuantización como Q3 reducen la precisión del modelo para disminuir el uso de memoria, lo que permite ejecutar modelos más grandes en GPUs con VRAM limitada. La GPU NVIDIA RTX 3090 tiene 24GB de VRAM, y tres de esas GPUs pueden alojar modelos de hasta unos 200 mil millones de parámetros con cuantización.
+**Contexto**: La Estación Espacial Internacional (ISS) es una estación espacial modular en órbita terrestre baja que sirve como laboratorio de investigación en microgravedad. Es un proyecto conjunto que involucra a la NASA, Roscosmos y otras agencias espaciales. Las fugas de aire, aunque no son infrecuentes, suelen ser manejables, pero esta parece ser más grave, lo que amenaza la seguridad de la tripulación y la integridad de la estación.
 
-<details><summary>Referencias</summary>
-<ul>
-<li><a href="https://www.tipsblade.com/minimax-unveils-open-source-llm-with-staggering-4m-token-context/">MiniMax unveils open source LLM with staggering 4M token</a></li>
-<li><a href="https://dat1.co/blog/llm-quantization-comparison">LLM Quantization Comparison</a></li>
-
-</ul>
-</details>
-
-**Etiquetas**: `#modelos locales`, `#comparación`, `#LLM`, `#GPU`
+**Etiquetas**: `#fuga de aire`, `#ISS`, `#seguridad espacial`, `#colaboración internacional`, `#Roscosmos`
 
 ---
 
 <a id="item-6"></a>
-## [Fusión sin censura Qwen3.6-35B-A3B mejora codificación y razonamiento](https://www.reddit.com/r/LocalLLaMA/comments/1tyb6u7/qwen3635ba3buncensoredclaude46genesisapexgguf/) ⭐️ 6.0/10
+## [S&P 500 niega entrada rápida a SpaceX, bloquea a empresas de IA](https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/) ⭐️ 7.0/10
 
-Se ha lanzado una fusión delta comunitaria de modelos Qwen, denominada Qwen3.6-35B-A3B-Uncensored-Claude-4.6-Genesis-APEX-GGUF, que ofrece mejor estabilidad para codificación, ausencia total de censura y razonamiento Claude 4.6 Opus. Utiliza cuantización APEX para inferencia local eficiente. Esta fusión demuestra la creciente capacidad de las fusiones comunitarias para mejorar modelos de lenguaje de código abierto, especialmente para inferencia local. Muestra cómo combinar distintas fortalezas puede crear herramientas versátiles para desarrolladores y usuarios de juegos de rol. El modelo se basa en una fusión delta de un lanzamiento anterior y requiere cuantización APEX. Funciona mejor con una primera línea específica en el prompt del sistema: 'You are Qwen, created by Alibaba Cloud. You are a helpful AI assistant.'
+S&P Dow Jones Indices anunció el 4 de junio de 2026 que no eximirá los requisitos de rentabilidad y antigüedad para SpaceX, OpenAI y Anthropic, impidiendo su inclusión en el índice S&P 500. Esta decisión bloquea a estas empresas de alto perfil el acceso a miles de millones de dólares en fondos de inversión pasiva que siguen el S&P 500, lo que podría limitar su atractivo bursátil y su base de inversores. El S&P 500 exige que las empresas tengan al menos 12 meses de historial de cotización y rentabilidad demostrada, lo que SpaceX (aún no pública), OpenAI (sin fines de lucro) y Anthropic (no rentable) no pueden cumplir actualmente.
 
-reddit · r/LocalLLaMA · /u/EvilEnginer · jun 6, 08:01
+rss · Ars Technica · jun 5, 18:45
 
-**Contexto**: La fusión de modelos es una técnica que combina diferentes checkpoints de modelos de lenguaje para aprovechar sus fortalezas respectivas. La fusión delta aplica solo la diferencia entre dos modelos, ahorrando almacenamiento y permitiendo un control más preciso. APEX (Precisión Adaptativa para Modelos de Expertos) es un método de cuantización diseñado para modelos Mixture-of-Experts (MoE), que logra mejor precisión que las cuantizaciones uniformes mientras reduce el tamaño del modelo. GGUF es un formato de archivo para inferencia eficiente en CPU de modelos cuantizados.
+**Contexto**: El S&P 500 es un índice bursátil que sigue el rendimiento de 500 grandes empresas estadounidenses. La inclusión en el índice es muy buscada porque desencadena compras automáticas por parte de fondos indexados y ETFs. El índice tiene criterios estrictos que incluyen capitalización de mercado, liquidez, flotación pública, rentabilidad y un período de antigüedad. Estas reglas están diseñadas para garantizar que solo se incluyan empresas estables y establecidas.
 
 <details><summary>Referencias</summary>
 <ul>
-<li><a href="https://huggingface.co/collections/mudler/apex-quants-gguf">APEX Quants (GGUF) - a mudler Collection</a></li>
-<li><a href="https://huggingface.co/mudler/Qwen3.5-35B-A3B-APEX-GGUF">mudler/Qwen3.5-35B-A3B-APEX-GGUF · Hugging Face</a></li>
-<li><a href="https://github.com/mudler/apex-quant">GitHub - localai-org/apex-quant: Adaptive Precision for EXpert Models: MoE-aware mixed-precision quantization · GitHub</a></li>
+<li><a href="https://www.investopedia.com/articles/investing/090414/sp-500-index-you-need-know.asp">Understanding the S&P 500: How It's Calculated and Why It Matters</a></li>
+<li><a href="https://cryptobriefing.com/sp500-delays-spacex-inclusion/">S&P 500 delays fast tracking SpaceX inclusion by at least a year</a></li>
+<li><a href="https://fatfire.com/sp-500-requirements/">S&P 500 Inclusion Criteria: Essential Requirements Explained | FATFIRE™</a></li>
 
 </ul>
 </details>
 
-**Etiquetas**: `#modelos de lenguaje`, `#código abierto`, `#razonamiento`, `#local`, `#fusión`
+**Etiquetas**: `#SpaceX`, `#S&P 500`, `#OpenAI`, `#Anthropic`, `#inversiones`
 
 ---
 
 <a id="item-7"></a>
-## [Reutilicé una pantalla táctil de señalización digital antigua como un enorme panel físico de Home Assistant, con una tarjeta Lovelace personalizada para cine en casa.](https://www.reddit.com/r/homeassistant/comments/1tyd5xc/i_repurposed_an_old_digital_signage_touchscreen/) ⭐️ 6.0/10
+## [Plan gigante de centro de datos reducido a la mitad tras protestas](https://arstechnica.com/tech-policy/2026/06/we-pissed-off-a-lot-of-people-giant-data-center-plan-cut-50-amid-protests/) ⭐️ 7.0/10
 
-Un usuario recicla una pantalla táctil de señalización digital para crear un panel de control de Home Assistant, incluyendo una tarjeta personalizada para el cine en casa.
+El desarrollador de un proyecto masivo de centro de datos anunció que reduciría el tamaño de la instalación en un 50% tras intensas protestas comunitarias. Esta reducción resalta la creciente tensión entre la rápida expansión de la infraestructura de datos y las preocupaciones de las comunidades locales sobre los impactos ambientales y en la calidad de vida. El desarrollador declaró que se sintieron 'golpeados' y que 'no tenían otra opción' más que reducir el plan, que originalmente aspiraba a ser un importante centro de datos.
 
-reddit · r/homeassistant · /u/Nerdaxic · jun 6, 09:59
+rss · Ars Technica · jun 5, 18:23
 
-**Etiquetas**: `#Home Assistant`, `#Pantalla táctil`, `#Reciclaje`, `#Lovelace`, `#Domótica`
+**Contexto**: Los centros de datos son grandes instalaciones que albergan servidores y equipos informáticos para servicios en la nube, streaming e inteligencia artificial. Requieren cantidades significativas de electricidad y agua para refrigeración, lo que a menudo genera oposición local por el uso de recursos y el impacto ambiental. Las protestas comunitarias surgen con frecuencia por el ruido, la construcción y la presión sobre la infraestructura local.
+
+**Etiquetas**: `#centros de datos`, `#protestas comunitarias`, `#política tecnológica`, `#planificación urbana`, `#impacto ambiental`
 
 ---
 
+<a id="item-8"></a>
+## [Explosión de Blue Origin proporciona datos valiosos de sobrepresión](https://arstechnica.com/space/2026/06/safety-officials-finally-have-a-good-idea-of-what-a-big-rocket-explosion-can-do/) ⭐️ 7.0/10
+
+Funcionarios de seguridad han obtenido datos concretos sobre los efectos de sobrepresión de una gran explosión de cohete, después de que una explosión de Blue Origin rompiera ventanas a casi una milla de distancia. Esto proporciona evidencia empírica para futuras evaluaciones de riesgo. Comprender la sobrepresión de las explosiones de cohetes grandes es crucial para diseñar plataformas de lanzamiento más seguras y proteger al personal y las infraestructuras. Estos datos pueden informar regulaciones y protocolos de seguridad en la creciente industria espacial comercial. La sobrepresión de la explosión de Blue Origin fue suficiente para romper ventanas en un hangar ubicado a aproximadamente una milla de la plataforma de lanzamiento. Los datos recopilados incluyen mediciones de presión y respuesta estructural, que antes faltaban para explosiones de cohetes a gran escala.
+
+rss · Ars Technica · jun 5, 13:55
+
+**Contexto**: La sobrepresión de una explosión es la presión generada por una onda de choque, medida en psi o kPa. Puede causar daños a estructuras y lesiones a humanos. Hasta ahora, los datos detallados sobre la sobrepresión de grandes explosiones de cohetes eran escasos, ya que la mayoría de los incidentes no estaban instrumentados. Este evento brinda una oportunidad única para el análisis.
+
+<details><summary>Referencias</summary>
+<ul>
+<li><a href="https://arstechnica.com/space/2026/06/safety-officials-finally-have-a-good-idea-of-what-a-big-rocket-explosion-can-do/">Safety officials finally have a good idea of what a big rocket explosion ...</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Overpressure">Overpressure - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**Etiquetas**: `#Seguridad espacial`, `#Explosión de cohete`, `#Blue Origin`, `#Presión de onda`, `#Ingeniería aeroespacial`
+
+---
+
+<a id="item-9"></a>
+## [Microbios antiguos de Ötzi, el Hombre de Hielo, aún vivos](https://arstechnica.com/science/2026/06/otzis-mummified-body-is-home-to-ancient-strains-of-yeast-and-bacteria/) ⭐️ 6.0/10
+
+Investigadores han descubierto que cepas antiguas de levadura y bacterias preservadas en el cuerpo momificado de Ötzi, el Hombre de Hielo, aún son viables y pueden crecer en cultivo. Este hallazgo demuestra la notable longevidad de la vida microbiana y ofrece una ventana única al ecosistema microbiano de un humano prehistórico, con implicaciones para campos como la astrobiología y el estudio de enfermedades antiguas. Los microbios fueron aislados del cuerpo de Ötzi, que data de alrededor del 3300 a.C., e incluyen tanto especies de levaduras como bacterias. La capacidad de cultivarlos permite a los científicos estudiar su genética y posibles adaptaciones metabólicas al frío extremo.
+
+rss · Ars Technica · jun 6, 11:15
+
+**Contexto**: Ötzi, también conocido como el Hombre de Hielo, es una momia natural bien conservada de un hombre de la Edad del Cobre, descubierta en 1991 en los Alpes, en la frontera entre Austria e Italia. Su cuerpo ha sido estudiado exhaustivamente, proporcionando información sobre la vida y la salud prehistóricas. La supervivencia de microbios durante más de 5,000 años en estado congelado desafía suposiciones anteriores sobre la longevidad microbiana y sugiere que organismos similares podrían encontrarse en otros entornos helados, como glaciares o permafrost.
+
+**Etiquetas**: `#microbiología`, `#arqueología`, `#Ötzi`, `#microorganismos antiguos`, `#ciencia`
+
+---
+
+<a id="item-10"></a>
+## [FDA aún desconoce la causa del brote de botulismo infantil](https://arstechnica.com/health/2026/06/baby-botulism-outbreak-fda-still-doesnt-know-cause-or-how-to-prevent-it/) ⭐️ 6.0/10
+
+La FDA no ha identificado la causa de un brote de botulismo infantil y no se han establecido medidas preventivas. Las tres empresas involucradas se culpan entre sí. Esta crisis sanitaria continua resalta las deficiencias en la regulación de seguridad alimentaria y la vulnerabilidad de los bebés al botulismo. La falta de respuestas socava la confianza pública en las agencias responsables de proteger a los consumidores. El brote involucra múltiples casos de botulismo infantil, pero la fuente sigue siendo desconocida. La FDA no ha proporcionado un cronograma de resolución y las empresas no han ofrecido una solución.
+
+rss · Ars Technica · jun 5, 22:36
+
+**Contexto**: El botulismo infantil es una enfermedad rara pero grave causada por esporas de Clostridium botulinum, a menudo presentes en el suelo o la miel. Los bebés menores de un año están en riesgo porque sus bacterias intestinales no están lo suficientemente desarrolladas para competir con las esporas. La FDA generalmente investiga brotes transmitidos por alimentos, pero en este caso no ha identificado el producto contaminado.
+
+**Etiquetas**: `#botulismo`, `#salud pública`, `#FDA`, `#brote infantil`, `#seguridad alimentaria`
+
+---
