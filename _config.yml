@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
-title: Horizon Diario
-description: Resumen diario de noticias tech, AI y self-hosting — curado por IA
+title: daily
+description: Tech, AI y self-hosting — curado por IA
 baseurl: ""
 url: "https://daily.jmlabs.app"
 

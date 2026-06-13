@@ -4,8 +4,8 @@ title: Horizon Daily
 ---
 
 <div class="hero">
-  <h1>🌅 Horizon Diario</h1>
-  <p class="hero-sub">Briefings diarios de tech, AI y self-hosting — curados por IA desde HN, Reddit y RSS.</p>
+  <h1>🌅 Daily</h1>
+  <p class="hero-sub">Briefing diario de tech, AI y self-hosting. Curado por IA desde HN, Reddit y RSS.</p>
   <div class="hero-stats">
     <span class="stat"><strong>{{ site.posts.size }}</strong> ediciones</span>
     {% assign latest = site.posts | first %}
@@ -21,7 +21,7 @@ title: Horizon Daily
       <span class="date-month">{{ post.date | date: "%b" }}</span>
     </div>
     <div class="card-body">
-      <h2 class="card-title">{{ post.title }}</h2>
+      <h2 class="card-title">{{ post.date | date: "%d de %B, %Y" }}</h2>
       {% assign excerpt = post.excerpt | strip_html | truncate: 140 %}
       <p class="card-excerpt">{{ excerpt }}</p>
     </div>
