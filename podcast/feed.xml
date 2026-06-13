@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Daily — Briefing Tech &amp; AI</title>
+    <link>https://daily.jmlabs.app</link>
+    <description>Resumen diario de noticias de tecnología, inteligencia artificial y self-hosting. Curado por IA desde HN, Reddit y RSS. Narrado por Elena.</description>
+    <language>es</language>
+    <itunes:author>Horizon AI</itunes:author>
+    <itunes:summary>Briefing diario de tech, AI y self-hosting</itunes:summary>
+    <itunes:category text="Technology"/>
+    <itunes:image href="https://daily.jmlabs.app/podcast/cover.jpg"/>
+    <itunes:explicit>no</itunes:explicit>
+    <item>
+      <title>Daily — 2026-06-13</title>
+      <description>Briefing diario de tech, AI y self-hosting — 2026-06-13</description>
+      <enclosure url="https://daily.jmlabs.app/podcast/daily-2026-06-13.mp3" length="17348400" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-06-13</guid>
+      <pubDate>Sat, 13 Jun 2026 09:00:00 -0300</pubDate>
+      <duration>2891</duration>
+    </item>
+  </channel>
+</rss>
