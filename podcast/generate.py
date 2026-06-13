@@ -11,6 +11,7 @@ BRIEFING_DIR = Path.home() / "Horizon" / "data" / "summaries"
 PODCAST_DIR = Path.home() / "horizon-daily-pages" / "podcast"
 VOICE = "es-AR-ElenaNeural"
 SITE_URL = "https://daily.jmlabs.app"
+RAW_URL = "https://raw.githubusercontent.com/Josemiranda989/horizon-daily/main"
 
 def clean_markdown(text: str) -> str:
     """Clean markdown for TTS narration."""
@@ -62,7 +63,7 @@ def update_podcast_feed(audio_file: str, title: str, date: str, duration_sec: in
     episode_xml = f"""    <item>
       <title>{title}</title>
       <description>Briefing diario de tech, AI y self-hosting — {date}</description>
-      <enclosure url="{SITE_URL}/podcast/{audio_file}" length="{size_bytes}" type="audio/mpeg"/>
+      <enclosure url="{RAW_URL}/podcast/{audio_file}" length="{size_bytes}" type="audio/mpeg"/>
       <guid isPermaLink="false">{date}</guid>
       <pubDate>{pub_date}</pubDate>
       <duration>{duration_sec}</duration>
