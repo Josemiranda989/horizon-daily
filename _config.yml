@@ -1,8 +1,8 @@
 theme: jekyll-theme-cayman
 title: Horizon Diario
 description: Resumen diario de noticias tech, AI y self-hosting — curado por IA
-baseurl: "/horizon-daily"
-url: "https://josemiranda989.github.io"
+baseurl: ""
+url: "https://daily.jmlabs.app"
 
 # Build settings
 markdown: kramdown
