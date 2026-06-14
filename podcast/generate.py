@@ -218,7 +218,7 @@ def update_podcast_feed(audio_file: str, title: str, date: str,
     <itunes:author>Horizon AI</itunes:author>
     <itunes:summary>Briefing diario de tech, AI y self-hosting</itunes:summary>
     <itunes:category text="Technology"/>
-    <itunes:image href="{SITE_URL}/podcast/cover.jpg"/>
+    <itunes:image href="{RAW_URL}/podcast/cover.jpg"/>
     <itunes:explicit>no</itunes:explicit>
     <itunes:owner>
       <itunes:name>José Miranda</itunes:name>
