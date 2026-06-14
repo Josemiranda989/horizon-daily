@@ -10,6 +10,10 @@
     <itunes:category text="Technology"/>
     <itunes:image href="https://daily.jmlabs.app/podcast/cover.jpg"/>
     <itunes:explicit>no</itunes:explicit>
+    <itunes:owner>
+      <itunes:name>José Miranda</itunes:name>
+      <itunes:email>josemiranda989@gmail.com</itunes:email>
+    </itunes:owner>
     <item>
       <title>Daily — 2026-06-14</title>
       <description>Briefing diario de tech, AI y self-hosting — 2026-06-14</description>

@@ -220,6 +220,10 @@ def update_podcast_feed(audio_file: str, title: str, date: str,
     <itunes:category text="Technology"/>
     <itunes:image href="{SITE_URL}/podcast/cover.jpg"/>
     <itunes:explicit>no</itunes:explicit>
+    <itunes:owner>
+      <itunes:name>José Miranda</itunes:name>
+      <itunes:email>josemiranda989@gmail.com</itunes:email>
+    </itunes:owner>
 {chr(10).join(all_episodes)}
   </channel>
 </rss>"""
