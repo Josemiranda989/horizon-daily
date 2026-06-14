@@ -11,6 +11,14 @@
     <itunes:image href="https://daily.jmlabs.app/podcast/cover.jpg"/>
     <itunes:explicit>no</itunes:explicit>
     <item>
+      <title>Daily — 2026-06-14</title>
+      <description>Briefing diario de tech, AI y self-hosting — 2026-06-14</description>
+      <enclosure url="https://raw.githubusercontent.com/Josemiranda989/horizon-daily/main/podcast/daily-2026-06-14.mp3" length="5765184" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-06-14</guid>
+      <pubDate>Sun, 14 Jun 2026 09:00:00 -0300</pubDate>
+      <duration>960</duration>
+    </item>
+<item>
       <title>Daily — 2026-06-13</title>
       <description>Briefing diario de tech, AI y self-hosting — 2026-06-13</description>
       <enclosure url="https://raw.githubusercontent.com/Josemiranda989/horizon-daily/main/podcast/daily-2026-06-13.mp3" length="5539104" type="audio/mpeg"/>

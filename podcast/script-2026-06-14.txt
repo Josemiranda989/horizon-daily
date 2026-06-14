@@ -1,0 +1,82 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 14 de junio de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+GLM 5.2 lanzado como modelo completamente abierto
+GLM 5.2, un modelo de lenguaje grande abierto, ha sido lanzado por Z.ai y la Universidad de Tsinghua. Es completamente de código abierto, permitiendo acceso y uso sin restricciones. Este lanzamiento es significativo porque proporciona una alternativa abierta a los modelos fronterizos restringidos, especialmente en medio de la creciente censura de modelos de IA en EE.UU. Promueve la colaboración científica global y desafía el dominio de los modelos propietarios. GLM 5.2 está construido sobre una arquitectura de mezcla de expertos (MoE) con 744 mil millones de parámetros y 256 expertos. Se informa que es competitivo con modelos como GPT-5.2 instant, aunque aún no se han publicado puntos de referencia oficiales.
+
+Pasamos a la siguiente noticia.
+
+Ruedas WASM ahora publicables en PyPI para Pyodide
+El lanzamiento de Pyodide 314.0 permite a los mantenedores de paquetes publicar ruedas basadas en WebAssembly directamente en PyPI, eliminando la necesidad de distribución manual por parte de los mantenedores de Pyodide. Anteriormente, más de 300 paquetes se construían y alojaban manualmente. Este cambio reduce la carga de mantenimiento de los mantenedores de Pyodide y elimina un gran cuello de botella para la comunidad, permitiendo que más paquetes se distribuyan para la ejecución de Python en el navegador. Agiliza significativamente el flujo de trabajo para los desarrolladores que crean paquetes Python con extensiones en C, C++ o Rust que necesitan ejecutarse en el navegador mediante WebAssembly. La funcionalidad se basa en la nueva etiqueta de plataforma PyEmscripten definida en PEP 783, y está soportada por herramientas como cibuildwheel. Simon Willison lo demostró empaquetando 'luau-wasm', un lenguaje similar a Lua compilado a WASM, como una rueda de 276KB que se puede instalar mediante micropip en Pyodide.
+
+Pasamos a la siguiente noticia.
+
+Oficina del Censo de EE.UU. prohíbe la infusión de ruido en productos estadísticos
+La Oficina del Censo de EE.UU. ha prohibido el uso de infusión de ruido, un método que añade ruido aleatorio para proteger la privacidad individual, en sus productos estadísticos publicados. Esta reversión genera preocupaciones sobre la privacidad de las personas cuyos datos son recolectados por el Censo, ya que la infusión de ruido era una técnica clave para evitar la reidentificación a partir de estadísticas agregadas. La prohibición aplica a todos los productos estadísticos publicados por la Oficina del Censo, lo que potencialmente aumenta el riesgo de ataques de reconstrucción que pueden identificar individuos a partir de datos agregados.
+
+Pasamos a la siguiente noticia.
+
+No confíes en las grandes ventanas de contexto
+Una publicación de blog argumenta que el rendimiento de los modelos de lenguaje grandes se degrada con el aumento de la longitud del contexto, citando estudios sobre el efecto 'perdido en el medio' y pruebas de 'aguja en un pajar'. Esto importa porque desafía la tendencia común de extender las ventanas de contexto como solución para tareas como análisis de código y procesamiento de documentos, sugiriendo que los usuarios deberían confiar en ingeniería de prompts más dirigida. El artículo hace referencia a estudios específicos que muestran caídas de rendimiento y recomienda mantener las longitudes de contexto por debajo de 200 000 tokens para una fiabilidad óptima.
+
+Pasamos a la siguiente noticia.
+
+Tratamiento de tumores pancreáticos revela vulnerabilidad clave del cáncer
+Un estudio reciente sugiere que atacar la mutación KRAS puede exponer una vulnerabilidad crítica en los cánceres pancreáticos, lo que podría conducir a nuevos tratamientos. Este enfoque, antes considerado imposible, muestra ser prometedor en aproximadamente el 20% de los tumores. Este descubrimiento es significativo porque las mutaciones de KRAS son impulsores comunes de muchos cánceres y durante mucho tiempo se consideraron 'no farmacables' debido a su estructura molecular. Atacar con éxito KRAS podría abrir la puerta a tratamientos para una amplia gama de cánceres. El descubrimiento se aplica aproximadamente al 20% de los tumores pancreáticos e implica el uso de productos biológicos para atacar la proteína KRAS. El estudio de referencia está registrado en clinicaltrials.gov con el identificador NCT06625320.
+
+Pasamos a la siguiente noticia.
+
+La IA de código abierto debe ganar
+Una publicación en Reddit en la comunidad LocalLLaMA insta a que la IA de código abierto prevalezca sobre las alternativas propietarias. Este debate destaca la tensión entre el desarrollo abierto y el control corporativo, con implicaciones para la innovación y el acceso equitativo a la IA. La discusión subraya el creciente apoyo comunitario a la IA de código abierto, enfatizando temas de transparencia y sesgo.
+
+Pasamos a la siguiente noticia.
+
+Falla en Honda Civic permite ejecución de código arbitrario por USB
+Un investigador de seguridad descubrió que los paquetes de actualización del infoentretenimiento del Honda Civic de décima generación están firmados con la clave de prueba pública de AOSP, lo que permite ejecutar código arbitrario en la unidad principal con acceso USB físico. Esta vulnerabilidad subraya la inseguridad generalizada de los sistemas de infoentretenimiento automotriz y el potencial de atacantes con acceso físico para ejecutar código arbitrario, comprometiendo la privacidad y seguridad del vehículo. Específicamente, los paquetes de actualización son paquetes de recuperación de la era Android 4.2.2 con verificaciones de versión adicionales que se pueden eludir fácilmente. El uso de la clave de prueba de AOSP significa que la verificación de firmas es efectivamente inexistente.
+
+Pasamos a la siguiente noticia.
+
+Phoenix LiveView 1.2: Mejoras en Tiempo Real
+Se lanzó Phoenix LiveView 1.2, una versión importante del framework web en tiempo real para Elixir. Esta actualización incluye nuevas características y mejoras de rendimiento para construir aplicaciones interactivas. Esta versión consolida LiveView como una solución líder para construir aplicaciones web interactivas sin frameworks frontend complejos, beneficiando a los desarrolladores de Elixir y a la comunidad de desarrollo web en general. El framework procesa eventos en el servidor, actualiza el estado y envía diferencias mínimas al cliente, permitiendo interacciones en tiempo real eficientes. Aprovecha la máquina virtual BEAM para concurrencia y tolerancia a fallos.
+
+Pasamos a la siguiente noticia.
+
+Mapeo de columnas de consultas SQLite a tablas origen
+Simon Willison exploró técnicas para identificar programáticamente la tabla y columna de origen de cada columna en los resultados de consultas SQL en SQLite, usando Claude Code para encontrar soluciones que involucran apsw, ctypes para acceder a la función C sqlite3_column_table_name() y el análisis de la salida de EXPLAIN. Esta capacidad permitiría a Datasette enriquecer resultados de consultas SQL arbitrarias con información contextual de las tablas origen, mejorando la exploración de datos. Aborda una brecha persistente en el ecosistema Python de SQLite, habilitando herramientas de análisis de datos más potentes. Las soluciones incluyen usar la biblioteca apsw, llamar a la función C sqlite3_column_table_name() mediante ctypes (que no está expuesta en el módulo sqlite3 de Python) y analizar la salida del comando EXPLAIN. La investigación de Willison está documentada en un repositorio de GitHub bajo simonw/research.
+
+Pasamos a la siguiente noticia.
+
+Dos DGX Spark logran 40 tk/s en inferencia con DeepSeek V4 Flash
+Un usuario de Reddit compartió una receta detallada para ejecutar DeepSeek V4 Flash, un modelo de mezcla de expertos de 284 mil millones de parámetros, en dos supercomputadoras personales NVIDIA DGX Spark conectadas mediante un cable ConnectX-7 de 200 Gbps, logrando aproximadamente 40 tokens por segundo por solicitud y hasta 350 tokens por segundo en agregado con 32 solicitudes concurrentes en un contexto de 256K tokens. Este desarrollo demuestra que modelos MoE de código abierto como DeepSeek V4 Flash pueden ejecutarse a velocidades prácticas en hardware local modesto, reduciendo la brecha entre la inferencia en la nube y en las instalaciones y habilitando flujos de trabajo de agentes en tiempo real. La receta requiere dos DGX Spark y un cable ConnectX-7 de 200 Gbps que cuesta $180; los benchmarks muestran que el sistema dual DGX Spark con FP8 alcanza ~41 tokens/s por solicitud y 350 tokens/s agregado con concurrencia 32, en comparación con RTX Pro 6000 (96 GB GDDR7) con 46.9 tokens/s en flujo único y Mac M2 Ultra 192 GB con 29.7 tokens/s en flujo único. El DGX Spark utiliza el superchip NVIDIA GB10 con 128 GB de memoria unificada.
+
+Pasamos a la siguiente noticia.
+
+Strix Halo vs DGX Spark: Batalla por la IA local
+Un hilo de Reddit en r/LocalLLaMA compara el APU Strix Halo de AMD con el minisupercomputador DGX Spark de NVIDIA para ejecutar modelos de lenguaje grandes localmente. El debate destaca el creciente interés en alternativas de hardware local para IA fuera del ecosistema CUDA de NVIDIA, ofreciendo más opciones para entusiastas e investigadores. Strix Halo cuenta con hasta 16 núcleos de CPU Zen 5 y una gran GPU integrada RDNA 3.5, mientras que DGX Spark usa el superchip GB10 Grace Blackwell de NVIDIA con 128 GB de memoria unificada y acceso a la pila completa de CUDA.
+
+Pasamos a la siguiente noticia.
+
+Herramienta gratuita convierte SQL a diagramas ER en el navegador
+Una herramienta gratuita basada en el navegador convierte sentencias SQL CREATE TABLE en diagramas de entidad-relación sin enviar datos a ningún servidor. Esta herramienta aborda frustraciones comunes en la visualización de esquemas de bases de datos al eliminar barreras de pago, registros y preocupaciones de privacidad, facilitando a los desarrolladores comprender y compartir diseños de bases de datos rápidamente. La herramienta utiliza un elemento para el renderizado, rasterizando tablas en mapas de bits cacheados con recorte de viewport para rendimiento, y opera completamente del lado del cliente sin backend.
+luau-wasm 0.1a0 permite ejecutar Luau en el navegador con Pyodide
+El lanzamiento de luau-wasm 0.1a0 empaqueta el lenguaje de programación Luau como una rueda WebAssembly para Pyodide, permitiendo ejecutarlo directamente en el navegador a través de micropip de Python. Esto extiende el ecosistema de Pyodide para incluir Luau, un lenguaje rápido y con tipado gradual derivado de Lua ampliamente utilizado en el desarrollo de juegos, permitiendo a los desarrolladores combinar Python y Luau en aplicaciones basadas en navegador. La rueda contiene un módulo de extensión de CPython compilado que incrusta el compilador y la máquina virtual de Luau, y se puede instalar en Pyodide usando micropip. El proyecto también sirve como demostración de cómo publicar ruedas WebAssembly en PyPI.
+
+Pasamos a la siguiente noticia.
+
+Comunidad comparte arreglos para alucinaciones de DiffusionGemma
+Un usuario de Reddit recopiló una tabla de métodos probados —incluyendo muestreo acotado por entropía, parada adaptativa y scaffolding de esquemas— para reducir alucinaciones en la inferencia de DiffusionGemma e instó a la comunidad a implementarlos en motores populares como llama.cpp y vLLM. DiffusionGemma promete generación de texto cuatro veces más rápida que los modelos autorregresivos, pero la inferencia ingenua produce alucinaciones excesivas, limitando su uso en agentes y aplicaciones de llamada a herramientas. Estas técnicas de optimización podrían hacer viable DiffusionGemma en la práctica, acelerando potencialmente la adopción de LLM de difusión de código abierto. Las técnicas clave incluyen un muestreador acotado por entropía con parada adaptativa (EB-Sampler) que puede proporcionar una aceleración de 2-3×, scaffolding de esquemas para mejorar la adherencia estructural JSON en un 65%, y un modo de pensamiento con historial limpio para potenciar el razonamiento. La publicación clasifica los métodos como cambios de configuración directos, envoltorios o modificaciones a nivel de decodificador.
+
+Pasamos a la siguiente noticia.
+
+La base de código crece: surgen errores con Qwen3.6-27B
+Un usuario que trabaja con Qwen3.6-27B informa que a medida que su base de código crece, el modelo comienza a introducir muchos errores pequeños, lo que lo obliga a revisar y corregir manualmente cada problema. Describe el uso de una ventana de contexto de 128K y el comando /compact para gestionar el contexto, pero aún así enfrenta problemas recurrentes como la omisión del manejo de errores. Esta publicación ilustra una limitación del mundo real de la codificación asistida por IA: mantener la calidad del código a escala no es trivial incluso con modelos potentes. La experiencia subraya la necesidad de mejores estrategias de ingeniería de prompts y gestión de contexto para reducir errores en el código generado por IA. El usuario ejecuta Qwen3.6-27B localmente a través de llama.cpp con una GPU 5090 y 64 GB de RAM, usando contexto de 128K, atención flash y decodificación especulativa. Comparte un ejemplo de error donde el modelo omite una declaración de retorno después de registrar un error, lo que provoca una inserción incorrecta en la base de datos.
+
+Pasamos a la siguiente noticia.
+
+Modelos locales a mediados de 2026: optimizaciones permiten IA local
+Una publicación de Reddit predice que para mediados de 2026, técnicas como mezcla de expertos (MoE), compresión KV latente, predicción de múltiples tokens y cuantización de 4 bits permitirán ejecutar modelos avanzados de pesos abiertos localmente, requiriendo menos RAM en lugar de más. Esta predicción resalta una tendencia hacia la democratización de los modelos de lenguaje grandes al reducir los requisitos de hardware, potencialmente permitiendo un acceso más amplio a IA potente en dispositivos de consumo. Las técnicas específicas citadas incluyen atención dispersa, mezcla de expertos (MoE) para activación selectiva, compresión latente del caché KV para reducir memoria, y predicción de múltiples tokens para aumentar la velocidad de inferencia.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
