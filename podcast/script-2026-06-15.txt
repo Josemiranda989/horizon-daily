@@ -1,0 +1,65 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 15 de junio de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+Apple presenta el framework Foundation Models para IA en dispositivo
+Apple presentó el framework Foundation Models, una API en Swift que da a los desarrolladores acceso a un modelo de lenguaje en dispositivo de ~3 mil millones de parámetros y permite integrar diversos modelos de lenguaje de gran tamaño en sus apps. Anunciado en la WWDC 2025, abstrae la capa subyacente del modelo para simplificar el desarrollo de funciones de IA. Esto convierte a los LLM de terceros en productos básicos y le da a Apple control sobre la experiencia del usuario, allanando el camino para un futuro en que sus propios modelos en dispositivo manejen más tareas. Podría reducir costos para desarrolladores y mejorar la privacidad mediante procesamiento local, reforzando la estrategia de Apple de vender hardware optimizado para IA. El framework ofrece una interfaz unificada para LLMs en dispositivo y en la nube, pero no está claro si varias apps pueden compartir un único modelo descargado para evitar saturar el almacenamiento. Los desarrolladores también señalan el reto de usabilidad de pedir a los usuarios que proporcionen claves API para modelos en la nube.
+
+Pasamos a la siguiente noticia.
+
+Kage: Empaqueta cualquier web en un binario offline único
+Kage es una nueva herramienta de código abierto que descarga un sitio web completo y lo empaqueta en un único binario ejecutable, permitiendo su visualización sin conexión mediante un servidor local. Este enfoque simplifica la distribución offline de contenido web, siendo ideal para trabajo de campo remoto o documentación en zonas sin cobertura. Además, garantiza la privacidad sin rastreos ni llamadas de red. Kage crea un binario que contiene todos los recursos del sitio y los sirve por HTTP usando un servidor integrado. Está escrito en Go y requiere ejecutar kage serve para visualizar el sitio; el GIF de demostración se generó con la herramienta ascii-gif del mismo autor.
+
+Pasamos a la siguiente noticia.
+
+El LLM de Río es señalado como fusión ponderada de modelos sin atribución
+La municipalidad de Río de Janeiro lanzó Rio-3.5-Open-397B, presentado como un ajuste fino de Qwen3.5. Un análisis señala que es en realidad una fusión ponderada de aproximadamente 60% Nex-N2 Pro y 40% Qwen3.5-397B-A17B, lanzado una semana antes. Esta controversia resalta la importancia de la transparencia y la atribución adecuada en IA de código abierto, especialmente con fondos públicos involucrados. Podría afectar la forma en que los gobiernos presentan sus proyectos de IA y la confianza de la comunidad en dichas afirmaciones. Un análisis técnico encontró que cada tensor de pesos en Río es una combinación lineal (mezcla 0.6/0.4) de los pesos de Nex y Qwen en las 60 capas, sin evidencia de ajuste fino adicional. Esta fusión simple mejoró inesperadamente el rendimiento en evaluaciones sin degradación.
+
+Pasamos a la siguiente noticia.
+
+Tu ePub está bien: Kobo no lo ve así, culpa a Adobe
+Un artículo detallado revela que muchos archivos ePub son técnicamente válidos pero se renderizan incorrectamente en dispositivos Kobo debido al motor RMSDK de Adobe, que está mal mantenido. Esto pone de relieve una frustración crónica para creadores y lectores de libros electrónicos, socavando la promesa de interoperabilidad del estándar abierto ePub y evidenciando el abandono de Adobe de una tecnología fundamental para ebooks. Kobo emplea un motor de renderizado más avanzado para archivos .kepub, por lo que convertir ePubs con herramientas como kepubify evita muchos errores del RMSDK. El RMSDK de Adobe es notoriamente inaccesible para desarrolladores independientes, sin canales de soporte que respondan.
+
+Pasamos a la siguiente noticia.
+
+Emacs agrega más funcionalidades integradas para mejorar la experiencia predeterminada
+Una publicación de blog de karthinks presenta nuevos paquetes y configuraciones integradas en Emacs que reducen la necesidad de personalizaciones externas, mejorando la experiencia inicial. Esto aborda una barrera histórica de adopción al hacer que Emacs sea más funcional recién instalado, atrayendo potencialmente a usuarios que antes encontraban deficiente la configuración por defecto. El artículo probablemente detalla mejoras integradas específicas; en la discusión comunitaria se menciona que distribuciones alternativas ya ofrecen configuraciones pulidas, pero las mejoras incorporadas podrían reducir la dependencia de configuraciones externas.
+
+Pasamos a la siguiente noticia.
+
+Curl no aceptará informes de vulnerabilidad en julio de 2026
+El proyecto curl anunció que no aceptará informes de vulnerabilidad durante julio de 2026 para dar a sus mantenedores un descanso veraniego, aunque seguirá ofreciendo soporte empresarial. Este enfoque innovador aborda el agotamiento de los mantenedores de código abierto al imponer un descanso y fomentar los contratos de soporte empresarial, resaltando el factor humano en el mantenimiento de infraestructura crítica. La política se aplica específicamente a julio de 2026, manteniéndose la prioridad para los clientes de soporte empresarial. La comunidad destaca que la madurez de curl hace improbables los errores críticos, y los gestores de paquetes pueden aplicar parches urgentes.
+
+Pasamos a la siguiente noticia.
+
+Por qué la IA no ha reemplazado a los ingenieros de software, y no lo hará
+Arvind Narayanan y Sayash Kappor publicaron un ensayo que argumenta que la IA no ha causado despidos masivos en la ingeniería de software, respaldado por evidencia como las declaraciones del WARN Act en Nueva York que muestran cero despidos relacionados con IA en un año completo. Esto desafía la narrativa generalizada de que la IA pronto reemplazará a un gran número de trabajadores tecnológicos, y sugiere que incluso en un campo con pocas barreras regulatorias, la adopción de IA no conduce directamente al desempleo masivo. El ensayo destaca tres cuellos de botella reales en la ingeniería de software que la IA no puede automatizar fácilmente: decidir y especificar qué construir, verificar y ser responsable de lo entregado, y la comprensión humana profunda del código, el negocio y el entorno. Además, los datos del WARN Act revelaron que ninguna de las más de 160 empresas notificó despidos relacionados con la IA.
+
+Pasamos a la siguiente noticia.
+
+Home Assistant publica su primer informe anual de 2025
+La fundación Home Assistant publicó su primer informe anual de 2025, que cubre cambios estructurales, grandes proyectos, logros y planes futuros. Este informe demuestra el compromiso de la fundación con la transparencia y el desarrollo abierto, brindando a usuarios y colaboradores una visión clara de las operaciones y la dirección de la organización. El informe detalla cambios estructurales en la fundación, grandes proyectos completados en 2025 y una hoja de ruta para próximas iniciativas, aunque no se revelaron detalles técnicos específicos en el anuncio.
+
+Pasamos a la siguiente noticia.
+
+La Transformación de la Cultura Nerd en Tecnología
+El artículo de Mr. Market analiza cómo el aumento de riqueza y estatus en la industria tecnológica atrajo a personas más interesadas en el dinero y las apariencias que en la curiosidad genuina y la pasión que originalmente definían la cultura 'nerd'. Este cambio resalta cómo la comercialización de una subcultura puede alterar sus valores fundamentales, afectando potencialmente la innovación, la diversidad laboral y el espíritu a largo plazo del sector tecnológico. El artículo de opinión carece de datos concretos pero utiliza figuras como Elon Musk y Bill Gates para ilustrar el cambio. Las respuestas de la comunidad debaten además la definición de nerd y señalan que las industrias lucrativas históricamente atraen a buscadores de estatus.
+
+Pasamos a la siguiente noticia.
+
+Piden normas de transparencia para código con IA en el subreddit de Home Assistant
+Un usuario de Reddit propuso que la comunidad r/homeassistant exija revelar cuándo las publicaciones incluyen contenido 'vibe coded' (código generado con IA) para mejorar la transparencia y la conciencia de seguridad. Con la codificación asistida por IA cada vez más extendida, el código generado por IA no declarado en entornos de hogar inteligente puede traer riesgos de seguridad, sobre todo por parte de no desarrolladores. La divulgación obligatoria ayuda a tomar decisiones informadas y refuerza la seguridad comunitaria. La sugerencia imita una regla de r/selfhosted donde los autores responden a un comentario automático del moderador explicando cómo usaron la IA. Aún no se ha adoptado ningún cambio; la publicación actúa como una encuesta comunitaria.
+
+Pasamos a la siguiente noticia.
+
+Servidor MCP de solo lectura para depurar Home Assistant
+Un desarrollador ha creado HA-MCP-Readonly, un servidor MCP de solo lectura que proporciona a los agentes de IA herramientas de alto nivel y una capa de dependencias basada en grafos para inspeccionar entidades, automatizaciones y registros de Home Assistant sin acceso de escritura. Permite a los asistentes de IA comprender de forma segura configuraciones complejas de Home Assistant, mejorando la eficiencia de depuración sin riesgo de cambios accidentales, cubriendo una necesidad en las herramientas de domótica con IA. El servidor ofrece métodos eficientes en tokens como estados agrupados, diagnósticos de automatizaciones, detección de conflictos y un generador de contexto estático para uso sin conexión. Utiliza una capa de grafos para rastrear relaciones entre entidades y detectar problemas como entidades huérfanas.
+
+Pasamos a la siguiente noticia.
+
+Radio de los años 50 transformada en pantalla inteligente con Home Assistant
+Un usuario de Reddit reutilizó de manera creativa una radio de los años 50 como pantalla inteligente funcional para la plataforma Home Assistant, fusionando estética retro con automatización moderna. Este proyecto destaca la flexibilidad de Home Assistant y la cultura maker, demostrando cómo la electrónica anticuada puede cobrar nueva vida dentro de un sistema domótico de control local. No se proporcionaron especificaciones técnicas detalladas, pero el proyecto probablemente implicó integrar una pantalla y un módulo de computación dentro de la carcasa de la radio antigua para ejecutar Home Assistant.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
