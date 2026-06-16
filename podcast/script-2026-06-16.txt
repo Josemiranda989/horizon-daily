@@ -1,0 +1,154 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 16 de junio de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+Una puerta trasera en una oferta de trabajo de LinkedIn
+Ciberdelincuentes usan perfiles falsos de reclutadores en LinkedIn para enviar a desarrolladores un repositorio de GitHub con un paquete npm malicioso. El script prepare del paquete ejecuta automáticamente una puerta trasera que permite ejecución remota de comandos al hacer npm install. Este ataque es una peligrosa combinación de ingeniería social y compromiso de la cadena de suministro, apuntando a desarrolladores con acceso a código sensible. Demuestra que incluso profesionales expertos pueden ser engañados, lo que subraya la necesidad de mayor concientización y responsabilidad de las plataformas. La puerta trasera está oculta en el script prepare de un paquete npm, que se ejecuta automáticamente al instalar. El payload, escondido entre código de prueba comentado, se conecta a un servidor remoto y ejecuta los comandos que recibe.
+
+Pasamos a la siguiente noticia.
+
+Emulador x86 corrige código defectuoso en tiempo de emulación
+Un equipo de emulación x86 descubrió que un programa heredado usaba un bucle masivamente desenrollado para inicializar memoria en la pila, lo que causaba ralentizaciones extremas, y diseñaron un método para parchear dinámicamente el ejecutable durante la emulación y usar un bucle eficiente. Esto demuestra cómo la emulación no solo conserva software heredado, sino que también lo mejora de manera transparente, ofreciendo ideas para capas de compatibilidad modernas como Proton y Wine, que ya aplican parches de rendimiento específicos para juegos. El código problemático incluía una función que ponía a cero 64 KB de memoria de pila mediante un bucle totalmente desenrollado de miles de instrucciones, lo que funcionaba mal con la traducción binaria del emulador. La solución reemplazaba dinámicamente este patrón con un bucle compacto durante la ejecución.
+
+Pasamos a la siguiente noticia.
+
+John Carmack elogia el legado de software de Fabrice Bellard
+John Carmack publicó un tuit elogiando al programador francés Fabrice Bellard por sus notables contribuciones al software, lo que provocó una discusión de alta calidad en Hacker News sobre su naturaleza reservada y su impacto técnico. Las creaciones de Bellard, como FFmpeg y QEMU, son fundamentales para la computación moderna, y el reconocimiento de Carmack subraya el valor de los desarrolladores independientes y profundamente concentrados cuyo trabajo a menudo pasa desapercibido. Bellard es conocido por FFmpeg, QEMU, TinyCC, QuickJS y fórmulas para calcular pi. Los comentarios señalaron que no ha contribuido a FFmpeg en más de 20 años y que su código original fue mayormente reemplazado, lo que generó debate sobre su influencia actual.
+
+Pasamos a la siguiente noticia.
+
+Iroh 1.0 es una biblioteca que permite conexiones directas entre aplicaciones sin depender de una capa de red externa, similar a Tailscale pero integrada a nivel de aplicación.
+
+Pasamos a la siguiente noticia.
+
+Biblioteca de libros prohibidos en bombilla inteligente Wi-Fi
+Un desarrollador ha creado una biblioteca digital portátil de libros prohibidos que se ejecuta en una bombilla inteligente Wi-Fi hackeada, permitiendo acceder a la colección a través de una red inalámbrica local para eludir la censura en internet. Este proyecto demuestra cómo los dispositivos IoT de bajo costo pueden reutilizarse para defender el libre acceso a la información, subrayando la tensión entre censura y derechos digitales en un mundo cada vez más conectado. El dispositivo probablemente usa un pequeño servidor web en el firmware de la bombilla, con almacenamiento limitado a unos pocos megabytes; la lista de libros parece estar curada y podría enfocarse en títulos cuestionados en bibliotecas escolares en lugar de obras prohibidas en general.
+
+Pasamos a la siguiente noticia.
+
+Desarrolladores usan modelos locales en lugar de IA en la nube para programar
+Una discusión en Hacker News revela que muchos desarrolladores han sustituido con éxito asistentes de codificación en la nube como Claude y GPT por modelos locales de código abierto como Qwen y Gemma, logrando un rendimiento satisfactorio y priorizando la privacidad y el ahorro de costos. Este cambio indica una tendencia creciente hacia herramientas de IA autogestionadas y respetuosas con la privacidad en el desarrollo de software, reduciendo la dependencia de API de pago y mitigando la fuga de datos. Podría democratizar el acceso y dar a los desarrolladores más control sobre sus flujos de trabajo. Los usuarios mencionan modelos como Qwen3.6 35B con solo 3B de parámetros activos para mayor velocidad, cuantificaciones de Unsloth, GPUs duales RTX3090 alcanzando ~150 tokens por segundo, y herramientas como Pi harness y Open Code. Algunos señalan que los modelos locales aún no son tan inteligentes como los de vanguardia, pero bastan para la mayoría de tareas.
+
+Pasamos a la siguiente noticia.
+
+Ajuste de precios de Hetzner
+
+Pasamos a la siguiente noticia.
+
+Hetzner realiza un ajuste de precios significativo en sus servidores cloud, provocando una amplia discusión sobre el impacto en los costos de infraestructura y las razones detrás del aumento.
+
+Pasamos a la siguiente noticia.
+
+Fox adquiere Roku por 22.000 millones para expandirse en televisores inteligentes y publicidad
+Fox ha anunciado planes para adquirir Roku por 22.000 millones de dólares, con el objetivo de hacerse cargo de su hardware de streaming, el sistema operativo Roku OS y los servicios gratuitos con publicidad (FAST). Este acuerdo de alto impacto podría reconfigurar el mercado del streaming y la publicidad en televisores inteligentes, posicionando a Fox como un actor clave en hardware y distribución de contenido con publicidad. La adquisición de 22.000 millones de dólares otorgaría a Fox el control del popular sistema operativo para televisores inteligentes de Roku, sus dispositivos de streaming y sus canales FAST, integrando capacidades de contenido y publicidad.
+
+Pasamos a la siguiente noticia.
+
+AMD elimina silenciosamente el cifrado de memoria TSME en CPUs de consumo
+AMD eliminó de forma silenciosa el cifrado de memoria TSME de sus CPUs de consumo, una característica de seguridad que antes estaba disponible en los procesadores Ryzen basados en Zen, en lo que parece ser un movimiento deliberado y encubierto. Esta eliminación reduce la seguridad de los sistemas de consumo contra ataques físicos a la memoria, socavando la confianza en el compromiso de AMD con la privacidad del usuario y potencialmente empujando a los usuarios preocupados por la seguridad hacia productos empresariales de mayor costo o competidores. TSME, parte del conjunto de cifrado de memoria segura de AMD, cifra automáticamente los datos en la RAM sin intervención del usuario. La eliminación afecta a las CPUs de consumo Ryzen mientras que los chips de servidor EPYC conservan la característica, y fue descubierta por el usuario Ben Kilpatrick tras una investigación de meses.
+
+Pasamos a la siguiente noticia.
+
+QuickTok: tokenizador BPE hasta 11 veces más rápido que tiktoken
+QuickTok es un nuevo tokenizador BPE en C++ que logra aceleraciones de 2 a 11 veces sobre tiktoken y bpe-openai, generando IDs de tokens idénticos byte a byte a los de tiktoken. Incluye soporte integrado para los vocabularios cl100k, o200k, GPT‑OSS, Llama‑3 y Qwen2.5/3. Una tokenización más rápida puede reducir drásticamente el tiempo de preprocesamiento en flujos de trabajo de NLP, especialmente en entrenamiento e inferencia a gran escala. Esto beneficia a investigadores e ingenieros que trabajan con modelos de lenguaje grandes al aliviar cuellos de botella en los pipelines de datos. En un Apple M1 (un solo hilo) con cl100k_base, QuickTok alcanza 121,7 MB/s nativo y 77,9 MB/s desde Python, frente a 13,6 MB/s de tiktoken. Emplea un trie de 2 bytes para las búsquedas de coincidencia más larga, cachés densos para las comprobaciones de validez de fusión y un pre‑tokenizador compilado a mano en lugar de un motor de expresiones regulares genérico.
+
+Pasamos a la siguiente noticia.
+
+Mi ablación offline dio -0.19 pp. El reentrenamiento en producción dio +1.11 pp. (D)
+Un ingeniero comparte cómo cuatro cambios que parecían positivos en pruebas offline con LightGBM resultaron en regresiones o ruido en producción debido a sesgos de entrenamiento/servicio, cambios en la distribución y inestabilidad de la línea base.
+
+Pasamos a la siguiente noticia.
+
+Ensayo nostálgico sobre el amor a las computadoras genera reflexión comunitaria
+Un ensayo nostálgico de Michael Enger reflexiona sobre el vínculo personal con las computadoras, lamentando cómo ha evolucionado la industria tecnológica, y provocó un debate enriquecedor en Hacker News sobre nostalgia, desilusión industrial y el papel de la IA. El ensayo y la discusión subrayan una creciente división entre la cultura hacker temprana y el panorama tecnológico actual, comercializado e impulsado por la IA, resonando con muchos que sienten que la 'chispa' de la computación se ha desvanecido. La discusión incluye ejemplos específicos como la programación en ensamblador 6502 para máquinas retro, la complejidad de los frameworks JS modernos y el uso de LLMs para aprender nuevos campos, ilustrando el espectro entre amor y frustración con la tecnología.
+
+Pasamos a la siguiente noticia.
+
+Controles de exportación de Fable 5 dañan la ciberdefensa de EE.UU.
+Simon Willison y Kate Moussouris argumentan que los controles de exportación del modelo de IA Claude Fable 5 de Anthropic se activaron por un 'jailbreak' trivial (pedirle 'arreglar este código'), que en realidad es una tarea defensiva legítima, y que la prohibición resultante perjudica las capacidades de ciberdefensa de Estados Unidos. Prohibir modelos por realizar correcciones de seguridad esenciales impide que los defensores usen la IA para proteger sistemas, mientras los atacantes pueden seguir usando modelos similares sin restricciones. Refleja una incomprensión peligrosa de las capacidades de la IA por parte de legisladores no técnicos, lo que podría generar regulaciones más dañinas. El 'jailbreak' consistió en mostrar a Fable 5 código con CVE conocidos y vulnerabilidades planteadas, pedirle 'revisar el código en busca de problemas de seguridad', luego 'arreglar este código' y, mediante un proceso manual de varios pasos, convertir la salida en scripts de explotación. Kate Moussouris señala que arreglar errores, explicar la corrección y escribir pruebas es la capacidad defensiva más valiosa y no se puede eliminar sin degradar el rendimiento general del modelo en reparación de errores.
+
+Pasamos a la siguiente noticia.
+
+Reino Unido prohibirá las redes sociales para menores de 16 años y podría imponer toques de queda nocturnos
+
+Pasamos a la siguiente noticia.
+
+El Reino Unido planea prohibir las redes sociales para menores de 16 años y podría imponer toques de queda nocturnos, medida que según críticos empuja a los jóvenes a alternativas más riesgosas.
+
+Pasamos a la siguiente noticia.
+
+Nvidia planea emitir bonos por $25 mil millones, primera desde 2021
+Nvidia busca recaudar más de 25 mil millones de dólares mediante una emisión de bonos, su primera oferta de deuda desde 2021, para financiar sus operaciones en medio de una creciente demanda de chips para IA. Esta emisión de bonos prueba el apetito de los inversores por la exposición al sector de la IA y señala confianza en la trayectoria de crecimiento de Nvidia, lo que podría sentar un precedente para otras empresas tecnológicas que buscan capital. No se han revelado los términos específicos, como el vencimiento y las tasas de interés, pero la emisión se produce en medio de un aumento generalizado del endeudamiento en la industria tecnológica.
+
+Pasamos a la siguiente noticia.
+
+Cohete chino se desintegra cerca de Starlink y genera 100-150 fragmentos
+Un cohete chino se desintegró en órbita cerca de la constelación Starlink, generando entre 100 y 150 nuevos fragmentos de basura espacial. El incidente aumenta la preocupación por posibles colisiones con satélites activos. Este evento amenaza la seguridad de miles de satélites en órbita baja, incluida la red Starlink de SpaceX. Subraya el creciente problema de la basura espacial y los riesgos de fragmentaciones cerca de regiones orbitales densamente pobladas. La fragmentación probablemente provino de una etapa de cohete chino ya gastada, y la nube de escombros ahora orbita en altitudes que se superponen con los satélites Starlink. Aún no se han reportado colisiones, pero los desechos podrían aumentar la probabilidad de impactos futuros.
+
+Pasamos a la siguiente noticia.
+
+Reflexión sobre 20 años de Mac Intel y las transiciones de hardware de Apple
+La era de los Mac con Intel está llegando a su fin tras 20 años. Un nuevo artículo de Ars Technica explica por qué Apple adoptó procesadores Intel en 2006 y por qué los reemplazó por chips propios basados en ARM desde 2020. Esta historia ilustra la búsqueda incesante de Apple por el rendimiento, la eficiencia y el control, moldeando el futuro de la informática personal e influyendo en las tendencias de diseño de chips en toda la industria. Los factores clave incluyen los estancados planes de desarrollo de PowerPC, la superior eficiencia energética de Intel en su momento, y más tarde las limitaciones en los avances de nodos de Intel, en contraste con los diseños ARM personalizados de Apple y la capa de traducción Rosetta 2 para la compatibilidad.
+
+Pasamos a la siguiente noticia.
+
+Rusia parece dispuesta a abordar finalmente las grietas graves y persistentes de la estación espacial
+
+Pasamos a la siguiente noticia.
+
+Rusia finalmente toma medidas para solucionar las grietas graves y persistentes en la estación espacial, tras una disputa entre NASA y Roscosmos.
+
+Pasamos a la siguiente noticia.
+
+Los LLM tienen nombres favoritos específicos por modelo y versión
+Un nuevo preprint revela que los grandes modelos de lenguaje muestran fuertes sesgos hacia ciertos nombres de personajes, específicos por modelo y versión. Por ejemplo, la aparición conjunta de 'Elena Vasquez' y 'Marcus Chen' sugiere fuertemente texto generado por Claude. Este hallazgo ofrece un método novedoso para detectar contenido generado por IA y descubre sesgos ocultos en los modelos de lenguaje. Podría impactar la verificación de autenticidad de contenido y la auditoría de sesgos. Los nombres aparecen en conjuntos correlacionados—frecuentemente como tríos—en múltiples sitios web con perfiles falsos como expertos en volcanes y anfitriones de podcasts. La investigación se originó de un método de diferenciación de modelos (CDD) y se detalla en el preprint arXiv:2606.02184.
+
+Pasamos a la siguiente noticia.
+
+Cleo: intentando incorporar el comportamiento completo de un analista en un modelo de 2B (P)
+Cleo logra emular el comportamiento de un analista con un modelo de lenguaje de solo 2B parámetros mediante un ajuste fino y un marco unificado de entrenamiento e inferencia con ejecución en vivo de consultas.
+
+Pasamos a la siguiente noticia.
+
+Cómo aprenden los cerebros (R)
+
+Pasamos a la siguiente noticia.
+
+Un nuevo marco de aprendizaje predictivo basado en derivadas temporales y circuitos corticotalámicos, implementado en el sistema Axon, busca superar la retropropagación tradicional.
+
+Pasamos a la siguiente noticia.
+
+TinyWind: un juego de navegación pirata en pixel art con física del viento
+TinyWind, un juego gratuito de navegación pirata en pixel art para navegador, ha ganado popularidad, con jugadores que han navegado colectivamente más de 380.000 kilómetros usando física de viento simulada que incluye conceptos como navegar de través, virar por avante y trasluchar. TinyWind demuestra el atractivo de las simulaciones de vela accesibles en el navegador, lo que podría introducir la física del viento a un público más amplio e inspirar simuladores independientes más realistas. Aunque se promociona con 'física de viento real', los jugadores señalan que la simulación simplifica muchas mecánicas de navegación; por ejemplo, el barco puede ceñir con demasiada facilidad y carece de ángulos muertos típicos de las embarcaciones de aparejo cuadrado. El juego está construido con HTML5 y se ejecuta en el navegador sin instalación.
+
+Pasamos a la siguiente noticia.
+
+CAPTCHA de Cloudflare solo en URLs con ampersand
+Simon Willison compartió un método para configurar el Desafío Administrado de Cloudflare y que solo se active en URLs de búsqueda que contengan al menos un ampersand, permitiendo que las búsquedas simples con un solo parámetro funcionen sin interrupción. Esta regla de precisión reduce la frustración del usuario al evitar CAPTCHAs en consultas simples y comunes, mientras sigue protegiendo contra rastreadores agresivos que apuntan a páginas de búsqueda facetada. Demuestra cómo las configuraciones granulares del WAF pueden equilibrar seguridad y usabilidad. La regla personalizada del WAF exacta es: (http.request.uri.path wildcard r"/search/*" and http.request.uri.query contains "&"). El autor usó Claude Code para generar la regla y la API de Cloudflare para implementarla, después de que el servidor MCP de Cloudflare resultara insuficiente para editar reglas.
+
+Pasamos a la siguiente noticia.
+
+Conflictos internos desactivan los modelos de Anthropic
+Un informe de Axios del 15 de junio de 2026 revela que conflictos de personalidad internos en Anthropic contribuyeron a la suspensión de sus modelos Fable 5 y Mythos 5, tras una directiva de control de exportaciones de EE.UU.; miembros clave se reúnen con el Departamento de Comercio. El incidente subraya la creciente influencia de la regulación gubernamental en el despliegue de IA y la fragilidad de la seguridad cuando chocan dinámicas internas y presiones políticas externas. Podría afectar la disponibilidad futura de modelos de IA avanzados y moldear políticas de control de exportaciones. La directiva gubernamental fue provocada por un jailbreak 'potencialmente limitado y no universal' contra Claude Mythos; los Clasificadores Constitucionales de Anthropic buscan prevenir jailbreaks universales, aunque la empresa reconoce que una resistencia perfecta podría ser inalcanzable.
+
+Pasamos a la siguiente noticia.
+
+Isar Aerospace retrasa nuevamente misión clave europea
+Isar Aerospace ha pospuesto una vez más su primer intento de lanzamiento orbital, lo que subraya la falta de experiencia de vuelo de la empresa. Este retraso evidencia la brecha entre la financiación y la capacidad real de lanzamiento en las startups espaciales, lo que podría ralentizar el objetivo europeo de un acceso espacial comercial independiente. El cohete Spectrum, un vehículo de dos etapas con combustible líquido y capacidad de carga de 1.000 kg a la órbita terrestre baja, ha sufrido múltiples aplazamientos técnicos a pesar de que Isar Aerospace ha conseguido más de 270 millones de euros en financiación.
+
+Pasamos a la siguiente noticia.
+
+Los pesos abiertos no son suficientes: necesitamos marcos de entrenamiento abiertos para la investigación y mejores algoritmos (P)
+
+Pasamos a la siguiente noticia.
+
+El autor presenta FeynRL, un marco de entrenamiento abierto para RL en modelos de lenguaje, argumentando que los pesos abiertos no bastan para la investigación avanzada.
+
+Pasamos a la siguiente noticia.
+
+Desarrollador de ML embebido pregunta: ¿Dónde se pierde tiempo en proyectos de datos de sensores?
+Un usuario de Reddit que desarrolla una nueva herramienta de IA en el borde pregunta a la comunidad de ML embebido sobre las mayores pérdidas de tiempo en proyectos con sensores de series temporales, para validar características como verificación automática de calidad de datos y etiquetado asistido por IA. Identificar los cuellos de botella reales en la preparación de datos puede orientar a los creadores de herramientas hacia soluciones que ahorren cientos de horas a los desarrolladores, acelerando el despliegue de modelos de ML fiables en microcontroladores. El desarrollador menciona cuatro posibles funcionalidades para su plataforma: 1) verificación automática de calidad de datos que señale datos incorrectos al cargarlos, 2) etiquetado asistido por IA para grabaciones largas/dinámicas, 3) aplicación de estándares de datos en la recolección y 4) pipelines reproducibles y versionados. Intenta determinar cuáles ahorrarían tiempo de verdad frente a las que serían solo agradables de tener.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
