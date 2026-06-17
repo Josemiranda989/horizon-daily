@@ -1,0 +1,148 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 17 de junio de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+SpaceX adquiere la plataforma de IA Cursor por 60 mil millones
+El 16 de junio de 2026, SpaceX anunció la adquisición de Cursor, una plataforma de codificación con IA, por 60 mil millones de dólares. La operación busca competir contra líderes de la IA como Anthropic y OpenAI. Esta adquisición de 60 mil millones de dólares marca una convergencia importante entre los sectores aeroespacial y de IA, y podría redefinir el mercado de herramientas de codificación con IA. Crea un nuevo competidor capaz de desafiar a líderes como Anthropic y OpenAI. Cursor, desarrollado por Anysphere desde 2022, es un IDE asistido por IA derivado de Visual Studio Code. El precio de adquisición de 60 mil millones de dólares duplica con creces su valoración anterior de 29,3 mil millones, lo que refleja su rápido crecimiento e importancia estratégica.
+
+Pasamos a la siguiente noticia.
+
+GLM-5.2 lidera los modelos de IA de pesos abiertos en Artificial Analysis
+El modelo GLM-5.2 de Zhipu AI ha alcanzado la puntuación más alta en inteligencia entre los modelos de pesos abiertos en el índice de Inteligencia de Artificial Analysis, superando a los líderes anteriores. Se destaca por su equilibrio óptimo entre costo y rendimiento, situándose en la frontera de Pareto del gráfico Inteligencia vs. Costo por Tarea. Este avance demuestra que los modelos de pesos abiertos son ahora altamente competitivos con los sistemas propietarios de frontera, ofreciendo una vía rentable hacia una alta inteligencia. Puede acelerar la adopción empresarial para aplicaciones sensibles a la privacidad, ya que las empresas pueden ejecutar el modelo localmente sin tarifas recurrentes de API. GLM-5.2 cuesta aproximadamente $0.46 por tarea según el benchmark, lo que es más alto que algunos competidores como DeepSeek V4 Pro a $0.05, pero aún define la frontera de Pareto para su nivel de inteligencia. Pruebas de la comunidad señalan que puede ser verboso, gastando hasta 15 minutos y 45k tokens de razonamiento en tareas de codificación complejas.
+
+Pasamos a la siguiente noticia.
+
+GrapheneOS portado a Android 17, lanzamientos oficiales próximos
+El proyecto GrapheneOS ha portado con éxito su sistema operativo basado en Android a Android 17, con lanzamientos oficiales previstos próximamente. Esto garantiza que los usuarios puedan disfrutar de las últimas funciones y parches de seguridad de Android sin comprometer la privacidad y la naturaleza desvinculada de Google de GrapheneOS, manteniendo su relevancia en el panorama de la seguridad móvil. El port está completo, pero los detalles específicos sobre dispositivos compatibles y características aún no se han anunciado; los miembros de la comunidad ya están discutiendo el cambio en dispositivos como Pixel 7a y Pixel 10.
+
+Pasamos a la siguiente noticia.
+
+Ejecutar modelos de lenguaje locales ahora es bueno
+Un artículo de junio de 2026 de Vicki Boykis afirma que ejecutar grandes modelos de lenguaje localmente ahora “es bueno”, y una discusión con 530 comentarios en Hacker News lo valida con experiencias reales utilizando herramientas como llama.cpp y Ollama para ejecutar modelos como Qwen y Gemma en hardware de consumo. Este cambio podría reducir costos, mejorar la privacidad al mantener los datos en local y desafiar a los proveedores de IA en la nube, obligándolos posiblemente a bajar precios o competir con alternativas locales gratuitas. Los modelos densos como Qwen 27b ofrecen mayor calidad pero inferencia más lenta, mientras que los modelos de mezcla de expertos como Gemma 26b son más rápidos pero cometen más errores. La cuantización a 4 bits es común en hardware limitado pero puede degradar capacidades como el uso de herramientas.
+
+Pasamos a la siguiente noticia.
+
+Bubbles.town: Un Hacker News para blogs independientes
+Bubbles.town ha surgido como un agregador curado de blogs personales independientes, ofreciendo una alternativa más humana a las redes sociales. Ofrece un respiro del contenido algorítmico de las redes sociales, fomentando una web más diversa y humana para escritores y lectores independientes. El registro se hace mediante cuenta de Mastodon; la función 'Briefings' ofrece una vista más curada. Los enlaces se abren en pestañas nuevas por defecto, lo que algunos usuarios consideran molesto.
+
+Pasamos a la siguiente noticia.
+
+Caos en la ciencia estadounidense: recortes de fondos y ruptura política
+El artículo informa que el pacto entre ciencia y política en EE.UU. se ha roto, lo que ha provocado severos recortes de fondos, restricciones de visa y la cancelación de proyectos de larga duración como la misión AXIS de la NASA. La disrupción amenaza el liderazgo científico de Estados Unidos, obstaculiza la innovación y pone en riesgo la pérdida de una generación de investigadores, afectando especialmente a áreas que dependen de fondos federales y colaboración internacional. Tras un cierre gubernamental que retrasó la revisión de su presupuesto, la NASA se negó a dar margen al equipo de AXIS, acabando con el proyecto después de casi una década. Al mismo tiempo, la congelación de subvenciones y las nuevas políticas de visa han impedido la contratación de estudiantes extranjeros, paralizando los laboratorios.
+
+Pasamos a la siguiente noticia.
+
+TIL: Puedes hacer peticiones HTTP sin curl usando Bash /dev/TCP
+
+Pasamos a la siguiente noticia.
+
+Aprende a realizar peticiones HTTP usando únicamente Bash y el pseudo-dispositivo /dev/tcp.
+
+Pasamos a la siguiente noticia.
+
+¿La IA ya ha matado los libros de autoayuda?
+Una publicación de Tim Ferriss generó debate sobre si la IA ha contribuido a la decadencia de los libros de autoayuda al ofrecer resúmenes concisos y sin relleno, mientras los comentarios de la comunidad añaden críticas al valor del género. Esta conversación señala un posible cambio en la forma en que los lectores consumen contenido de desarrollo personal, desafiando los modelos editoriales tradicionales y destacando el papel de la IA en la condensación de información. Los modelos de lenguaje como Claude pueden extraer los puntos clave de libros extensos, pero algunos sostienen que la autoayuda carece de 'arte significativo', lo que la hace más susceptible a la disrupción que la ficción u otros géneros.
+
+Pasamos a la siguiente noticia.
+
+Dejen de usar JWT para sesiones en navegador
+Un gist de GitHub del usuario samsch argumenta que los JSON Web Tokens (JWT) no deberían usarse para sesiones de usuario en navegadores debido a fallos de seguridad, lo que generó un amplio debate en Hacker News sobre usos apropiados y alternativas. Este debate es importante porque el mal uso de JWT es común en desarrollo web, pudiendo causar vulnerabilidades; aclarar su uso adecuado ayuda a elegir estrategias de autenticación más seguras. Las principales preocupaciones incluyen la dificultad para revocar tokens individuales y los riesgos de ataques de confusión de algoritmos; se sugieren mitigaciones como tokens de corta duración con refresco, revocación basada en nonces y validación estricta del algoritmo.
+
+Pasamos a la siguiente noticia.
+
+Datasette 1.0a34 permite insertar, editar y eliminar filas desde su interfaz
+La versión 1.0a34 de Datasette introduce la capacidad de insertar, editar y eliminar filas directamente desde su interfaz de usuario, una funcionalidad que antes solo era posible a través del chat de Datasette Agent. Esta funcionalidad tan esperada potencia la utilidad de Datasette para explorar y publicar datos al permitir cambios directos en la interfaz, disminuyendo la dependencia de herramientas SQL externas y haciendo la gestión de datos interactiva más accesible para usuarios no técnicos. Las funciones de escritura están disponibles en las páginas de tabla, y las opciones de editar y eliminar también aparecen como acciones en la página de cada fila. Al ser una versión alfa, esta funcionalidad aún está en desarrollo y podría no ser apta para entornos de producción.
+
+Pasamos a la siguiente noticia.
+
+Herramienta gratuita compara discos NAS con tasas de fallo reales y precios en vivo
+Un desarrollador creó nasdisks.com, un sitio web y API gratuitos que reúnen el estado CMR/SMR, las tasas de fallo reales de los datos de Backblaze de 2025 y el precio en vivo por terabyte de discos NAS, eliminando la necesidad de investigaciones manuales. Esta herramienta ahorra tiempo a los entusiastas del homelab y evita errores comunes como comprar discos SMR para arreglos RAID, que pueden tener problemas de rendimiento. También hace accesibles los datos de fiabilidad para tomar decisiones de compra informadas. El sitio incluye conjuntos de datos CSV/JSON descargables bajo CC BY 4.0, una API gratuita, gráficos del historial de precios por disco y utilidades como calculadora de espacio usable en RAID y estimador de probabilidades de fallo. Cubre siete regiones: EE. UU., DE, Reino Unido, FR, ES, IT, CA.
+
+Pasamos a la siguiente noticia.
+
+Calvin y Hobbes y el precio de la integridad
+Un artículo en The Republic of Letters examina cómo Bill Watterson mantuvo su integridad artística al no comercializar Calvin y Hobbes, y el precio que pagó por ello, generando un animado debate en Hacker News. La historia de Watterson ejemplifica un raro compromiso con la integridad artística en industrias comerciales, inspirando a creadores y lectores que valoran la visión creativa sin concesiones por encima del lucro. El artículo es elogiado por su brillante redacción, y los comentaristas comparten anécdotas personales como la crianza inspirada en el papá de Calvin, además de un enlace al discurso de graduación de Watterson en el MIT de 1990 sobre la integridad.
+
+Pasamos a la siguiente noticia.
+
+Lanzamiento de Wolfram Language y Mathematica 15 con IA integrada
+Wolfram Research ha lanzado la versión 15 de Wolfram Language y Mathematica, incorporando capacidades de inteligencia artificial integradas y una gama de nuevas funcionalidades principales. Este lanzamiento integra la IA directamente en una importante plataforma de computación simbólica, lo que podría agilizar los flujos de trabajo de investigadores e ingenieros, aunque su naturaleza de código cerrado y los altos costos de licencia siguen generando críticas en la comunidad. El asistente de IA incorporado ha recibido críticas mixtas; los usuarios informan que modelos de propósito general como Claude lo superan en tareas de Wolfram Language, probablemente debido a la escasez de ejemplos de código públicos para el entrenamiento. Además, el software sigue siendo propietario y costoso para uso empresarial.
+— una imagen fija que se reproduce
+
+Pasamos a la siguiente noticia.
+
+Simon Willison comparte un componente web que convierte imágenes estáticas en GIFs que se reproducen al hacer clic, optimizando el rendimiento mediante carga bajo demanda.
+
+Pasamos a la siguiente noticia.
+
+Solo Europa ha cumplido con los lanzamientos de cohetes para los satélites de Amazon
+La constelación de satélites Project Kuiper de Amazon ha dependido de nuevos cohetes de Arianespace, United Launch Alliance y Blue Origin, pero hasta ahora solo el Ariane 6 de Arianespace ha lanzado con éxito satélites de producción, ya que el Vulcan Centaur de ULA permanece en tierra tras una anomalía en un propulsor en febrero de 2026 y el New Glenn de Blue Origin enfrenta retrasos. Este cuello de botella en los lanzamientos pone en riesgo el plazo impuesto por la FCC a Amazon de julio de 2026 para desplegar al menos la mitad de su constelación de 3.236 satélites, al tiempo que subraya el papel temporal pero crucial de Europa en el competitivo mercado de lanzamientos. Los lanzamientos del Vulcan Centaur se detuvieron en febrero de 2026 por un fallo en un propulsor sólido, y el propio Ariane 6 experimentó un fracaso parcial de misión en su vuelo inaugural en julio de 2024, aunque lanzó con éxito una carga comercial en marzo de 2025.
+
+Pasamos a la siguiente noticia.
+
+Anthropic pausa la facturación por tokens para el SDK de Claude Agent
+Anthropic pausó su plan de facturación por tokens para el SDK de Claude Agent, originalmente previsto para el lunes, lo que habría aumentado significativamente los costos para usuarios intensivos. Esta pausa destaca la sensibilidad de los cambios de precios en IA y la capacidad de respuesta de Anthropic a las preocupaciones de los desarrolladores, ya que los modelos basados en tokens pueden generar costos impredecibles para usuarios intensivos. El cambio de facturación iba a entrar en vigor de forma inminente; Anthropic no ha anunciado un nuevo cronograma, y refleja cambios controvertidos similares en la industria, como el paso de GitHub Copilot a la facturación por uso.
+
+Pasamos a la siguiente noticia.
+
+OpenAI pierde miles de millones según documentos filtrados
+Documentos financieros filtrados y auditados de OpenAI muestran que la empresa pierde miles de millones de dólares al año porque sus gastos en investigación y desarrollo y otros costos superan con creces sus ingresos crecientes. Estas pérdidas generan serias dudas sobre la sostenibilidad financiera a largo plazo de las principales empresas de IA, lo que podría afectar la confianza de los inversores y el ritmo de innovación en el sector. Los documentos filtrados son estados financieros auditados, lo que les otorga alta credibilidad, e indican específicamente que los costos de investigación y desarrollo son el principal generador de las pérdidas masivas.
+
+Pasamos a la siguiente noticia.
+
+Mobileye ingresa al mercado de robotaxis en EE.UU. con servicio independiente para 2027
+Mobileye anunció que lanzará su propio servicio de robotaxis en una ciudad aún no revelada de EE.UU. en 2027, utilizando su plataforma Moovit. Este movimiento marca la transición de Mobileye de proveedor de tecnología a operador directo, intensificando la competencia en la industria de viajes autónomos y potencialmente acelerando su adopción. El servicio independiente integrará el sistema de conducción autónoma de Mobileye con la aplicación Moovit para reserva y pago de viajes, aunque la ciudad específica y la escala operativa permanecen sin revelar.
+
+Pasamos a la siguiente noticia.
+
+Servidor de actualizaciones autoalojado con caché de borde para apps de escritorio
+El desarrollador de faynoSync, un servidor de actualizaciones autoalojado de código abierto, introdujo una capa de caché de borde usando almacenamiento compatible con S3. Esto reduce la carga de la API al servir respuestas en caché a clientes con parámetros idénticos. Permite a los desarrolladores que autoalojan actualizaciones manejar escala masiva sin agrupar bases de datos complejas, reduciendo costos y mejorando la confiabilidad. Se alinea con la tendencia creciente de autoalojar infraestructura crítica para evitar dependencia de proveedores. FaynoSync está escrito en Go, usa MongoDB y almacenamiento compatible con S3 (como MinIO), y admite Electron, Tauri, Squirrel y actualizadores personalizados a través de una API JSON. La capa de caché de borde es opcional por aplicación e invalida los manifiestos en caché cuando se publica o elimina una versión; la telemetría continúa mediante un beacon ligero validado contra una lista de permitidos en memoria.
+
+Pasamos a la siguiente noticia.
+
+Explotación de servidores IIS: humor y riesgo de cárcel
+Una entrada de blog detalla con humor técnicas para explotar servidores web IIS de Microsoft, a la vez que subraya las graves consecuencias legales, incluida la posible cárcel, del acceso no autorizado. Destaca las debilidades de seguridad persistentes en los populares servidores IIS y sirve como advertencia sobre los riesgos legales del hacking malicioso, relevante para profesionales de seguridad y aficionados. El artículo aparentemente cubre peculiaridades reales como el comportamiento heredado de nombres de archivo 8.3 de DOS y ataques de directory traversal, mezclando conocimiento técnico con narrativa humorística y anécdotas legales.
+
+Pasamos a la siguiente noticia.
+
+GPT-NL: un modelo de lenguaje soberano para los Países Bajos
+TNO, SURF y NFI anunciaron el desarrollo de GPT-NL, un modelo de lenguaje neerlandés de código abierto que incluye un modelo de reparto de ingresos para los proveedores de datos y utiliza solo datos de entrenamiento obtenidos legalmente. Esta iniciativa refuerza la soberanía digital europea al crear una alternativa independiente y legalmente conforme a los grandes modelos de lenguaje de EE.UU. y China, mientras que el modelo de reparto de ingresos podría sentar un precedente para un uso más justo de los datos. GPT-NL está siendo desarrollado por las organizaciones neerlandesas sin ánimo de lucro TNO, SURF y NFI. Se diseñó como un modelo abierto entrenado exclusivamente con datos obtenidos legalmente, y su mecanismo de reparto de ingresos busca compensar a los proveedores de datos.
+
+Pasamos a la siguiente noticia.
+
+Datasette-tailscale 0.1a0: plugin alfa para exponer datos via Tailscale
+Se lanzó el plugin alfa experimental datasette-tailscale 0.1a0, que permite iniciar un servidor Datasette con un sidecar de Tailscale y hacerlo accesible en una red privada de Tailscale. Esta integración simplifica el uso compartido seguro y privado de instancias de Datasette sin exponerlas a la internet pública, en línea con el auge de las redes de confianza cero. Utiliza los bindings de Python para la librería experimental tailscale-rs, y el desarrollador ha reportado un issue solicitando un mecanismo de proxy más limpio para la integración.
+
+Pasamos a la siguiente noticia.
+
+El creador de llama.cpp elogia Qwen3.6-27B para codificación local
+Georgi Gerganov, creador de llama.cpp, informó que ha estado usando el modelo Qwen3.6-27B localmente en su M2 Ultra y RTX 5090 para tareas de programación diarias durante el último mes y medio, considerándolo una herramienta muy capaz y útil. Este respaldo de una figura clave en la inferencia local de LLM valida la creciente viabilidad de ejecutar modelos avanzados de peso abierto localmente para el desarrollo de software, lo que podría reducir la dependencia de APIs en la nube. Ejecutó el modelo de 27B parámetros sin conexión en un Apple M2 Ultra y una NVIDIA RTX 5090, usando un agente pi simplificado y un prompt de sistema personalizado para alinear el estilo de codificación.
+
+Pasamos a la siguiente noticia.
+
+Trump intenta bloquear demanda de la NAACP contra xAI por turbinas sin permiso
+La administración Trump intenta intervenir en una demanda presentada por la NAACP contra xAI, la empresa de inteligencia artificial de Elon Musk, acusada de operar turbinas de gas sin los permisos exigidos por la Ley de Aire Limpio para alimentar su centro de datos de Grok. El caso subraya el conflicto entre la rápida expansión de la infraestructura de IA y las regulaciones ambientales. La intervención del gobierno, que alega necesidad militar de Grok, podría sentar un precedente para evadir leyes ambientales en proyectos tecnológicos y genera preocupación por interferencia política. El argumento legal de la administración se basa en que Grok es esencial para operaciones militares, lo que podría justificar la suspensión de salvaguardas ambientales. La demanda de la NAACP se centra en el uso de turbinas de gas sin permiso por parte de xAI, las cuales emiten contaminantes en comunidades cercanas.
+
+Pasamos a la siguiente noticia.
+
+El Pentágono presume de usar IA para informes al Congreso
+El Pentágono anunció que 1,5 millones de empleados utilizan herramientas de IA generativa, incluso para redactar informes exigidos por el Congreso. Esta adopción masiva de IA en el gobierno podría mejorar la eficiencia, pero también genera preocupaciones sobre la fiabilidad y supervisión de documentos oficiales generados por IA. La afirmación carece de detalles sobre qué herramientas se utilizan y cómo garantizan la precisión; la cifra de 1,5 millones sugiere una experimentación generalizada sin una gobernanza clara.
+
+Pasamos a la siguiente noticia.
+
+Android 17 comienza a distribuirse en teléfonos y relojes Pixel
+Google ha iniciado la implementación inalámbrica de Android 17 para dispositivos Pixel, pero la actualización solo trae mejoras menores sin grandes novedades. Aunque carece de cambios importantes, la actualización asegura que los dispositivos Pixel se mantengan al día con la última versión de Android e incluye mejoras de seguridad y rendimiento. La actualización se distribuye de forma inalámbrica (OTA) y llegará a los dispositivos Pixel en las próximas semanas; los primeros indicios apuntan a que se centra en mejoras internas en lugar de funciones visibles.
+
+Pasamos a la siguiente noticia.
+
+Cómo asegurar los endpoints de Prometheus en VMs y VPS
+Un usuario de Reddit pregunta cómo conectar de forma segura los endpoints de métricas de Prometheus en servidores caseros y un VPS remoto, considerando soluciones como proxy inverso con autenticación HTTP o VPN Tailscale. Esto resalta un desafío común en el monitoreo autoalojado: Prometheus carece de seguridad nativa, lo que obliga a los usuarios a implementar capas adicionales para proteger datos sensibles de infraestructura. El usuario ejecuta máquinas virtuales Proxmox en casa y un VPS vinculado mediante Tailscale, pero no puede restringir el tráfico de Prometheus a la VPN sin arriesgar exposición pública. Cuestiona si usar un proxy inverso con autenticación HTTP es el único método seguro además de la VPN.
+
+Pasamos a la siguiente noticia.
+
+Reducir swappiness a 10 mejora respuesta en servidor casero con 8GB RAM
+Un usuario con un servidor doméstico de 8GB de RAM reemplazó el archivo de swap de 4GB por uno de 8GB y redujo vm.swappiness de 60 a 10, disminuyendo el uso de swap de 3.7GB a 280MB y mejorando la respuesta del sistema. Este ajuste práctico muestra cómo un simple cambio de parámetro del kernel puede reducir el desgaste del SSD y mejorar el rendimiento de contenedores Docker en servidores con memoria limitada, ofreciendo una optimización sin costo para la comunidad de autoalojamiento. El sistema ejecuta Ubuntu Server 24.04 LTS con un Intel Core i5-8250U y SSD NVMe; tras reducir swappiness a 10, el uso de RAM se mantiene en ~93% (7.3GB) pero el swap bajó a 280MB, y el usuario se mantiene precavido ante riesgos del OOM killer bajo alta presión de memoria.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
