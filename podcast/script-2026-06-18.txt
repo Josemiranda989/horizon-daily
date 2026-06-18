@@ -1,0 +1,58 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 18 de junio de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+GLM-5.2: El LLM de solo texto con pesos abiertos más potente
+Z.ai lanzó GLM-5.2, un modelo de solo texto con arquitectura Mixture of Experts de 753B parámetros, ventana de contexto de 1 millón de tokens y licencia MIT. Ahora lidera clasificaciones como el Índice de Inteligencia de Artificial Analysis entre modelos de pesos abiertos. Este lanzamiento demuestra que los modelos de pesos abiertos pueden superar a los propietarios en rendimiento, democratizando el acceso a IA de vanguardia. Su licencia MIT permisiva permite un amplio uso comercial e investigativo, acelerando potencialmente la innovación en múltiples sectores. A pesar de su tamaño, solo 40B parámetros están activos por token gracias a Mixture of Experts. Es intensivo en tokens, usando 43k tokens de salida por tarea de referencia, y ocupa el segundo lugar en Code Arena WebDev a pesar de carecer de entrada de imágenes.
+
+Pasamos a la siguiente noticia.
+
+Filtración masiva expone credenciales de Oracle, Lenovo, FedEx y contratista de la OTAN
+Una filtración masiva de datos ha expuesto credenciales de acceso de miles de redes sensibles, afectando a grandes organizaciones como Oracle, Lenovo, FedEx, un contratista de la OTAN y Fortinet. Esta brecha supone un grave riesgo de seguridad, ya que las credenciales comprometidas podrían permitir el acceso no autorizado a redes corporativas y de defensa, con posibles robos de datos, espionaje o interrupciones operativas. Cabe destacar que la brecha comprometió a un contratista de la OTAN y a Fortinet, un importante proveedor de ciberseguridad, lo que aumenta la preocupación por ataques a la cadena de suministro y la exposición de redes relacionadas con la defensa.
+
+Pasamos a la siguiente noticia.
+
+Tesco migra 40.000 cargas desde VMware por alza del 175%
+Tesco, un importante minorista del Reino Unido, está migrando 40.000 cargas de trabajo desde VMware a otras plataformas después de que Broadcom aumentara las tarifas de licencia en aproximadamente un 175%. La medida se produce tras demandas judiciales en el Reino Unido donde Tesco acusó a Broadcom de 'conducta abusiva'. Esto subraya la creciente fricción entre los clientes empresariales de TI y Broadcom tras su adquisición de VMware por 69 mil millones de dólares, ya que los fuertes aumentos de precios impulsan migraciones a gran escala. Podría indicar un cambio más amplio alejándose de la posición dominante de VMware en el mercado de virtualización. Tesco citó un aumento del 175% en documentos judiciales del Reino Unido, y la migración de 40.000 cargas de trabajo en servidores representa un enorme proyecto de TI. No se revelaron plazos ni tecnologías de reemplazo, pero el desafío legal subraya la gravedad de la carga de costos.
+
+Pasamos a la siguiente noticia.
+
+Charity Majors: la IA hace el código instantáneo y desechable
+En 2025, la IA invirtió la economía de la producción de código, volviéndola gratuita e instantánea, y convirtiendo las líneas de código de un recurso cuidadosamente seleccionado a un producto desechable y regenerable. Este cambio de paradigma permite prototipados e iteraciones más rápidos, pero exige una mayor disciplina de ingeniería para gestionar el mayor volumen de código generado y garantizar la calidad y la seguridad. La cita proviene de un artículo donde se argumenta que la IA exige más disciplina de ingeniería, ya que la generación de código desechable puede dar lugar a montones de código no verificado y mal comprendido sin pruebas y revisiones rigurosas.
+
+Pasamos a la siguiente noticia.
+
+Amazon y QuEra prometen corrección de errores cuánticos útil para 2028
+Amazon y QuEra han anunciado una hoja de ruta para lograr una corrección de errores cuánticos práctica para 2028, mucho antes de lo que muchos expertos anticipaban, lo que podría permitir una computación cuántica tolerante a fallos antes de lo esperado. La corrección de errores cuánticos práctica es un hito crítico para construir computadoras cuánticas fiables a gran escala. Lograrlo para 2028 podría acelerar los plazos para aplicaciones reales en descubrimiento de fármacos, ciencia de materiales y criptografía. La promesa proviene de Amazon Web Services (AWS) y QuEra Computing, que colaboran en hardware basado en átomos neutros. No se han revelado por completo los detalles técnicos del esquema de corrección de errores ni las tasas de error lógico objetivo, y el cronograma sigue siendo una proyección, no un resultado demostrado.
+
+Pasamos a la siguiente noticia.
+
+Agentes de programación de IA enseñan a robots a instalar GPUs y cortar bridas
+
+Pasamos a la siguiente noticia.
+
+Nvidia usa agentes de programación de IA para enseñar a robots tareas como instalar GPUs y cortar bridas.
+
+Pasamos a la siguiente noticia.
+
+California acusa a AT&T de mentir a la FCC para cerrar su antigua red telefónica
+California ha alegado que AT&T engañó a la Comisión Federal de Comunicaciones (FCC) en su petición para discontinuar el servicio telefónico tradicional de cobre, mientras la FCC evalúa si anular las regulaciones estatales. La disputa sobre la autoridad de la infraestructura de telecomunicaciones podría afectar a millones que dependen de líneas fijas de cobre, especialmente en zonas rurales y servicios de emergencia, en medio de una migración sectorial a redes digitales. AT&T busca anular las normas estatales que exigen mantener las antiguas redes de cobre, argumentando que es necesaria la migración a fibra e inalámbrico, mientras California sostiene que AT&T proporcionó información falsa a la FCC sobre el impacto del cierre.
+
+Pasamos a la siguiente noticia.
+
+IA peligrosas con capacidades de hackeo serán inevitables
+Expertos advierten que los sistemas de IA con sofisticadas capacidades de hackeo se volverán algo habitual en un futuro cercano, a pesar de los esfuerzos regulatorios. Esta tendencia podría democratizar los ciberataques, facilitando que actores maliciosos aprovechen vulnerabilidades a gran escala, y desafía las defensas de ciberseguridad existentes. Los avances en modelos de lenguaje grandes y aprendizaje por refuerzo están permitiendo que la IA descubra vulnerabilidades y genere código de explotación de forma autónoma, aunque los sistemas actuales aún tienen limitaciones en fiabilidad y sigilo.
+
+Pasamos a la siguiente noticia.
+
+Altavoz Google Home con Gemini ya en preventa por $100
+Google ha abierto los pedidos anticipados para su nuevo altavoz inteligente Google Home, con un precio de $100, tras diez meses de espera. El dispositivo prioriza la integración de Gemini sobre la calidad de audio. Este lanzamiento demuestra el compromiso de Google de integrar Gemini más profundamente en el hardware de consumo, haciendo que la asistencia de IA avanzada sea más accesible en los hogares. También refleja un cambio en el mercado donde las capacidades de IA, no la calidad de sonido, diferencian a los altavoces inteligentes. El altavoz tiene un precio competitivo de $100, pero los detalles sobre el hardware o la versión de Gemini (por ejemplo, Nano en dispositivo o procesamiento en la nube) siguen sin estar claros. Se informa que la calidad de audio no es un enfoque principal.
+
+Pasamos a la siguiente noticia.
+
+Demuelen torres históricas del transbordador espacial en Vandenberg para SpaceX
+Las torres de lanzamiento del Complejo Espacial 6 de la Base de la Fuerza Espacial Vandenberg, construidas originalmente para el transbordador espacial pero nunca utilizadas en un vuelo tripulado, han sido demolidas para dar paso a futuros lanzamientos de cohetes de SpaceX. Esto marca la eliminación final de la infraestructura de la era de la Guerra Fría, simbolizando el cambio de programas espaciales gubernamentales a empresas espaciales comerciales, y permitirá a SpaceX aumentar su cadencia de lanzamientos desde la Costa Oeste. La demolición incluyó la Torre de Servicio Móvil y la Estructura de Servicio Fijo, que fueron modificadas para el Delta IV Heavy pero originalmente diseñadas para el transbordador. Los planes de SpaceX para SLC-6 probablemente incluyen lanzamientos de Falcon 9 y posiblemente Falcon Heavy a órbitas polares y heliosincrónicas.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
