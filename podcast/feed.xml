@@ -15,6 +15,14 @@
       <itunes:email>josemiranda989@gmail.com</itunes:email>
     </itunes:owner>
     <item>
+      <title>Daily — 2026-06-19</title>
+      <description>Briefing diario de tech, AI y self-hosting — 2026-06-19</description>
+      <enclosure url="https://raw.githubusercontent.com/Josemiranda989/horizon-daily/main/podcast/daily-2026-06-19.mp3" length="6164208" type="audio/mpeg"/>
+      <guid isPermaLink="false">2026-06-19</guid>
+      <pubDate>Fri, 19 Jun 2026 09:00:00 -0300</pubDate>
+      <duration>1027</duration>
+    </item>
+<item>
       <title>Daily — 2026-06-18</title>
       <description>Briefing diario de tech, AI y self-hosting — 2026-06-18</description>
       <enclosure url="https://raw.githubusercontent.com/Josemiranda989/horizon-daily/main/podcast/daily-2026-06-18.mp3" length="3277152" type="audio/mpeg"/>

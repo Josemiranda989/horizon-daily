@@ -1,0 +1,97 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 19 de junio de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+Tipos de valor del Proyecto Valhalla llegan a JDK 28 tras una década
+Después de una década de desarrollo, el Proyecto Valhalla introduce tipos de valor y referencias con restricción nula en JDK 28, lo que permite diseños de memoria planos y eficientes para objetos Java y seguridad contra nulos en tiempo de compilación. Esto aborda la penalización de rendimiento histórica de Java para objetos pequeños al reducir la sobrecarga de memoria y la indirección de punteros, haciendo que Java sea más competitivo para computación de alto rendimiento, procesamiento de datos y aplicaciones de baja latencia. Las clases de valor son inmutables y se comparan por valor; los arrays de tipos de valor se almacenan de forma plana sin cabeceras. Los tipos con restricción nula usan la sintaxis Foo! para prohibir null. El operador == compara el estado interno, lo que puede exponer detalles de implementación y romper la encapsulación.
+
+Pasamos a la siguiente noticia.
+
+OAuth sin fricción para MCP introduce token ID-JAG
+Se ha anunciado un mecanismo de autenticación gestionado a nivel empresarial para el Model Context Protocol (MCP), que permite OAuth sin fricción y sin interacción del usuario. Respaldado por Okta, Microsoft, Figma y Linear, presenta un nuevo formato de token llamado ID-JAG para el intercambio seguro de datos entre aplicaciones. Esto aborda un desafío crítico en la autenticación de agentes de IA, simplificando la adopción empresarial al permitir que los agentes accedan de forma segura a recursos utilizando los proveedores de identidad existentes. Mejora la seguridad y la experiencia del usuario, haciendo que las herramientas de IA sean más viables para grandes organizaciones. El token ID-JAG es un estándar en borrador del IETF (no específico de MCP) que facilita el intercambio seguro de datos entre aplicaciones que utilizan el mismo proveedor de inicio de sesión único (SSO). La extensión de Autenticación Gestionada Empresarial (EMA) ahora es una parte estable de la especificación MCP.
+
+Pasamos a la siguiente noticia.
+
+Ubiquiti presenta NAS empresarial basado en ZFS
+Ubiquiti presentó su solución de almacenamiento conectado a la red (NAS) empresarial basada en el sistema de archivos ZFS, con hardware de alto rendimiento como puertos SFP28 duales de 25 Gb y fuentes de alimentación redundantes, con un precio de 3.999 dólares y sin cuotas recurrentes de software. Esto marca la entrada de Ubiquiti en el mercado de almacenamiento empresarial, ofreciendo un NAS con ZFS y sin costes recurrentes, lo que desafía a los competidores que dependen de suscripciones y puede atraer a empresas que buscan integridad de datos y previsibilidad de costes. El NAS ejecuta el sistema de archivos ZFS, que ofrece instantáneas, replicación y sumas de verificación para la integridad de los datos. Incluye puertos SFP28 duales de 25 Gb y fuentes redundantes, pero algunos miembros de la comunidad dudan que las configuraciones basadas en discos duros puedan saturar esos enlaces, y persisten las preocupaciones sobre la calidad del software y el historial de seguridad de Ubiquiti.
+
+Pasamos a la siguiente noticia.
+
+Microsoft detecta nuevo malware clipper de criptomonedas por USB
+Microsoft ha descubierto una nueva campaña de malware, activa desde febrero de 2026, que utiliza una puerta trasera ligera para robar criptomonedas reemplazando direcciones de billetera en el portapapeles. El malware se propaga a través de unidades USB infectadas y se comunica mediante Tor. Este malware apunta directamente a usuarios de criptomonedas al secuestrar transacciones de forma silenciosa, lo que puede provocar pérdidas financieras significativas. Su capacidad de propagación por USB también amenaza sistemas aislados y organizaciones. El malware utiliza archivos LNK (acceso directo) maliciosos en unidades USB para ejecutarse al conectarse, y se comunica con servidores de comando y control a través de Tor para ofuscar el tráfico. Supervisa específicamente el portapapeles de Windows en busca de direcciones de criptomonedas y las reemplaza con direcciones controladas por el atacante.
+
+Pasamos a la siguiente noticia.
+
+Sanders propone fondo de riqueza de IA de 7 billones
+El senador Bernie Sanders ha presentado un plan de 7 billones de dólares para crear un fondo público de riqueza de IA, con el objetivo de dar a los estadounidenses control colectivo sobre la industria de la inteligencia artificial. De ser promulgado, este plan podría reconfigurar radicalmente el desarrollo de la IA al redistribuir los beneficios económicos y el poder de decisión de las grandes tecnológicas al público, reduciendo potencialmente el dominio corporativo. La propuesta crearía un fondo de inversión administrado por el gobierno federal, pero los detalles sobre fuentes de financiamiento, gobernanza e implementación aún no están claros; enfrenta fuerte oposición de las principales empresas de IA.
+cuTile Rust ofrece kernels de GPU seguros e inferencia LLM competitiva
+La biblioteca cuTile Rust introduce un modelo de programación de GPU basado en tiles que utiliza la propiedad de Rust para garantizar la seguridad de memoria y la ausencia de condiciones de carrera en tiempo de compilación. Su motor de inferencia Grout para modelos Qwen3 alcanza velocidades de decodificación batch-1 de 171 tok/s (4B) y 82 tok/s (32B), competitivas con vLLM y SGLang. Esto demuestra que el código de GPU seguro puede igualar el rendimiento de bibliotecas optimizadas a mano, cambiando el cuello de botella de confiar en los kernels a generarlos. Allana el camino para código de GPU generado por IA más seguro y fiable. El GEMM seguro está dentro del 0,3 % de una versión escrita a mano y los kernels element-wise alcanzan 7 TB/s. Grout solo admite decodificación batch-1, un conjunto limitado de modelos, es exclusivo de NVIDIA y GEMM queda ligeramente por detrás de cuBLAS en algunos tamaños.
+
+Pasamos a la siguiente noticia.
+
+El efecto AirPods: cómo el uso constante de auriculares nos aísla
+El artículo analiza el 'efecto AirPods', donde el uso generalizado de auriculares inalámbricos en espacios públicos conduce al aislamiento social y reduce las oportunidades de reflexión mental y conversación espontánea. Esta tendencia podría tener implicaciones significativas para la salud mental y la cohesión comunitaria, ya que limita los efectos restauradores de la divagación mental y debilita el tejido social de los espacios compartidos. El artículo menciona la red neuronal por defecto del cerebro, que se activa durante la ensoñación y es crucial para la resolución creativa de problemas; la entrada constante de audio puede suprimir la actividad beneficiosa de esta red.
+
+Pasamos a la siguiente noticia.
+
+Datasette Apps: aloja aplicaciones HTML personalizadas dentro de Datasette
+Se lanzó el plugin datasette-apps, que permite incrustar aplicaciones HTML y JavaScript autocontenidas dentro de instancias de Datasette, con acceso en sandbox a consultas SQL sobre los datos subyacentes. Esto convierte a Datasette en una plataforma de desarrollo rápido de aplicaciones, permitiendo a los desarrolladores construir herramientas de datos interactivas sobre bases de datos SQLite sin necesidad de un frontend separado, manteniendo la seguridad mediante el sandboxing. Las aplicaciones se ejecutan en un iframe con el atributo sandbox="allow-scripts allow-forms", reforzado con una Política de Seguridad de Contenido (CSP) que bloquea las solicitudes de red externas, evitando la filtración de datos. Las consultas de escritura requieren activación explícita mediante consultas almacenadas.
+
+Pasamos a la siguiente noticia.
+
+Asesores de la FDA votan unánimemente a favor de aprobar la vacuna de ARNm de Moderna tras drama en la agencia
+En junio de 2026, el comité asesor de la FDA votó unánimemente para recomendar la aprobación de la vacuna de ARNm de Moderna, meses después de que un funcionario de la administración Trump se negara a iniciar el proceso de revisión, lo que provocó un retraso significativo. Esta aprobación allana el camino para una nueva vacuna basada en ARNm, pero el rechazo anterior resalta las preocupaciones sobre la interferencia política en las agencias de salud pública, lo que podría socavar la confianza en los procesos regulatorios. La enfermedad específica a la que se dirige la vacuna no se reveló en el resumen, aunque la plataforma de ARNm de Moderna se ha utilizado para COVID-19 y otras enfermedades. El voto asesor, aunque no vinculante, influye fuertemente en la decisión final de la FDA.
+
+Pasamos a la siguiente noticia.
+
+Taiwán impulsa producción de drones para defensa y EE.UU. ante China
+Taiwán está incrementando la fabricación de drones para su propia defensa y para el ejército estadounidense. Este movimiento también podría potenciar sus ventas en el extranjero. Es significativo en medio de las crecientes tensiones con China, pues refuerza las capacidades defensivas de Taiwán y profundiza sus vínculos militares con EE.UU., pudiendo reconfigurar el equilibrio de poder regional. No se revelaron modelos ni cifras de producción específicos, pero el plan se centra en drones de fabricación local, lo que podría reducir la dependencia de proveedores extranjeros e impulsar la industria de defensa taiwanesa.
+
+Pasamos a la siguiente noticia.
+
+La NASA pide a Northrop Grumman detener el trabajo en el módulo HALO lunar
+
+Pasamos a la siguiente noticia.
+
+La NASA ordenó a Northrop Grumman detener el trabajo en el módulo HALO del Gateway lunar, indicando posibles cambios en los planes de exploración lunar.
+
+Pasamos a la siguiente noticia.
+
+Google confirma lanzamiento de verificación de desarrolladores Android este mes
+Un nuevo servicio del sistema Android se lanzará este mes, marcando el inicio de la verificación de desarrolladores. Se esperan cambios importantes en septiembre. Esta medida es crucial para la seguridad de Android, ya que ayudará a verificar las identidades de los desarrolladores y reducir las aplicaciones maliciosas. Afecta a todos los desarrolladores y tiendas de aplicaciones en la plataforma. Un nuevo servicio del sistema debuta este mes, con características importantes de verificación que llegarán en septiembre. Google también confirmó la lista de tiendas de aplicaciones compatibles.
+
+Pasamos a la siguiente noticia.
+
+Antes de la OPI de SpaceX, inversores chinos adquirieron participaciones en secreto
+Una investigación reveló que inversores chinos, incluido uno con vínculos con contratistas militares, adquirieron secretamente acciones de SpaceX antes de su próxima OPI. Esto podría suscitar preocupaciones de seguridad nacional y un mayor escrutinio regulatorio, dado que SpaceX tiene contratos de defensa confidenciales en EE. UU. y la propiedad extranjera podría violar las normas de divulgación. La identidad del inversor y el tamaño exacto de la participación no se han revelado; la adquisición se realizó a través de canales clandestinos para evitar su detección.
+datasette-acl 0.6a0 se expande a compartición general de recursos
+La versión alfa 0.6a0 de datasette-acl expande los permisos más allá de las tablas para ofrecer un sistema general de compartición de recursos para Datasette, permitiendo un control de acceso detallado. Alex Garcia lideró el desarrollo de esta versión. Esta actualización hace que las instancias multiusuario de Datasette sean más seguras y colaborativas al permitir a los administradores controlar finamente el acceso a cualquier recurso, no solo a las tablas. Al ser una versión alfa, puede contener errores y no está lista para producción. Generaliza las ACLs de solo tablas a recursos arbitrarios dentro de Datasette.
+
+Pasamos a la siguiente noticia.
+
+Científicos buscan corales resistentes al calor para repoblar arrecifes
+Investigadores han identificado arrecifes de coral que soportan temperaturas oceánicas más altas, lo que sugiere que estos 'bastiones' podrían ayudar a repoblar arrecifes más degradados. Esto es significativo porque los arrecifes de coral son críticos para la biodiversidad marina pero están disminuyendo rápidamente debido al cambio climático; descubrir corales resistentes al calor ofrece una posible vía para la restauración. El artículo carece de datos técnicos específicos, como los mecanismos genéticos de tolerancia al calor o las ubicaciones precisas de estos arrecifes resilientes, lo que limita la profundidad de los hallazgos.
+
+Pasamos a la siguiente noticia.
+
+Audaz misión de rescate satelital organizada en tiempo récord
+Se organizó una misión de rescate satelital con una velocidad sin precedentes para intentar salvar un satélite. El esfuerzo se considera un éxito por el simple hecho de intentarlo. La misión podría demostrar la viabilidad de los rescates espaciales de respuesta rápida, cambiando potencialmente la forma en que la industria maneja las emergencias satelitales. También destaca un cambio hacia operaciones espaciales más audaces y de tiempo crítico. El resultado de la misión sigue siendo incierto y no se mencionan el satélite ni la organización específicos en el resumen. El principal desafío técnico es el plazo limitado para la planificación y ejecución.
+
+Pasamos a la siguiente noticia.
+
+Apple corrige vulnerabilidad de escucha en Beats Studio Buds
+Apple ha lanzado un parche para una vulnerabilidad de alta gravedad que permitía a atacantes cercanos espiar conversaciones a través de los Beats Studio Buds. La falla fue revelada hace 12 meses y afecta a varios fabricantes. Este parche evita posibles violaciones de privacidad al cerrar un vector que podría haber permitido escuchas no autorizadas. Subraya la necesidad de actualizaciones de seguridad oportunas en dispositivos de audio inalámbricos de uso común. La vulnerabilidad se reveló hace un año sin informes de explotación activa. La solución de Apple es específica para los Beats Studio Buds, pero el problema subyacente podría afectar a otros dispositivos Bluetooth.
+
+Pasamos a la siguiente noticia.
+
+Fallece Aleksandr Samokutyaev, primer cosmonauta residente de larga duración en la ISS
+Falleció Aleksandr Samokutyaev, el primer cosmonauta en completar una misión de larga duración en la Estación Espacial Internacional, a los 56 años. Acumuló 322 días en el espacio en dos expediciones, incluyendo dos caminatas espaciales. Su fallecimiento representa la pérdida de un pionero en los vuelos espaciales de larga duración, fundamentales para comprender la resistencia humana en el espacio y preparar misiones futuras a la Luna y Marte. También pone de relieve el envejecimiento de la primera generación de exploradores de la ISS. Samokutyaev voló en dos expediciones a la ISS, realizó dos caminatas espaciales y pasó un total de 322 días en órbita. Falleció a los 56 años; no se reveló de inmediato la causa de la muerte.
+
+Pasamos a la siguiente noticia.
+
+La depuración a nivel de conversación supera a las métricas de voz tradicionales
+Un ingeniero relata que las métricas aisladas tradicionales (precisión STT, latencia) no detectan problemas de calidad en sistemas de voz multigiro. Al centrarse en la depuración a nivel de conversación, descubrieron que el QA automatizado identifica mejor patrones recurrentes que frustran a los usuarios. Es relevante porque muestra que los métodos de evaluación actuales son insuficientes para sistemas en producción, lo que impulsa la adopción de pruebas a nivel de interacción y QA automatizado para lograr experiencias más naturales. El autor menciona experimentos con QA automatizado a nivel de conversación para escalar la depuración más allá de la revisión manual, centrándose en patrones recurrentes. Sin embargo, no se proporcionan datos cuantitativos ni detalles de herramientas concretas.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
