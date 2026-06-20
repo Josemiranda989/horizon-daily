@@ -1,0 +1,66 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 20 de junio de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+No hay instancias en ATProto
+El artículo aclara que el protocolo AT, utilizado por Bluesky, no tiene 'instancias' como Mastodon; en su lugar, consta de Servidores Personales de Datos (PDS), Relays y AppViews, cada uno con funciones distintas en una red descentralizada. Es importante porque disipa un malentendido común, mostrando un diseño modular que separa almacenamiento, agregación y visualización, lo que podría influir en futuras redes sociales descentralizadas y mejorar la escalabilidad. El PDS es el almacén canónico de datos del usuario; los Relays recopilan y redistribuyen registros sin mantener estado, y las AppViews permiten múltiples interfaces competitivas sobre la misma capa de datos.
+
+Pasamos a la siguiente noticia.
+
+Noruega impone cuasi prohibición de IA en primaria
+El gobierno noruego ha decidido que los alumnos de 6 a 13 años no deben usar IA en general, mientras que los de 14 a 16 pueden usarla con cautela bajo supervisión docente. Es una política nacional histórica sobre IA en educación, que reconoce la necesidad de proteger el aprendizaje fundamental de la posible disrupción de la IA generativa, y podría sentar un precedente para otros países. La restricción se aplica de primero a séptimo grado (6 a 13 años), mientras que se permite el uso supervisado en secundaria inferior (14 a 16 años). La política no especifica mecanismos de aplicación ni aborda el uso de IA fuera de la escuela.
+
+Pasamos a la siguiente noticia.
+
+Almacené un sitio web en un favicon
+
+Pasamos a la siguiente noticia.
+
+Un desarrollador explica cómo incrustó un sitio web completo dentro de un favicon, con comentarios que exploran variantes como SVG y preocupaciones de privacidad.
+
+Pasamos a la siguiente noticia.
+
+Dónde encontrar los colores que tu pantalla no puede mostrar
+Un nuevo artículo técnico explora por qué muchos colores del mundo real permanecen invisibles en las pantallas sRGB estándar, y sugiere dónde experimentar estos tonos fuera de gama directamente en la naturaleza y el arte. Esto pone de relieve la brecha entre la visión humana y las pantallas digitales comunes, afectando a fotógrafos, artistas y diseñadores que dependen de una reproducción cromática fiel, y puede impulsar estándares de gama de color más amplia. El artículo señala que la mayor debilidad de sRGB está en los naranjas/rojos/púrpuras saturados, no solo en los azul-verdosos como sugiere el diagrama CIE 1931; los comentaristas añaden que la estimulación individual de conos podría incluso desbloquear colores completamente nuevos.
+
+Pasamos a la siguiente noticia.
+
+La sorprendente economía de los sistemas con balanceo de carga
+
+Pasamos a la siguiente noticia.
+
+Análisis de la economía sorprendente de los sistemas con balanceo de carga usando teoría de colas, con comentarios que señalan las limitaciones del modelo ante tráfico real.
+
+Pasamos a la siguiente noticia.
+
+Fallece Bobby Prince, compositor de Doom, Wolfenstein 3D y Duke Nukem 3D
+Ha fallecido Bobby Prince, el legendario compositor conocido por las bandas sonoras de los clásicos shooters en primera persona Doom, Wolfenstein 3D y Duke Nukem 3D. Sus innovadoras composiciones basadas en MIDI ayudaron a definir la atmósfera de videojuegos icónicos de los años 90 y dejaron una profunda influencia en el género FPS y la música de videojuegos en general. La música de Prince a menudo se inspiraba en bandas de heavy metal como Pantera y Slayer, y sus bandas sonoras se compusieron con tecnología MIDI para funcionar con las limitaciones de hardware de la época.
+
+Pasamos a la siguiente noticia.
+
+Hyundai toma control total de Boston Dynamics
+Hyundai Motor Group ha adquirido la participación restante de Boston Dynamics a SoftBank por $325 millones, tomando control total de la empresa de robótica. Esto completa la compra iniciada en diciembre de 2020, cuando Hyundai adquirió el 80% por $880 millones. La adquisición posiciona a Hyundai para comercializar robótica de uso general, incluidos robots humanoides como Atlas, aprovechando su infraestructura de fabricación. También subraya la importancia estratégica de la robótica para enfrentar desafíos demográficos, especialmente en Corea del Sur, donde se prevé una fuerte disminución de la población en edad laboral. La operación valora inicialmente a Boston Dynamics en unos $1.100 millones, con Hyundai pagando un total de $1.205 millones por la propiedad total. El robot humanoide Atlas de Boston Dynamics, aunque avanzado, aún no es adecuado para aplicaciones directas de fabricación automotriz debido a los robots especializados existentes en fábricas.
+
+Pasamos a la siguiente noticia.
+
+Satélite revela escala masiva de manipulación de señales GPS
+Un estudio satelital afirma que la manipulación de señales GPS está mucho más extendida de lo que se creía, pero los hallazgos son cuestionados porque la fuente es una empresa que desarrolla tecnología antiinterferencias y recientemente recaudó 170 millones de dólares, lo que sugiere posible publicidad encubierta. La suplantación de GPS plantea graves riesgos de seguridad para la aviación, incluyendo alertas de proximidad al terreno corruptas, por lo que una evaluación precisa de la amenaza es crucial. Si los datos están sesgados por intereses comerciales, podrían distorsionar las prioridades regulatorias y la inversión en seguridad de la navegación. La empresa planea desplegar una constelación en órbita baja (LEO) para fortalecer las señales PNT, afirmando que reduciría la efectividad de los inhibidores al 5 % del alcance actual. Los críticos señalan que el artículo parece marketing encubierto para esa solución.
+
+Pasamos a la siguiente noticia.
+
+Sean Lynch: MCP como puerta de enlace de autenticación
+Sean Lynch destacó que el Model Context Protocol (MCP) permite aislar los flujos de autenticación fuera de la ventana de contexto del agente de IA, pudiendo funcionar exclusivamente como una puerta de enlace de autenticación para APIs. Esto podría reducir el uso de tokens y mejorar la seguridad al mantener los datos de autenticación confidenciales fuera del prompt del modelo de lenguaje, simplificando la forma en que los agentes se integran con servicios externos. El comentario se publicó en Hacker News en una discusión que comparaba MCP con enfoques de habilidades/CLI. Lynch argumentó que incluso un MCP mínimo que sirviera solo como puerta de enlace de autenticación sería un gran avance.
+
+Pasamos a la siguiente noticia.
+
+Safebucket v0.6.0 añade vista previa, descarga masiva y soporte LDAP
+Safebucket v0.6.0, una alternativa autoalojada de código abierto para compartir archivos, introduce vista previa de archivos en la interfaz, la posibilidad de seleccionar y descargar varios archivos a la vez, y soporte de autenticación LDAP. Estas funciones mejoran la usabilidad y la preparación empresarial, haciendo de Safebucket un reemplazo autoalojado más viable para servicios como WeTransfer, especialmente para organizaciones que ya usan directorios LDAP. Safebucket es agnóstico de S3, lo que significa que puede funcionar con cualquier almacenamiento compatible con S3, y su integración LDAP permite usar servicios de directorio existentes para la autenticación de usuarios. La herramienta es de código abierto bajo licencia MIT.
+
+Pasamos a la siguiente noticia.
+
+Sencho v0.92.0 lanzado con escaneo de seguridad y soporte móvil
+Sencho v0.92.0 presenta una página de seguridad exclusiva para escaneo de vulnerabilidades y secretos, compatibilidad móvil completa para editar archivos compose y de entorno, y nuevas funciones de gestión de flotas como detección de stacks estancados y soporte para compose multi-archivo desde fuentes Git. Estas mejoras hacen que el auto-hospedaje sea más seguro al integrar el escaneo de vulnerabilidades directamente en la interfaz de gestión, y más conveniente al permitir tareas administrativas desde dispositivos móviles. También aumentan la fiabilidad operativa con mejor monitoreo de flotas y opciones de recuperación. La página de seguridad utiliza Trivy para el escaneo; Compose Doctor realiza verificaciones previas de las configuraciones de los stacks; y un inspector de red señala exposiciones de servicio no intencionadas. Los usuarios ahora pueden establecer intervalos personalizados de verificación de actualizaciones de imágenes y desplegar stacks con múltiples archivos Compose desde repositorios Git.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
