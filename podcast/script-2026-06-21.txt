@@ -1,0 +1,69 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 21 de junio de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+Google alcanza el 50% de tráfico IPv6
+Según las estadísticas de Google, la proporción de sus usuarios globales que acceden a la plataforma a través de IPv6 alcanzó el 50% por primera vez en abril de 2026, marcando un hito importante en la adopción del protocolo. Este hito señala que IPv6 se está convirtiendo en la norma para la conectividad a internet, impulsado en gran medida por las redes móviles y los ISP con visión de futuro, lo que presionará a más sitios web y servicios a habilitar IPv6 y ayudará a preparar internet para el futuro ante el agotamiento de direcciones IPv4. La adopción es mayor los fines de semana (más del 50%) debido a un menor tráfico corporativo, y aunque los operadores móviles a menudo usan IPv6 de forma exclusiva, muchos servicios importantes como GitHub aún carecen de soporte para IPv6. Países como Francia, Alemania e India ya ven la mayor parte de su tráfico de Google a través de IPv6.
+
+Pasamos a la siguiente noticia.
+
+Artículo resurgido muestra que muchos desarrolladores no entienden CORS
+Un artículo de 2019 de Fosterelli sobre malentendidos de CORS ganó atención renovada en Hacker News, generando un debate de 153 comentarios que reveló la persistente confusión entre desarrolladores. Las malas configuraciones de CORS pueden causar fallos en aplicaciones web y brechas de seguridad, por lo que entenderlo bien es crucial para los desarrolladores. El debate subraya una laguna importante en el conocimiento de seguridad web. Un malentendido clave es pensar que Access-Control-Allow-Origin limita qué orígenes pueden enviar solicitudes al servidor; en realidad, el servidor recibe la solicitud y CORS solo controla si el navegador expone la respuesta al origen solicitante. Además, las solicitudes preflight son necesarias para ciertas peticiones no simples de origen cruzado.
+
+Pasamos a la siguiente noticia.
+
+Loupe expone los datos que apps de iOS pueden ver sin permiso
+Mysk Research lanzó Loupe, una aplicación iOS que muestra los datos extensos que las apps nativas pueden acceder en un iPhone sin consentimiento, incluyendo fechas de configuración del dispositivo y el historial del portapapeles. Esta herramienta destaca vulnerabilidades de privacidad importantes en iOS, al mostrar que las apps nativas pueden recolectar silenciosamente información sensible, generando conciencia y presión para que Apple refuerce los controles de acceso a datos. Loupe revela que las apps pueden acceder a detalles como la fecha de última configuración del iPhone, la fecha de creación del volumen, el contador de cambios del portapapeles y realizar sondeos limitados de apps instaladas mediante esquemas de URL, a pesar de las restricciones de Apple.
+
+Pasamos a la siguiente noticia.
+
+La respiración lenta modula la función cerebral y el comportamiento de riesgo00339-9)
+Un nuevo estudio en Neuron muestra que la respiración lenta con exhalación prolongada aumenta específicamente la conducta de toma de riesgos al potenciar la actividad parasimpática (vagal), modulando redes cerebrales implicadas en el procesamiento de recompensas. Este hallazgo explica cómo los ejercicios de respiración pueden alterar rápidamente los estados emocionales y la toma de decisiones, ofreciendo un posible mecanismo para tratar la ansiedad y la depresión al enfocarse en el equilibrio autonómico mediante técnicas simples de respiración. Solo la exhalación prolongada (no la inhalación/exhalación igual) aumentó la toma de riesgos y moduló la actividad cerebral relacionada con la recompensa, vinculada a un mayor control vagal cardíaco. Los efectos fueron específicos de la proporción de duración de las fases respiratorias, no solo de la frecuencia lenta.
+
+Pasamos a la siguiente noticia.
+
+SMPTE hace que sus estándares sean de acceso gratuito
+
+Pasamos a la siguiente noticia.
+
+La SMPTE hace que sus estándares técnicos para medios sean de acceso gratuito, facilitando la innovación y la colaboración global.
+
+Pasamos a la siguiente noticia.
+
+Epoll vs. io_uring en Linux
+
+Pasamos a la siguiente noticia.
+
+Comparativa práctica entre epoll e io_uring en Linux, destacando diferencias de rendimiento y arquitectura para servidores de alto rendimiento.
+
+Pasamos a la siguiente noticia.
+
+Proyecto de ingeniería inversa de F-15 Strike Eagle II busca pilotos de prueba en DOS
+El proyecto de ingeniería inversa del juego DOS F-15 Strike Eagle II finalizó la conversión de su código ensamblador a C equivalente en DOS, y ahora busca voluntarios para detectar errores antes de portarlo a Linux y Windows. Esta iniciativa preserva juegos clásicos más allá de la emulación al permitir su ejecución nativa en sistemas modernos, garantizando accesibilidad y mantenimiento a largo plazo. También demuestra la ingeniería inversa meticulosa como método de restauración viable. El proyecto se enfoca en la versión 451.03 de F-15 Strike Eagle II; las pruebas en DOS buscan detectar errores introducidos por la traducción antes de portar el código. Una vez eliminado el ensamblador, la meta es una versión en C portátil y libre de código máquina.
+
+Pasamos a la siguiente noticia.
+
+Alerta no autorizada enviada a celulares en todo Brasil
+
+Pasamos a la siguiente noticia.
+
+Una alerta no autorizada fue enviada a todos los celulares de Brasil debido a un aparente hackeo del sistema de emergencia.
+
+Pasamos a la siguiente noticia.
+
+IA agentiva fiable: la calidad de los datos prima sobre el ajuste del modelo
+Un nuevo artículo en el sitio de Martin Fowler examina cómo construir sistemas de IA agentiva confiables, subrayando que la limpieza rigurosa de datos y la evaluación adecuada son más determinantes que el ajuste del modelo, centrándose en arquitecturas RAG. A medida que la IA agentiva cobra impulso en entornos empresariales, el artículo señala un error frecuente: los equipos invierten demasiado en refinar modelos y descuidan la calidad de los datos y la evaluación, que son las verdaderas palancas de fiabilidad. El sistema descrito emplea una arquitectura RAG estándar con recuperación dinámica de datos, lo que puede provocar bucles no deterministas y problemas de transparencia; la sección de evaluación dura solo dos párrafos tras una extensa exposición del RAG.
+
+Pasamos a la siguiente noticia.
+
+MuckScraper: agregador de noticias autogestionado con IA local y calificaciones de sesgo
+Se ha lanzado MuckScraper, un nuevo agregador de noticias de código abierto y autogestionado que extrae artículos completos, asigna calificaciones de sesgo, agrupa historias con embeddings vectoriales y genera resúmenes con IA de forma completamente local mediante Ollama, sin APIs externas. Aborda las crecientes preocupaciones sobre la privacidad y el control en el consumo de noticias al mantener todos los datos y el procesamiento de IA en el hardware del usuario, reduciendo la dependencia de servicios de terceros y permitiendo un análisis de sesgo transparente. Extrae el contenido completo de los artículos cuando es posible, utiliza embeddings vectoriales para agrupar historias y se ejecuta en Ollama para la generación local de resúmenes. Un sitio complementario, muckscraper.news, ofrece dos ediciones diarias de 20 historias seleccionadas. Requiere configuración local de Ollama y modelos adecuados.
+
+Pasamos a la siguiente noticia.
+
+El sistema de ventanas X11 llega al Apple Vision Pro
+Una nueva aplicación llamada UHF X11 permite que el clásico sistema de ventanas X11, desarrollado originalmente en los años 80, se ejecute en visionOS y se muestre dentro del casco de realidad mixta Apple Vision Pro. Este proyecto une la computación espacial de vanguardia con infraestructura de software vintage, deleitando a los entusiastas de la retroinformática y demostrando la flexibilidad de la plataforma Vision Pro para ejecutar aplicaciones heredadas. UHF X11 lleva el protocolo X11 a visionOS, permitiendo que aplicaciones Unix usen ventanas gestionadas por el gestor de ventanas TWM; sin embargo, es principalmente una curiosidad más que una herramienta lista para producción, y la compatibilidad con funciones como GLX para renderizado 3D puede ser limitada.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
