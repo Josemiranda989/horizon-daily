@@ -1,0 +1,59 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 12 de julio de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+RISCBoy: consola portátil de código abierto basada en RISC-V
+RISCBoy es una consola de juegos portátil de código abierto diseñada desde cero por el ingeniero de ASIC de Raspberry Pi, Luke Wren, con una arquitectura RISC-V personalizada e inspirada en la Gameboy Advance; fue enviada a fabricación en la primera ronda de wafer.space. Este proyecto demuestra la creciente viabilidad del hardware abierto y el diseño de ASIC personalizados, lo que podría inspirar más hardware de juegos abierto y promover la adopción de RISC-V en electrónica de consumo. La consola cuenta con un pipeline de renderizado programable basado en búferes de líneas de escaneo, descrito en su documentación PDF detallada. Fue diseñada por Luke Wren, conocido por su trabajo en la salida DVI/HDMI del RP2040, aunque aún no se ha confirmado si el chip fabricado funciona.
+
+Pasamos a la siguiente noticia.
+
+Arquitectura de UPI: cómo funciona el sistema de pagos de India
+El artículo 'UPI: Anatomía de una transacción de pago' ofrece un desglose técnico detallado de la Unified Payments Interface, explicando el flujo de una transacción desde su inicio hasta su liquidación. UPI ha impulsado la revolución de los pagos digitales en India, procesando miles de millones de transacciones mensuales, y entender su arquitectura es crucial para ingenieros, legisladores y empresas que construyen sobre ella. El artículo probablemente cubre los roles del banco del pagador, del banco del beneficiario, de NPCI como conmutador, y el uso de direcciones de pago virtuales; entre las métricas de rendimiento destacan más de 22 mil millones de transacciones al año, con un promedio de ~700 consultas por segundo en el conmutador de NPCI, con picos mucho más altos.
+
+Pasamos a la siguiente noticia.
+
+Anthias: 8 lanzamientos en 2 meses / reproducción de video finalmente arreglada en todas partes, placas ARM no Pi, HDMI-CEC, correcciones de seguridad y una biblioteca de aplicaciones gratuita.
+
+Pasamos a la siguiente noticia.
+
+Anthias lanza 8 versiones en 2 meses con reproducción de video arreglada, soporte para otras placas ARM, HDMI-CEC, correcciones de seguridad y una biblioteca de aplicaciones gratuita.
+
+Pasamos a la siguiente noticia.
+
+Mesh LLM: computación distribuida de IA en iroh
+
+Pasamos a la siguiente noticia.
+
+Mesh LLM permite la inferencia distribuida de modelos de lenguaje grandes a través de múltiples nodos utilizando la red iroh.
+
+Pasamos a la siguiente noticia.
+
+Nvidia, CoreWeave y Nebius: Dentro del financiamiento circular del boom de GPU
+Un reportaje investigativo expone la dinámica de financiamiento circular entre Nvidia y los proveedores de nube de IA CoreWeave y Nebius, en la que las inversiones de capital de Nvidia ayudan a estas startups a comprar GPUs de Nvidia, distorsionando posiblemente la demanda real de infraestructura de IA. Si el auge de las GPU se sostiene en parte por financiamiento de proveedor en lugar de una demanda genuina, podría indicar una burbuja en infraestructura de IA, con riesgo de sobrecapacidad, pérdidas financieras y una corrección brusca en el gasto de hardware. Nvidia invirtió cerca de 2 mil millones de dólares por una participación del 9% en CoreWeave, cuyo plan de gasto de capital para 2026 asciende a 35 mil millones de dólares; es decir, la contribución directa de Nvidia equivale solo al 5.7% del CapEx de un año. Tanto CoreWeave como Nebius construyen grandes clústeres de GPUs Nvidia para cargas de trabajo de IA; CoreWeave opera un superordenador de 1.6 mil millones de dólares para Nvidia en Texas.
+
+Pasamos a la siguiente noticia.
+
+Chat Control 1.0 de la UE aprobado entre controversia, aumentando urgencia por el autoalojamiento
+Se informa que el Parlamento Europeo aprobó la legislación Chat Control 1.0 mientras muchos eurodiputados estaban de vacaciones, supuestamente impulsada por la presidenta Roberta Metsola. Esta legislación podría socavar la privacidad al permitir el escaneo de chats privados, afectando potencialmente a todos los ciudadanos de la UE e impulsando un cambio hacia servicios autoalojados para evadir la vigilancia. La ley aparentemente apunta a plataformas de comunicación para detectar material de abuso sexual infantil, pero los críticos advierten que podría romper el cifrado y sentar un precedente de vigilancia masiva. La próxima versión, Chat Control 2.0, aún está pendiente.
+
+Pasamos a la siguiente noticia.
+
+Ant: Un entorno de ejecución y ecosistema JavaScript con soporte de escritorio
+Ant, anteriormente un entorno de ejecución JavaScript independiente, ahora incluye un gestor de paquetes, el registro ants.land, una plataforma de despliegue y Ant Desktop para construir aplicaciones de escritorio nativas. Ofrece una alternativa todo en uno a las herramientas JavaScript fragmentadas, simplificando potencialmente los flujos de trabajo de desarrollo y despliegue para aplicaciones web y de escritorio. El entorno de ejecución utiliza un motor JavaScript personalizado inicialmente derivado del motor Elk con licencia AGPL, pero el autor afirma que ha sido reimplementado; el ecosistema está en etapas tempranas y busca compatibilidad con herramientas JavaScript existentes.
+
+Pasamos a la siguiente noticia.
+
+Lanzamiento de Lanemu P2P VPN 0.14 con soporte RUDP y STUN
+La versión 0.14 de Lanemu P2P VPN introduce el protocolo RUDP (Reliable User Datagram Protocol) como transporte por defecto, reemplazando TCP, y añade soporte STUN para atravesar NAT, junto con la instalación automática del controlador TAP en Windows. Esta alternativa de código abierto a Hamachi mejora la conectividad punto a punto detrás de NATs, haciendo que las configuraciones de VPN autogestionadas sean más accesibles y fiables para usuarios preocupados por la privacidad. RUDP opera sobre los puertos UDP n y n+1 con multiplexación para operaciones de cliente y servidor en un único puerto, por defecto el 5521; STUN utiliza stun.l.google.com de forma predeterminada, con alternativas configurables; y la aplicación ahora se ejecuta con privilegios de administrador en Windows.
+
+Pasamos a la siguiente noticia.
+
+Archivando fotos RAW
+
+Pasamos a la siguiente noticia.
+
+Un usuario comparte su método para reducir el tamaño de archivos RAW convirtiéndolos a formato DNG mediante herramientas automatizadas en Docker y Wine.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
