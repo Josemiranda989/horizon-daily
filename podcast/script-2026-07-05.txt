@@ -1,0 +1,84 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 5 de julio de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+Si eres un botón, tienes un solo trabajo
+El artículo 'Si eres un botón, tienes un solo trabajo' analiza el requisito esencial de que los botones de interfaz de usuario proporcionen retroalimentación consistente e inmediata, basándose en ejemplos de la comunidad sobre implementaciones buenas y malas. Este análisis es importante porque la retroalimentación poco fiable de los botones provoca confusión, errores y disminución de la confianza en las interfaces digitales, algo crítico a medida que el software se vuelve más central en la vida cotidiana. La discusión destaca problemas específicos como el bloqueo del hilo principal que hace que los botones se queden visualmente presionados, el peligro del almacenamiento en búfer de clics y enfoques alternativos como el uso de eventos de toque para una respuesta inmediata.
+
+Pasamos a la siguiente noticia.
+
+Mejores modelos de IA pueden empeorar las herramientas, advierte desarrollador
+El 4 de julio de 2026, Armin Ronacher publicó un artículo que sostiene que los modelos de IA más avanzados pueden, paradójicamente, empeorar la integración de herramientas debido a expectativas desalineadas y diseño de interfaces. Esto desafía la suposición de que los modelos más inteligentes usan herramientas mejor por sí solos, impactando el diseño de agentes de IA y el debate sobre estándares como MCP. Podría conducir a mejores protocolos y prácticas para invocación de herramientas. Los comentarios de la comunidad destacan soluciones prácticas: mensajes de error claros ayudan a los modelos a autocorregirse, usar comandos curl en archivos de habilidades puede ser más confiable, y modelos como pi alcanzan un 95% de éxito en llamadas a herramientas. Algunos sospechan un bloqueo deliberado por parte de los proveedores de IA.
+
+Pasamos a la siguiente noticia.
+
+Shadcn/UI cambia su base predeterminada a Base UI desde Radix
+La popular biblioteca de componentes React shadcn/ui ha cambiado sus primitivas de componentes sin estilo subyacentes de Radix UI a Base UI. Esto afecta a nuevas instalaciones y ofrece una ruta de migración asistida por IA para proyectos existentes. Este cambio afecta a miles de desarrolladores que dependen de shadcn/ui para construir interfaces de usuario personalizadas rápidamente, ya que altera las APIs y el comportamiento de los componentes. También indica preferencias cambiantes en el ecosistema React hacia bibliotecas de UI sin estilo alternativas. La migración utiliza un agente de actualización impulsado por IA en lugar de los tradicionales codemods, lo que busca simplificar las transiciones pero genera dudas sobre su fiabilidad. El nuevo predeterminado requiere actualizar imports y adaptarse a la API de Base UI, que puede diferir de la de Radix.
+
+Pasamos a la siguiente noticia.
+
+La agrupación de tokens de razonamiento en GPT-5.5 Codex podría estar provocando una degradación del rendimiento
+
+Pasamos a la siguiente noticia.
+
+Se reporta un posible problema de agrupación de tokens de razonamiento en GPT-5.5 Codex que causa degradación intermitente en la calidad de las respuestas.
+
+Pasamos a la siguiente noticia.
+
+Command and Conquer Generals portado de forma nativa a macOS, iPhone, iPad usando Fable
+
+Pasamos a la siguiente noticia.
+
+Port nativo de Command and Conquer Generals a macOS e iOS utilizando herramientas de traducción automática (Fable) y una compleja cadena de renderizado indirecta.
+
+Pasamos a la siguiente noticia.
+
+Generando un mapa del mundo en ASCII con solo 445 bytes
+Iwo Kadziela (con asistencia de Codex) creó un método para generar un mapa del mundo en ASCII utilizando solo 445 bytes de datos, combinando compresión deflate con las APIs fetch y DecompressionStream de JavaScript. Esto demuestra un uso ingenioso de algoritmos de compresión y la moderna API Compression Streams para lograr una entrega de datos extremadamente compacta, lo que podría inspirar otras visualizaciones ligeras o experimentos web. Los datos del mapa se almacenan como una secuencia deflate codificada en base64 en una URI de datos, se obtienen y descomprimen mediante DecompressionStream('deflate-raw'), y se presentan como texto en un elemento . El truco aprovecha la capacidad de usar fetch() con URIs data:, una funcionalidad del navegador poco conocida.
+
+Pasamos a la siguiente noticia.
+
+Nuevos modelos de Anthropic empeoran en llamadas a herramientas personalizadas
+Armin Ronacher informó que los modelos más recientes de Anthropic, Opus 4.8 y Sonnet 5, generan llamadas a herramientas inválidas al inventar campos adicionales que no coinciden con el esquema al usar la herramienta de edición de Pi, lo que provoca rechazos. Esta regresión no se observa en modelos anteriores. Esto revela una disminución en la fiabilidad de los modelos más avanzados para integraciones con herramientas personalizadas, lo que afecta a los desarrolladores que dependen del cumplimiento exacto del esquema. Sugiere que la optimización de modelos para herramientas propias puede degradar involuntariamente su rendimiento en herramientas similares de terceros. El problema ocurre específicamente con la herramienta de edición de Pi, donde los modelos añaden claves inventadas en el arreglo anidado 'edits[]'. Armin teoriza que el entrenamiento de Anthropic, posiblemente mediante aprendizaje por refuerzo, para la herramienta de edición de búsqueda y reemplazo de Claude Code ha sesgado a los modelos más nuevos a esperar ese formato, provocando alucinaciones ante un esquema diferente.
+
+Pasamos a la siguiente noticia.
+
+Competence Gate: adaptador LoRA controla uso de herramientas por confianza interna en Qwen3.5-4B
+Un nuevo adaptador LoRA de código abierto para Qwen3.5-4B, llamado Competence Gate, utiliza las señales de confianza internas del modelo —no las verbalizadas— para controlar el uso de herramientas, decidiendo por consulta si responder directamente, buscar en la web o recuperar documentos locales. Este enfoque detecta más errores y reduce las fugas de datos en comparación con la invocación de herramientas estándar. Los modelos de lenguaje pequeños a menudo producen respuestas incorrectas con alta confianza, limitando su utilidad en aplicaciones sensibles. Al leer las señales de confianza internas, Competence Gate mejora significativamente la detección de errores y evita que datos privados se envíen a motores de búsqueda públicos, aumentando la fiabilidad de los LLMs locales. El adaptador es un módulo LoRA de 10MB con una capa de orquestación, probado en Qwen3.5-4B. Logra una mejora d' de 0.46 en detección de errores y reduce la filtración de consultas privadas a búsqueda pública en 12 puntos porcentuales, aunque los conjuntos de evaluación son pequeños (n=60 para privacidad, n=126 para recuperación). La versión GGUF reproduce las decisiones con un acuerdo de 0.83, tendiendo a ser conservadora.
+
+Pasamos a la siguiente noticia.
+
+Herramienta visual de código abierto valida formas de tensores y evita desperdicio de GPU
+Un desarrollador lanzó un editor visual de código abierto que valida las formas de los tensores de redes neuronales, cuenta parámetros y estima FLOPs/VRAM antes del entrenamiento, detectando errores como conexiones residuales incompatibles y capas mal emparejadas. Esta herramienta ahorra tiempo de GPU y recursos computacionales al identificar discrepancias de forma temprano en la fase de diseño, reduciendo ciclos de depuración costosos para profesionales del aprendizaje profundo. La herramienta soporta 63 operaciones, realiza inferencia de formas adecuada, exporta código PyTorch funcional y tiene licencia MIT, alojada en tensey.vercel.app con código fuente en GitHub.
+
+Pasamos a la siguiente noticia.
+
+Si tu GPU puede ejecutar inferencia, debería ser capaz de hacer fine-tuning también. (P)
+
+Pasamos a la siguiente noticia.
+
+USAF es un método de ajuste fino disperso para modelos MoE que entrena pesos de expertos y el enrutador, permitiendo el fine-tuning en GPUs de consumo con memoria limitada.
+
+Pasamos a la siguiente noticia.
+
+Las medusas curan heridas en minutos; los científicos buscan sus secretos
+Investigadores han descubierto que las medusas poseen una notable capacidad para curar heridas en minutos, y ahora investigan los mecanismos básicos detrás de esta rápida regeneración. Comprender cómo las medusas regeneran tejido tan rápido podría ofrecer conocimientos sobre la curación de heridas y la regeneración en otros organismos, lo que podría impulsar la investigación médica. Las medusas tienen estructuras de tejido relativamente simples, carentes de sistema circulatorio o nervioso, lo que las convierte en un modelo ideal para observar procesos fundamentales de curación de heridas.
+
+Pasamos a la siguiente noticia.
+
+Simon Willison usa Claude Fable para detectar errores críticos en sqlite-utils 4.0
+Simon Willison usó Claude Fable para realizar una revisión final del candidato a versión estable sqlite-utils 4.0, descubriendo problemas significativos como un error de pérdida de datos en delete_where(). Esto demuestra cómo los agentes de IA pueden ayudar a los mantenedores a lanzar software de código abierto más estable al detectar errores sutiles y de alto impacto antes de su publicación. El error en delete_where() dejaba la conexión en un estado no confirmado, provocando que todas las operaciones posteriores se perdieran silenciosamente. El proceso de revisión incluyó 37 indicaciones, 34 commits y cambios en 30 archivos.
+
+Pasamos a la siguiente noticia.
+
+Lanzado sqlite-utils 4.0rc2, mayormente escrito por IA
+Se ha publicado sqlite-utils 4.0rc2, una versión candidata de la popular herramienta de manipulación de SQLite. Cabe destacar que la mayor parte de esta versión fue generada por el modelo de IA Claude Fable. Este lanzamiento demuestra el creciente papel de la IA en la escritura de software de producción, lo que podría reducir el tiempo y los costos de desarrollo. También ofrece una herramienta actualizada para los numerosos desarrolladores que dependen de sqlite-utils para la gestión de bases de datos. El candidato a versión 4.0rc2 añade nuevas funciones o mejoras, aunque no se detallan los cambios específicos aquí. El proceso de generación por IA costó aproximadamente 149,25 dólares, lo que plantea interesantes preguntas sobre el futuro de la codificación automatizada.
+
+Pasamos a la siguiente noticia.
+
+Investigador cuestiona seguir investigando en ML cuando DeepMind o Anthropic lideran
+Un usuario de r/MachineLearning compartió sentimientos de insuficiencia y duda sobre continuar investigando en aprendizaje automático, cuestionando el valor del trabajo académico cuando empresas como DeepMind y Anthropic ya tienen modelos superiores y de código cerrado. La publicación resalta un problema de moral en la comunidad académica de aprendizaje automático, donde el rápido avance de las grandes tecnológicas puede desalentar la investigación independiente, sofocando potencialmente la innovación y la exploración de ideas no convencionales que la industria podría pasar por alto. El usuario menciona preocupaciones específicas como las prácticas de contratación de la industria que favorecen habilidades prácticas, la percepción de que los LLM representan el paradigma final y el temor de que su propia investigación avanzada sea trivial frente a los proyectos de la industria. La publicación usa términos como 'deep geometric autoencoding variational neural-former' para ilustrar cómo puede percibirse la investigación académica.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
