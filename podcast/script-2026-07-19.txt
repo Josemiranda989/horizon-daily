@@ -1,0 +1,75 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 19 de julio de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+Alibaba anuncia Qwen3.8: un LLM de 2.4 billones de parámetros con pesos abiertos
+Alibaba ha anunciado Qwen3.8, un modelo de lenguaje de gran escala con 2.4 billones de parámetros, y planea lanzarlo con pesos abiertos próximamente. Una versión preliminar, Qwen3.8-Max-Preview, ya está disponible para pruebas en las plataformas de Alibaba. Este movimiento intensifica la competencia en el espacio de IA con pesos abiertos, especialmente frente a modelos como Kimi K3 de Moonshot AI y Deepseek 4, y brinda a los desarrolladores acceso a un modelo local masivo para manejar datos sensibles. También desafía a líderes propietarios como Claude Fable 5 de Anthropic. Qwen3.8 afirma ser el segundo en capacidad solo después de Claude Fable 5, aunque no se han publicado benchmarks oficiales. La vista previa es accesible a través del Token Plan de Alibaba, Qoder y Qwen Chat, y la comunidad espera tamaños de modelo más pequeños en el futuro.
+
+Pasamos a la siguiente noticia.
+
+El lanzamiento de Kimi K3 genera debate sobre destilación y modelos abiertos
+El lanzamiento de Kimi K3, un modelo de lenguaje de gran escala de pesos abiertos con 2.8 billones de parámetros y ventana de contexto de 1M tokens, ha desatado discusiones sobre la destilación de conocimiento de modelos de frontera occidentales y el futuro del acceso abierto a la IA avanzada. El lanzamiento desafía el dominio de laboratorios de IA estadounidenses como OpenAI y Anthropic al ofrecer inteligencia comparable a precios competitivos, al tiempo que plantea dudas sobre propiedad intelectual, seguridad nacional y la trayectoria del desarrollo de IA de código abierto. Kimi K3 presenta una arquitectura de 2.8 billones de parámetros, una ventana de contexto de 1M tokens y puntúa 57 en el Índice de Inteligencia de Artificial Analysis. El precio de API es de $3/$15 por 1M tokens de entrada/salida, similar a GPT-5.6 y Opus 4.8, aunque algunos usuarios reportan alto consumo de tokens y latencia en la práctica.
+
+Pasamos a la siguiente noticia.
+
+Transcribe.cpp: Nueva biblioteca de transcripción de voz a texto en C++
+Se ha anunciado Transcribe.cpp, una nueva biblioteca de inferencia de voz a texto de código abierto en C/C++. Desarrollada a través del programa Builders in Residence de Mozilla.ai, soporta 16 familias de modelos con aceleración por GPU y transcripción tanto en streaming como por lotes. Permite una conversión de voz a texto rápida, local y privada sin dependencia de la nube, simplificando la integración de STT en aplicaciones C++. Su soporte multimodelo y capacidad de streaming responden a una necesidad creciente de transcripción sin conexión y de baja latencia en dispositivos edge y aplicaciones de escritorio. Construida sobre el runtime ggml, transcribe.cpp utiliza modelos GGUF y ofrece backends para GPUs Metal, Vulkan y CUDA, además de una ruta de CPU acelerada por tinyBLAS. Todos los modelos están validados numéricamente y se prueba su Tasa de Error de Palabras (WER) contra las implementaciones de referencia.
+
+Pasamos a la siguiente noticia.
+
+Rastreador de reinicios de uso de Codex suscita debate sobre tácticas de casino
+Se ha creado un sitio web (codex-resets.com) que rastrea la frecuencia con que OpenAI reinicia los límites de uso de su asistente de programación Codex. La frecuencia e imprevisibilidad de estos reinicios ha generado comparaciones con mecánicas de casino diseñadas para mantener a los usuarios enganchados. Esta práctica podría fomentar el uso excesivo y la dependencia, inflando el consumo habitual de los usuarios y haciendo que los planes de pago parezcan una degradación si los reinicios cesan. Plantea dudas éticas sobre la sostenibilidad y la manipulación de usuarios en los servicios de IA. Los reinicios suelen activarse por hitos o correcciones de errores, y algunos usuarios pueden 'acumular' reinicios para usarlos más tarde, aunque la disponibilidad depende del plan, la región y el estado de la cuenta. El crecimiento de 7M a 9M de usuarios en días sugiere que estos incentivos podrían estar impulsando la adopción.
+
+Pasamos a la siguiente noticia.
+
+¿Un contenido de IA flagrantemente mediocre acaba de ganar el gran premio de 25k USD de DeepMind / Kaggle? (D)
+Un usuario de Reddit presenta pruebas de que un trabajo incoherente y con afirmaciones infundadas ganó el gran premio de 25k USD en un desafío de Kaggle patrocinado por DeepMind, cuestionando el proceso de revisión.
+
+Pasamos a la siguiente noticia.
+
+Herramienta de código abierto evade Cloudflare para transmitir video a televisores
+Una nueva herramienta de código abierto llamada Castor permite transmitir videos web a televisores usando un navegador sin cabeza para simular clics en la casilla de verificación de Cloudflare Turnstile, eludiendo su detección de bots. Esto pone de relieve la batalla continua entre las tecnologías anti-bots y las técnicas evasivas, al tiempo que plantea cuestiones éticas sobre la piratería y la eficacia de protecciones como Cloudflare Turnstile. La herramienta supuestamente elude Cloudflare Turnstile simplemente simulando clics de usuario, lo que algunos consideran sorprendentemente fácil, y no requiere hardware adicional como Chromecast o Apple AirPlay.
+
+Pasamos a la siguiente noticia.
+
+Hardcore IndieWeb: Aloja tu sitio por $0.01 al día
+Un tutorial detalla cómo alojar un sitio web personal estático en NearlyFreeSpeech.net por solo $0,01 al día, promoviendo una independencia casi total de las plataformas corporativas. Demuestra que ser dueño de tu presencia en línea puede ser extremadamente asequible, empoderando a los usuarios para escapar del control de las grandes tecnológicas y adoptar el principio IndieWeb de publicar en tu propio dominio. La configuración usa alojamiento estático de pago por uso, pero un dominio añade unos $6 al año. Se debate la verdadera independencia, pues el proveedor de alojamiento sigue siendo un tercero.
+
+Pasamos a la siguiente noticia.
+
+La manía de la IA está destrozando la toma de decisiones global
+Simon Willison comparte un artículo que critica cómo la obsesión por la IA está distorsionando la toma de decisiones en las empresas, con ejecutivos que impulsan estrategias sin entender la tecnología.
+
+Pasamos a la siguiente noticia.
+
+Claude Code ahora usa Bun reescrito en Rust para mejorar el inicio
+Simon Willison confirmó que Claude Code v2.1.181 y posteriores incluyen un puerto de Bun escrito en Rust, aún no lanzado oficialmente; este cambio mejoró el tiempo de inicio en un 10% en Linux. Esto demuestra que herramientas críticas como Claude Code ya están adoptando la reescritura de Bun en Rust, validando su estabilidad y beneficios de rendimiento, y sentando un precedente para otras herramientas. El puerto Rust se identifica por la cadena de versión "Bun v1.4.0" y la presencia de numerosos archivos fuente .rs; está disponible como compilación canary de Bun mediante bun upgrade --canary.
+
+Pasamos a la siguiente noticia.
+
+SQLite Query Explainer: Analizador de planes de consulta SQLite en el navegador
+Simon Willison creó una herramienta interactiva, SQLite Query Explainer, que ejecuta SQLite en el navegador mediante Pyodide y WebAssembly para explicar los resultados de EXPLAIN y EXPLAIN QUERY PLAN. Esta herramienta ayuda a los desarrolladores a entender y optimizar el rendimiento de las consultas SQLite sin instalar software, haciendo el análisis de planes de consulta más accesible. La herramienta utiliza Python ejecutándose en Pyodide compilado a WebAssembly, y proporciona anotaciones explicativas para las salidas de EXPLAIN y EXPLAIN QUERY PLAN. Sin embargo, el creador advierte que no puede verificar completamente la precisión de las explicaciones.
+
+Pasamos a la siguiente noticia.
+
+Geometría de embeddings de GPT-2 Small alrededor de “Trump”: vecinos discretizados vs continuos
+Un nuevo análisis compara los vecinos más cercanos del token “Trump” en la tabla de embeddings de GPT-2 Small bajo dos representaciones: discretizada (coordenadas umbralizadas) y continua (coordenadas originales). La versión discretizada produce términos políticos genéricos como Mitt y Hillary, mientras que la continua revela asociaciones más específicas como familiares y expresidentes. Este estudio ilustra cómo la discretización de espacios de embeddings puede borrar relaciones matizadas, mostrando que las representaciones continuas capturan asociaciones más ricas y contextuales. Estos hallazgos son relevantes para investigadores que exploran sesgos en modelos y para aplicaciones que dependen de la similitud de embeddings. La visualización se basa en la tabla de embeddings estática de GPT-2 Small, con t-SNE aplicado a 32,070 tokens; la discretización se logra umbralizando las coordenadas individuales, y los hallazgos se limitan a este modelo y token específicos.
+
+Pasamos a la siguiente noticia.
+
+Mapa interactivo de embeddings de tokens de GPT-2 usando t-SNE y árbol de expansión mínima
+Se ha publicado una visualización interactiva de los embeddings de tokens de palabras (WTE) de GPT-2-small, que mapea 32,070 tokens alfabéticos en 2D usando t-SNE y un árbol de expansión mínima para revelar relaciones semánticas. Esta herramienta hace tangible el concepto abstracto de los embeddings de palabras, ayudando en la interpretabilidad de modelos y en la educación al mostrar cómo GPT-2 agrupa palabras semánticamente relacionadas. La disposición usa t-SNE sobre una representación comprimida de la tabla de embeddings, y los bordes representan un árbol de expansión mínima, garantizando que cada línea sea una relación real de vecino más cercano; incluye solo tokens alfabéticos, no requiere pase hacia adelante y funciona en dispositivos móviles.
+
+Pasamos a la siguiente noticia.
+
+Redditor resume 25 métodos de aprendizaje profundo para análisis de scRNA-seq en una tabla
+Un usuario de Reddit compartió una tabla comparativa exhaustiva que resume 25 métodos de aprendizaje profundo para el análisis de secuenciación de ARN de célula única (scRNA-seq), extraída de un artículo de revisión reciente. Esta visión general seleccionada ayuda a los investigadores a comprender rápidamente el panorama de herramientas de aprendizaje profundo para scRNA-seq, acelerando la selección de métodos y la incorporación de nuevos profesionales en bioinformática y biología computacional. La tabla desglosa 25 métodos en 6 subcategorías (p. ej., agrupamiento, reducción de dimensionalidad), detallando su arquitectura, propósito y novedad. Se basa en un solo artículo de revisión y no incluye métodos posteriores a su publicación.
+
+Pasamos a la siguiente noticia.
+
+TabFM Studio: predicciones con clic en hojas de cálculo con modelos fundacionales tabulares locales
+TabFM Studio es una nueva aplicación web local que permite a los usuarios ejecutar modelos fundacionales tabulares como TabFM de Google en datos de hojas de cálculo sin necesidad de programar. Los usuarios pueden cargar un archivo CSV o Excel, seleccionar la columna objetivo y generar predicciones al instante. Esta herramienta reduce la barrera de entrada para que no programadores, como analistas de negocios y expertos en dominios específicos, aprovechen modelos fundacionales tabulares de última generación para realizar predicciones. Democratiza el acceso al aprendizaje automático avanzado sin requerir conocimientos técnicos ni dependencias de la nube. La aplicación utiliza aprendizaje en contexto: las filas con valores conocidos de la columna objetivo sirven como ejemplos, lo que permite al modelo predecir los valores faltantes. Actualmente, solo es compatible con el modelo TabFM de Google y se ejecuta completamente en la máquina local del usuario.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
