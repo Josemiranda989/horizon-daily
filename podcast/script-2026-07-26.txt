@@ -1,0 +1,84 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 26 de julio de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+El comando : en shell no hace nada. Úsalo de todos modos
+
+Pasamos a la siguiente noticia.
+
+Un análisis detallado de las aplicaciones útiles del comando : en shell scripting, enriquecido por comentarios de la comunidad que comparten trucos y contextos adicionales.
+
+Pasamos a la siguiente noticia.
+
+GrapheneOS protege dispositivos bloqueados con reinicio automático a modo BFU
+La discusión destaca el reinicio automático cada 18 horas de GrapheneOS, que devuelve el dispositivo al estado BFU (Before First Unlock), impidiendo la extracción forense de datos incluso sin una contraseña de coacción. Esto eleva significativamente el nivel de seguridad en escenarios de confiscación de dispositivos, como en fronteras, ya que las claves de cifrado no están accesibles en la memoria, protegiendo información sensible como fuentes periodísticas. La función reinicia el dispositivo tras 18 horas de inactividad, eliminando las claves de descifrado de la RAM; medidas adicionales como un PIN o contraseña de coacción pueden activar un borrado o mostrar un perfil señuelo, aunque éstos aún no son totalmente indistinguibles de un perfil real.
+
+Pasamos a la siguiente noticia.
+
+Cloudflare introduce bloqueo predeterminado de rastreadores de IA
+Cloudflare anunció nuevas opciones para que los clientes bloqueen rastreadores de entrenamiento de IA, con las categorías Training y Agent bloqueadas por defecto en páginas con anuncios para todos los nuevos dominios. A partir del 15 de septiembre, los rastreadores multipropósito como Googlebot serán bloqueados si también se utilizan para el entrenamiento de IA. Esta medida podría reducir significativamente el raspado de datos para IA sin autorización, afectando a grandes empresas de IA que dependen de datos web. También centraliza el control del tráfico web en Cloudflare, lo que genera preocupaciones sobre la gobernanza de internet y el doble papel de la empresa como protector y proveedor de servicios de IA. El bloqueo predeterminado se aplica solo a nuevos dominios y solo en páginas que muestran anuncios; los rastreadores de búsqueda permanecen permitidos. La política de Cloudflare trata a los rastreadores multipropósito según todos sus comportamientos, por lo que Googlebot podría ser bloqueado por su uso en entrenamiento de IA. Las limitaciones incluyen posible evasión mediante suplantación de user-agent y bloqueo no intencionado de agentes de IA legítimos.
+
+Pasamos a la siguiente noticia.
+
+Ejecutar un LLM de 28.9M parámetros en un microcontrolador de 8 dólares
+
+Pasamos a la siguiente noticia.
+
+Repositorio que permite ejecutar un modelo de lenguaje de 28.9M parámetros en un microcontrolador ESP32 de 8 dólares.
+
+Pasamos a la siguiente noticia.
+
+¿Qué está pasando con los trabajos? Separando la exageración de la IA de la realidad
+Discusión sobre un informe de Stanford que intenta separar la exageración de la realidad en el impacto de la IA en los trabajos, con comentarios que destacan la rápida evolución de los agentes de IA y las distorsiones en el mercado laboral.
+
+Pasamos a la siguiente noticia.
+
+Ruff v0.16.0 aumenta las reglas de linting predeterminadas de 59 a 413
+Ruff v0.16.0, lanzado el 23 de julio de 2025, ahora habilita 413 reglas predeterminadas (antes solo 59), ofreciendo muchas más comprobaciones automáticas de calidad de código para proyectos Python. Este cambio convierte a Ruff en un linter aún más completo que detecta más problemas sin configuración adicional, reduciendo la dependencia de plugins separados y consolidando su papel como herramienta rápida todo-en-uno para linting y formateo en Python. El salto de 59 a 413 reglas predeterminadas puede romper pipelines de CI existentes si la dependencia de Ruff no está fijada; Ruff, escrito en Rust, cuenta con más de 900 reglas integradas en total y reimplementa complementos populares de Flake8.
+
+Pasamos a la siguiente noticia.
+
+Las nuevas reglas de ingeniería de contexto para los modelos Claude 5 de Anthropic
+Anthropic publicó una guía sobre ingeniería de contexto para sus modelos de quinta generación Claude, demostrando que más del 80% del prompt del sistema anterior para tareas de codificación puede eliminarse sin pérdida de rendimiento en modelos como Claude Opus 5 y Claude Fable 5. Esto indica un cambio de paradigma en el diseño de prompts, reduciendo la necesidad de instrucciones extensas y permitiendo a los desarrolladores confiar más en las capacidades de inferencia del modelo, lo que puede agilizar la integración y reducir costos de tokens. La simplificación se aplica específicamente a Claude Opus 5 y Fable 5; sin embargo, algunos usuarios informan que las funciones de auto-memoria recomendadas pueden ser poco confiables, introduciendo suposiciones ocultas y dificultando la trazabilidad de las decisiones.
+
+Pasamos a la siguiente noticia.
+
+DeepSeek suspende recaudación por filtraciones sobre brecha computacional con EE.UU.
+DeepSeek ha pausado su segunda ronda de recaudación después de que se filtrara en línea una transcripción de los comentarios del fundador Liang Wenfeng sobre la creciente brecha computacional entre los laboratorios de IA chinos y estadounidenses. Los comentarios filtrados, de una reunión de inversores de julio de 2026, revelaron preocupaciones de que las empresas estadounidenses podrían tener una ventaja de infraestructura insuperable. Este acontecimiento pone de relieve la intensa competencia en IA entre Estados Unidos y China, así como los desafíos financieros que enfrentan las startups chinas debido a los controles de exportación de chips avanzados. La pausa podría indicar dudas estratégicas o un cambio en la percepción de los inversores sobre la capacidad de DeepSeek para competir en la vanguardia sin acceso a computación de última generación. Según Bloomberg, DeepSeek informó a los posibles inversores sobre la suspensión días después de que la transcripción filtrada circulara. La empresa, conocida por sus modelos de peso abierto y eficientes en costos, podría estar reevaluando la necesidad de una gran recaudación si no puede cerrar la brecha computacional.
+
+Pasamos a la siguiente noticia.
+
+Inflect-Micro-v2: texto a voz con solo 9.36 millones de parámetros
+Se lanzó Inflect-Micro-v2, un nuevo modelo de texto a voz con 9.36 millones de parámetros, que ofrece síntesis de voz local completa en inglés con una voz masculina fija. Demuestra que la síntesis de voz de alta calidad es posible con modelos extremadamente compactos, permitiendo el despliegue local en dispositivos de bajos recursos y reduciendo la dependencia de servicios en la nube. El modelo utiliza 9,356,513 parámetros (37.53 MB FP32), genera audio mono a 24 kHz, admite generación determinista y exportación ONNX, pero está limitado a una sola voz masculina y solo inglés.
+
+Pasamos a la siguiente noticia.
+
+SpaceX planea atrapar el Starship con la torre en su próximo vuelo tras exitoso final del vuelo 13
+
+Pasamos a la siguiente noticia.
+
+SpaceX planea intentar atrapar la nave Starship en la plataforma de lanzamiento en su próximo vuelo, tras el exitoso amerizaje del vuelo 13.
+
+Pasamos a la siguiente noticia.
+
+Modelos abiertos de 4B se acercan a la precisión de o3 en examen médico sueco
+Modelos abiertos de 4B parámetros como Qwen3.5-4B alcanzaron un 87 % de precisión en el examen de licencia médica sueco (MedQA-SWE), casi igualando el 88 % de o3, al habilitar razonamiento y usar intervenciones de salida temprana para evitar bucles repetitivos. Demuestra que modelos pequeños y de código abierto pueden competir con grandes sistemas propietarios en dominios médicos especializados en idiomas distintos del inglés, reduciendo costos y aumentando la accesibilidad para lenguas con pocos recursos. Qwen3.5-4B razonó en inglés a pesar de la entrada en sueco; sin posentrenamiento alcanzó un 77 %; la técnica de salida temprana S-GRPO ayudó a limitar la longitud del razonamiento, y el aprendizaje por refuerzo para trazas más cortas solo produjo mejoras menores.
+
+Pasamos a la siguiente noticia.
+
+Modelos de lenguaje de frontera dominan la OMI 2026, los abiertos mejoran con arneses multiagente
+Una comparación de modelos de lenguaje en los problemas de la Olimpiada Internacional de Matemáticas 2026 revela que modelos de frontera como Sol y Fable alcanzaron puntuaciones perfectas o casi perfectas sin importar el arnés, mientras que modelos abiertos como GLM y Sonnet y Opus de Anthropic mejoraron notablemente con un arnés multiagente personalizable llamado AutoFyn. Los problemas de la OMI son un referente exigente y libre de contaminación para el razonamiento complejo, y los resultados evidencian la brecha persistente entre modelos propietarios de frontera y alternativas abiertas, así como el potencial y los límites de las mejoras basadas en ingeniería de arneses. Sonnet y Opus tuvieron desempeño pobre en aplicaciones web, pero mejoraron con el arnés del proveedor (Claude Code) y aún más con AutoFyn; el modelo abierto GLM igualó a Sonnet sin arnés. El problema más difícil (P3) no fue resuelto por ningún modelo por debajo de la frontera, incluso tras ejecuciones de 20 horas, pues los arneses aportaron recuperación y verificación pero no la idea clave. La calificación fue realizada por un modelo de frontera y verificada por exmedallistas de la OMI.
+
+Pasamos a la siguiente noticia.
+
+Directorio gratuito y sin anuncios de todos los campos de golf de EE. UU.
+Un desarrollador lanzó un directorio web gratuito y sin publicidad de todos los campos de golf de EE. UU. construido con datos de OpenStreetMap, que incluye reporte de errores por usuarios e información detallada como tarjetas de puntuación y ratings de la USGA. Este proyecto ofrece una alternativa superior y mantenida por la comunidad a los directorios comerciales, abordando malas experiencias de búsqueda y brindando información precisa, actualizada y sin anuncios para los golfistas. El directorio utiliza OpenStreetMap como base, verificado con sitios web de campos, y enriquecido con correcciones de usuarios, tarjetas de puntuación y rating/slope de la USGA; actualmente solo cubre EE. UU. pero planea expandirse globalmente.
+
+Pasamos a la siguiente noticia.
+
+Implementación de inferencia YOLO26n desde cero en ensamblador ARM64
+Un proyecto final de grado implementó la inferencia del modelo YOLO26n completamente desde cero usando ensamblador ARM64 y C, dirigido a Raspberry Pi 4 con optimizaciones como NEON SIMD, convolución Winograd y fusión de operadores, aunque las ganancias de rendimiento fueron menores a las esperadas. Muestra el valor educativo y los retos de la optimización de inferencia de IA a bajo nivel para dispositivos en el borde, ilustrando por qué superar a los frameworks altamente ajustados sigue siendo difícil a pesar de los kernels personalizados. El proyecto incluyó un formato binario de modelo personalizado, mecanismo de atención, particionamiento consciente de la caché y microkernels, produciendo detecciones correctas pero sin la aceleración esperada, lo que resalta la complejidad de la optimización en ensamblador puro.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
