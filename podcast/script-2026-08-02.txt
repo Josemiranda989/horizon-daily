@@ -1,0 +1,60 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 2 de agosto de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+Tour interactivo de Go 1.27 muestra nuevas características y genera debate
+Go 1.27 introduce un tipo genérico Box con un método Map, el drenado automático de cuerpos de respuesta HTTP y una corrección en tiempo de ejecución para compatibilidad con Memory Tagging Extension (MTE) en Android. Se ha publicado un tour interactivo para guiar a los desarrolladores en estas actualizaciones. Estos cambios mejoran la seguridad de tipos y los patrones de concurrencia con genéricos, optimizan el comportamiento predeterminado del cliente HTTP para la gestión de recursos y habilitan funciones de seguridad en plataformas móviles. El tour interactivo ayuda a la comunidad a adoptar la nueva versión de manera eficiente. El tipo genérico Box añade carga cognitiva, el drenado del cuerpo HTTP es un cambio de comportamiento silencioso que podría romper código existente, y la corrección de MTE beneficia específicamente a aplicaciones que usan gomobile en GrapheneOS. Las notas de la versión también contienen frases generadas por LLM que generaron críticas.
+
+Pasamos a la siguiente noticia.
+
+Joven de 15 años construye una caja de cambios cicloidal
+Un joven de 15 años llamado Tom Ilan construyó una caja de cambios cicloidal funcional y compartió el proyecto en GitHub, demostrando su diseño y fabricación. El proyecto destaca una habilidad ingenieril temprana excepcional e inspira a la comunidad, especialmente a los jóvenes, a involucrarse en el diseño mecánico práctico. Los reductores cicloidales se valoran por sus altas relaciones de reducción y bajo juego, haciendo este logro técnicamente significativo. La caja de cambios fue diseñada y fabricada por un adolescente, probablemente usando impresión 3D o mecanizado CNC. El proyecto incluye archivos de diseño de código abierto, y el creador respondió a preguntas técnicas, como sobre compatibilidad con CNC.
+
+Pasamos a la siguiente noticia.
+
+ByteDance lanza Seedance 2.5, modelo de video IA con referenciado flexible
+ByteDance ha lanzado Seedance 2.5, una nueva versión de su modelo de generación de video IA que puede producir videos 4K de 30 segundos en una sola toma, utilizando hasta 50 referencias multimodales (imágenes, clips de video y clips de audio) en una sola pasada. El modelo amplía las fronteras de la calidad y el control creativo en video IA, pero resalta desafíos como los altos costos de inferencia y un enfoque en escenas de acción que puede no alinearse con las necesidades de todos los cineastas, mientras que competidores como MiniMax H3 ofrecen alternativas de código abierto. Seedance 2.5 admite la entrada de hasta 30 imágenes, 10 clips de video y 10 clips de audio como materiales de referencia, lo que permite la generación en una sola toma de videos 4K consistentes; está disponible a través de la plataforma Dreamina de ByteDance.
+
+Pasamos a la siguiente noticia.
+
+El marco de documentación Diátaxis gana popularidad y comentarios positivos
+El marco de documentación Diátaxis está recibiendo amplia atención por su enfoque sistemático, con el creador impulsando traducciones multilingües y miembros de la comunidad integrándolo con herramientas de IA como una habilidad recién lanzada para documentación generada por LLM. Diátaxis proporciona una estructura clara y centrada en el usuario para la documentación técnica, mejorando significativamente su claridad y utilidad. Su creciente adopción e integraciones con IA indican un impacto positivo en la calidad de la documentación en toda la industria. El marco clasifica el contenido en tutoriales, guías prácticas, referencia técnica y explicación, cada uno abordando necesidades distintas del usuario. Las contribuciones de la comunidad incluyen una habilidad en fase alfa para indicar a los LLM que generen documentos conformes a Diátaxis, aunque aún está en desarrollo.
+
+Pasamos a la siguiente noticia.
+
+Home Assistant lee datos de cepillado Oral-B en vivo desde el cargador iO Sense
+El usuario realizó ingeniería inversa del protocolo Bluetooth del cargador iO Sense, permitiendo que Home Assistant reciba datos de cepillado en tiempo real (temporizador, presión, modo, sector) a ~1 Hz a través del cargador sin ocupar la conexión Bluetooth del cepillo. Esto permite usar el cepillo sin interrupciones con su aplicación y la pantalla del cargador, mientras se registran todos los datos de cepillado localmente en Home Assistant, mejorando la automatización del hogar sin dependencia de la nube. La integración ofrece datos en vivo a ~1 Hz, con niveles de presión, modo de cepillado, sector del temporizador, historial de sesiones, batería y diagnósticos del cabezal. Soporta modos de conexión a través del cargador o directa, seleccionados automáticamente, y ya está en el catálogo de HACS.
+
+Pasamos a la siguiente noticia.
+
+Cartas abiertas debaten modelos de IA de pesos abiertos y regulación en EE. UU.
+Microsoft coordinó una carta abierta, firmada por 235 empresas como NVIDIA y OpenAI, apoyando los modelos de pesos abiertos, mientras Anthropic emitió una respuesta cautelosa. Posteriormente, 1324 empleados de IA firmaron una carta instando a un desarrollo pausado de la IA. Esto refleja un debate crucial entre innovación abierta y preocupaciones de seguridad, con posibles implicaciones para la regulación estadounidense, la competencia global en IA y la accesibilidad futura de la IA avanzada. La carta de Microsoft defendió sorprendentemente la destilación de modelos; Anthropic se opone a la destilación a escala industrial y advierte riesgos de uso indebido; la carta de empleados destaca la preocupación por la aceleración peligrosa de la investigación automatizada en IA.
+
+Pasamos a la siguiente noticia.
+
+Greg Brockman: Empleados prefieren contacto humano directo sobre peticiones de IA
+Greg Brockman, presidente y cofundador de OpenAI, observa que en OpenAI, a los empleados no les gusta cuando el ChatGPT de un compañero les contacta para pedir ayuda, incluso si ayudarían con gusto al compañero directamente. Esto subraya la importancia de las relaciones humanas en el trabajo y sugiere que las herramientas de IA deberían mejorar la interacción humana en lugar de reemplazarla, influyendo en el diseño ético de los futuros asistentes de IA. La reflexión surge del uso interno de la integración de ChatGPT en Slack, que permite a la IA enviar mensajes en nombre de los usuarios, revelando una preferencia por el compromiso humano directo.
+
+Pasamos a la siguiente noticia.
+
+El modelo Astra no lanzado de OpenAI resuelve diez problemas matemáticos de décadas por menos de $2,000 cada uno
+OpenAI usó una versión interna de su próximo modelo importante, Astra, para resolver diez problemas matemáticos que no habían tenido avances en al menos una década, gastando menos de $2,000 por problema a tarifas de tokens de GPT-5.6 Sol. Esto demuestra que los modelos de IA de frontera pueden producir resultados de investigación auditables y formalizados a un costo extremadamente bajo, lo que potencialmente transforma la investigación matemática y abre un mercado para la IA como infraestructura de descubrimiento. Las soluciones están formalizadas en Lean 4 y acompañadas de un artículo y una guía del proceso de razonamiento generada por LLM, aunque las instrucciones utilizadas no se han revelado.
+
+Pasamos a la siguiente noticia.
+
+Desarrollador reemplaza Lovelace de Home Assistant con panel Vue 3 personalizado
+Un desarrollador, cansado del YAML y card-mod, creó un panel de control personalizado con Vue 3 para Home Assistant, usando la integración panel_custom. El proyecto ofrece andamiaje para facilitar la construcción de interfaces personalizadas (GitHub: ha-vue-kiosk). Esto ofrece una vía para que los desarrolladores creen paneles con frameworks modernos, evitando las limitaciones de Lovelace. Demuestra la extensibilidad de Home Assistant y podría inspirar más soluciones de interfaz personalizadas. El panel se carga desde /config/www/ y utiliza Vue 3 como módulo ESM incluido. Aprovecha el objeto hass para estado reactivo, hass.callService para acciones, y la API websocket para registros, historial y estadísticas, con un truco para incrementar la versión de caché y evitar el almacenamiento en el navegador.
+
+Pasamos a la siguiente noticia.
+
+Firmware personalizado de ESPHome para Litter Robot 4 casi terminado
+El desarrollador ha lanzado una versión preliminar de un firmware personalizado sin nube para el Litter Robot 4 usando ESPHome, con pruebas exitosas y planes para seguimiento de peso e integración oficial en ESPHome. Este firmware permite la operación totalmente local del Litter Robot 4, eliminando la dependencia de la nube del fabricante y mejorando la privacidad y fiabilidad para usuarios de Home Assistant. Tras cinco instalaciones confirmadas sin problemas mayores, se corrigió un error menor; el seguimiento de peso para múltiples gatos está previsto para la próxima actualización, mientras que el soporte para LR3 está en espera de capturas de datos serie proporcionadas por usuarios.
+
+Pasamos a la siguiente noticia.
+
+CEO de Reddit duda del valor de los AI Overviews de Google ante caída de acciones
+El CEO de Reddit ha cuestionado públicamente el valor de los AI Overviews de Google mientras el precio de las acciones de Reddit cae, insinuando que la compañía aún podría estar considerando rescindir su acuerdo de licencia de datos con Google. Esto podría afectar las capacidades de IA de Google y los ingresos de Reddit, ya que el acuerdo de licencia es un arreglo financiero significativo. También refleja tensiones más amplias en la industria sobre el uso de datos para IA y la efectividad de las funciones de búsqueda generadas por IA. El acuerdo de licencia entre Reddit y Google está valorado en aproximadamente 60 millones de dólares anuales. Los AI Overviews de Google han recibido críticas por inexactitudes y por potencialmente reducir el tráfico a fuentes originales como Reddit.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
