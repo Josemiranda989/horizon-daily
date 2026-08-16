@@ -1,0 +1,19 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 16 de agosto de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+Sin novedades relevantes hoy. Puede deberse a:
+Un día tranquilo en tus fuentes
+El umbral de score es muy alto
+Falta diversificar las fuentes
+
+Pasamos a la siguiente noticia.
+
+Sugerencias:
+1. Bajar ai_score_threshold en config.json
+2. Agregar más fuentes de información
+3. Verificar que el modelo AI funcione correctamente
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
