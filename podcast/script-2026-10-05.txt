@@ -1,0 +1,55 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 5 de octubre de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+Brecha de datos en Dinamarca expone datos personales y números CPR de 8,8 millones
+Las autoridades danesas informaron de un acceso no autorizado masivo a la información CPR de la ciudadanía, que expuso datos personales y números CPR de 8,8 millones de ciudadanos y residentes. Dado que el número CPR es un identificador nacional ampliamente utilizado en Dinamarca, la brecha podría facilitar el robo de identidad, el fraude y el rastreo no deseado, y también alimenta preocupaciones más amplias sobre privacidad y vigilancia. La información comprometida incluye, según los reportes, números CPR, edad, sexo, relaciones familiares, direcciones físicas y protegidas, y registros de cambio de sexo, y afecta a ciudadanos daneses vivos, residentes extranjeros y algunas personas fallecidas. Al parecer, el incidente ocurrió pocos días después de otra brecha en la Universidad Técnica de Dinamarca.
+
+Pasamos a la siguiente noticia.
+
+Sona de Yandex Music reemplaza 15 generadores candidatos, pre-ranker y ranker
+Yandex Music desarrolló Sona, un transformador único que reemplazó más de 15 generadores candidatos, el pre-ranker y el ranker en una prueba A/B en altavoces inteligentes. Procesa hasta 8.192 eventos y usa compresión de historial, dividiendo el historial antiguo y reciente para reducir aproximadamente a la mitad el costo de inferencia y conservar la mayor parte de la calidad de atención completa. En la prueba A/B, Sona logró +4,53% de usuarios activos y +6,30% de tiempo total de escucha con p
+
+Pasamos a la siguiente noticia.
+
+El nuevo unicornio europeo de robótica: RobCo alcanza una valoración de 1.000 millones de dólares
+La startup de robótica RobCo, fundada en Múnich, ha alcanzado una valoración de 1.000 millones de dólares y se convierte en el nuevo unicornio europeo del sector tras duplicar su valoración en nueve meses. La valoración unicornio indica que los inversores apuestan cada vez más por la IA física y la robótica industrial autónoma en Europa, lo que podría acelerar la adopción entre los fabricantes y fortalecer el ecosistema de automatización de la región. RobCo ofrece sistemas modulares de robots industriales y promueve un modelo Robotics-as-a-Service sin desembolso inicial; su nueva ronda incluyó a inversores existentes como Sequoia, Lightspeed, Greenfield, Kindred, Lingotto y Promus Ventures, además de los nuevos Cherry Ventures y European Tech Collective.
+
+Pasamos a la siguiente noticia.
+
+Cloudflare lanza una API de búsqueda web a través de AI Gateway.
+Cloudflare anunció una integración nativa de la API de búsqueda web en AI Gateway, desarrollada con los proveedores Ceramic.ai, Exa y Linkup, para que los desarrolladores puedan inyectar resultados web en tiempo real en las llamadas de inferencia mediante AI Gateway, API REST o Workers bindings. Esto facilita que los desarrolladores agreguen contexto web en tiempo real a agentes de IA y aplicaciones generativas, con una única interfaz de Cloudflare para enrutar, supervisar y gestionar costos entre varios proveedores de búsqueda. La API admite Ceramic.ai, Exa y Linkup y está disponible mediante AI Gateway, API REST y Workers bindings; sin embargo, las primeras pruebas de la comunidad reportaron poca relevancia o cero resultados del proveedor predeterminado Ceramic.ai en algunas consultas.
+
+Pasamos a la siguiente noticia.
+
+Aparece en línea un archivo de animación de Tippett Studio tras su cierre
+Se ha subido al Internet Archive una colección digital de materiales de animación y efectos visuales de Tippett Studio, rescatados al parecer de un lote de CD-ROM en una subasta. La página de archivo, disponible en archive.org/details/tippett-archive, contiene unos 90 GB de material. Esto conserva décadas de trabajo históricamente importante en efectos visuales y animación de Phil Tippett y sus colaboradores, que de otro modo podrían haberse perdido. También pone de relieve el valor cultural de la preservación digital independiente y la fragilidad del acceso cuando un estudio cierra. La colección está alojada en el Internet Archive en archive.org/details/tippett-archive y se describe como un conjunto de unos 90 GB de datos. Los comentaristas señalan que es importante replicar los torrents, ya que el material podría enfrentar acciones por derechos de autor tras la adquisición en subasta.
+
+Pasamos a la siguiente noticia.
+
+Un IDE clásico de Visual Basic 6 recreado en el navegador
+Se ha publicado una recreación del IDE clásico de Visual Basic 6 en wieslawsoltes.github.io/VB6 que se ejecuta en el navegador y puede compilar una aplicación a un único archivo HTML. Lleva la experiencia de desarrollo rápido de aplicaciones de VB6 al navegador sin necesidad de instalar Windows y reaviva el interés por los paradigmas clásicos de IDE de escritorio que algunos desarrolladores aún consideran insuperables. Los usuarios pueden compilar una aplicación directamente a un único archivo HTML; sin embargo, los comentarios señalan problemas de fidelidad visual, como botones de ventana distorsionados y biseles ausentes causados por los bordes definidos en CSS, y se sugirió usar 98.css, con licencia MIT, para lograr un aspecto más fiel.
+
+Pasamos a la siguiente noticia.
+
+Una herramienta para desactivar Apple Intelligence en macOS 27 y recuperar espacio en disco
+El proyecto de GitHub RemoveMacAI ofrece una herramienta para desactivar Apple Intelligence en macOS 27 y recuperar el espacio en disco que ocupan esas funciones de IA, aunque un comentarista señala que es principalmente un envoltorio del proyecto existente pared. Aborda la creciente frustración por las funciones de IA incluidas y el bloatware de almacenamiento, especialmente para quienes usan Mac con poca capacidad; la alta participación en torno al repositorio muestra una demanda clara de mayor control sobre macOS. Apple Intelligence solo está disponible en Mac con chip de Apple e incluye funciones como herramientas de escritura, generación de imágenes, resúmenes de notificaciones e integración con ChatGPT; un comentarista identifica la herramienta RemoveMacAI como un envoltorio de github.com/4evy/pared.
+
+Pasamos a la siguiente noticia.
+
+Destilan la función de valor de Stockfish en ResNet/ViT y publican 3.9B posiciones
+El proyecto destiló la función de valor de Stockfish en un modelo híbrido ResNet/ViT usando mil millones de posiciones del conjunto de datos Gigafish y publicó en Hugging Face el conjunto de datos completo de 3.9 mil millones de posiciones construido a partir de 37 meses de partidas de Lichess. Esto sugiere que las aproximaciones aprendidas de la búsqueda profunda de un motor podrían competir con las redes NNUE compactas y ofrecer evaluaciones más rápidas, lo que podría influir en el futuro de la IA de ajedrez y en los enfoques de destilación de modelos. El autor mantuvo constante la profundidad de búsqueda para aproximar el subárbol bajo la función de valor, y observó que una CNN aprendía más rápido al inicio gracias a los sesgos inductivos geométricos, mientras que un vision transformer era inicialmente lento; los mejores resultados surgieron al combinar ambos.
+
+Pasamos a la siguiente noticia.
+
+Explicación de interruptores de efecto Hall, TMR y otros sensores magnéticos
+Ars Technica publicó una guía que explica cómo funcionan los interruptores de efecto Hall, TMR y otras nuevas tecnologías de detección para teclados, y por qué están reemplazando los contactos mecánicos tradicionales. La guía ayuda a los entusiastas del hardware a comprender los teclados de interruptores magnéticos, que pueden ofrecer respuesta más rápida, puntos de activación ajustables y una vida útil más larga que los interruptores de contacto. Los interruptores de efecto Hall usan un imán y un sensor para medir cambios en el campo magnético, mientras que los interruptores TMR se basan en una unión de túnel magnética con capas ferromagnéticas y una barrera aislante delgada.
+
+Pasamos a la siguiente noticia.
+
+Demostración interactiva de ataques de inyección de prefijo para jailbreaking de LLM
+Una publicación de Reddit de /u/big_hole_energy comparte una demostración interactiva que permite experimentar con ataques de inyección de prefijo para hacer jailbreaking en modelos de lenguaje grandes, y advierte que puede ser lenta y requerir recargar la página. Ofrece a investigadores de seguridad y profesionales del aprendizaje automático una forma práctica de observar cómo la inyección de prefijo puede eludir los controles de seguridad de los LLM, algo relevante a medida que estos modelos se exponen cada vez más a entradas no confiables. La demostración vinculada parece usar un LLM de 1 bit y muestra un prefijo afirmativo inyectado en una carga útil del LLM con un mensaje del sistema. Se advierte a los usuarios que la página puede ser lenta y que quizá deba recargarse.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
