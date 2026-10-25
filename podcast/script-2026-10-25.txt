@@ -1,0 +1,212 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 25 de octubre de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+PHP publica actualización de seguridad para dos vulnerabilidades de ejecución remota de código.
+PHP publicó actualizaciones de seguridad para todas las versiones PHP 8.x el 21 de octubre de 2026, corrigiendo dos vulnerabilidades de ejecución remota de código (RCE) que ya tienen exploits circulando a causa de una filtración en el proceso de divulgación coordinada. Estas vulnerabilidades afectan a todas las versiones PHP 8.x y están siendo explotadas activamente, por lo que actualizar de inmediato es fundamental para cualquier sitio web o aplicación que use PHP y evitar una posible toma de control por parte de atacantes. La puntuación CVSS es 9.2 (no el 10.0 filtrado originalmente). La divulgación coordinada inicial se vio interrumpida cuando los identificadores CVE y un video de prueba de concepto de la firma de seguridad Calif se filtraron en línea, acelerando el desarrollo de exploits. Wiz Research descubrió las vulnerabilidades usando herramientas de IA como Gemini 4 Argon y GPT-5.6 Sol.
+
+Pasamos a la siguiente noticia.
+
+Comprometidas las claves privadas de CA intermedia de eMudhra: actualizaciones de emergencia
+Se comprometieron las claves privadas de ocho certificados de CA intermedia de eMudhra, lo que permitiría a un atacante emitir certificados TLS fraudulentos. Los almacenes de confianza de Mozilla, Microsoft, Apple y Chrome están afectados, y se han publicado listas de certificados actualizadas en uv 0.13.4, pip 26.2.2 y certifi 2026.10.19. Se trata de una brecha grave en la confianza de la infraestructura de clave pública (PKI): las claves intermedias comprometidas pueden usarse para suplantar cualquier sitio web, interceptar tráfico cifrado y debilitar HTTPS. Millones de usuarios y cualquier software que dependa de los programas raíz afectados necesitan actualizaciones inmediatas para revocar la confianza en los certificados comprometidos. Se expusieron ocho claves privadas de CA intermedias, que enlazan con raíces confiables para Mozilla, Microsoft, Apple y Chrome. La mitigación requiere actualizar los paquetes de certificados CA; las correcciones específicas incluyen uv 0.13.4, pip 26.2.2 y certifi 2026.10.19, y las distribuciones de Linux deben parchear ca-certificates.
+
+Pasamos a la siguiente noticia.
+
+Deberíamos ser más ambiciosos con el software que construimos
+Un nuevo ensayo de Dan Luu sostiene que la industria del software debería perseguir metas más ambiciosas en lugar de conformarse con mejoras incrementales, y generó un intenso debate en Hacker News con 479 puntos y 417 comentarios. El ensayo desafía a la comunidad del software a repensar su enfoque en mejoras marginales de rendimiento en un momento en que las herramientas de IA están eliminando los cuellos de botella de la codificación, lo que podría cambiar la forma en que los equipos priorizan y construyen tecnología transformadora. Los comentarios de la comunidad destacan que la fricción organizativa y la baja calidad del software en el mundo real persisten incluso cuando la IA acelera la codificación individual, con ejemplos que incluyen configuraciones no documentadas en bombas de calor, un SDK personalizado para dispositivos de tinta electrónica Kobo y un armazón GUI nativo en Rust como alternativa a Electron.
+
+Pasamos a la siguiente noticia.
+
+Cerebras despliega modelos de IA de un billón de parámetros en hardware a escala de oblea
+Cerebras ha detallado cómo implementa modelos de IA de un billón de parámetros en su hardware de motor a escala de oblea, compartiendo detalles de implementación para una inferencia de baja latencia. Los modelos de un billón de parámetros están en la frontera de la capacidad de IA, pero normalmente requieren muchas GPU e infraestructura compleja; el enfoque a escala de oblea de Cerebras podría ofrecer una inferencia más rápida y eficiente para estos modelos, reduciendo potencialmente costos y latencia en los servicios de IA. Según se informa, el sistema solo transmite activaciones entre obleas mediante RDMA sobre Ethernet para lograr baja latencia, y el chip WSE-3 de Cerebras incluye 4 billones de transistores y 900.000 núcleos de IA; sin embargo, el artículo no aclara cómo se acelera el prefill en esa interconexión, y los miembros de la comunidad señalan que se citan pruebas de precisión total mientras que en la práctica se usa cuantización de 4 bits.
+
+Pasamos a la siguiente noticia.
+
+Goose: un lenguaje de sistemas seguro sin montículo ni recolector de basura
+Se ha presentado el lenguaje de programación Goose, creado por Wouter van Oortmerssen, como un lenguaje de sistemas que elimina la asignación en montículo, la recolección de basura y las anotaciones de vida útil al colocar todos los valores dinámicos en pilas de datos gestionadas por el compilador. El anuncio ha generado una amplia discusión en Hacker News con 436 puntos y 269 comentarios. Goose ofrece una alternativa potencial a C++ y Rust para la programación de sistemas al proporcionar seguridad de memoria sin gestión manual de memoria, sobrecarga de recolección de basura ni anotaciones complejas de vida útil. Si cumple sus afirmaciones de rendimiento, podría influir en cómo el software de bajo nivel futuro maneja los datos dinámicos. Goose no utiliza montículo, recolector de basura ni anotaciones de vida útil; los valores dinámicos viven en línea en pilas de datos gestionadas por el compilador y la memoria se libera automáticamente al finalizar el ámbito. Los primeros comentarios de la comunidad señalan una inexactitud en el tutorial respecto a la optimización de cadenas pequeñas de C++ y plantean dudas sobre cómo representar un número arbitrario de valores de tamaño dinámico.
+
+Pasamos a la siguiente noticia.
+
+Estados Unidos ha perdido 200 mil empleos en medios, cine y artes. ¿Cuánto se debe a la IA?
+
+Pasamos a la siguiente noticia.
+
+Análisis de la caída de 200 mil empleos en medios, cine y artes en Estados Unidos y cuánto de esa pérdida puede atribuirse a la IA.
+
+Pasamos a la siguiente noticia.
+
+Node2Shell evoluciona a HTTP2Shell y amplía su impacto a muchas bibliotecas y aplicaciones HTTP
+La vulnerabilidad de descompresión Brotli CVE-2026-111497, inicialmente conocida como Node2Shell en Node.js, ha demostrado afectar a muchas otras bibliotecas y aplicaciones HTTP, lo que llevó a los investigadores a renombrarla HTTP2Shell. Se trata de una escritura fuera de límites que puede permitir la ejecución remota de código sin autenticación al procesar datos Brotli maliciosos. Esta vulnerabilidad crítica de ejecución remota de código sin autenticación afecta a una amplia gama de bibliotecas y aplicaciones HTTP más allá de Node.js, lo que amplía considerablemente la superficie de ataque y la cantidad de sistemas que deben actualizarse. CVE-2026-111497 es una escritura fuera de límites en el decodificador Brotli de Google que se activa al descomprimir datos controlados por el atacante; Node.js la corrigió en la publicación de seguridad del 21 de octubre de 2026, pero muchas otras bibliotecas y aplicaciones HTTP que utilizan Brotli siguen vulnerables hasta que apliquen sus propias actualizaciones.
+
+Pasamos a la siguiente noticia.
+
+Anthropic dona el estándar Agent Skills a la Agentic AI Foundation
+Anthropic anunció el 22 de octubre de 2026 que dona el estándar Agent Skills a la Agentic AI Foundation (AAIF) bajo el paraguas de la Linux Foundation, que cofundó con Block y OpenAI y a la que ya había donado el Model Context Protocol (MCP). Esta donación coloca Agent Skills bajo una gobernanza neutral e impulsada por la comunidad, lo que reduce la fragmentación y fomenta la interoperabilidad entre productos de agentes de IA, de forma similar a la transición anterior de MCP. Señala una creciente alineación de la industria en torno a estándares abiertos para la IA agéntica. El formato Agent Skills fue desarrollado originalmente por Anthropic y lanzado como estándar abierto; contiene código ejecutable que los agentes pueden ejecutar y ha sido adoptado por un número creciente de productos de agentes. La AAIF es una fundación neutral y abierta alojada por la Linux Foundation, a la que se donó la especificación MCP en diciembre de 2025.
+
+Pasamos a la siguiente noticia.
+
+Vacuna de ARNm de Moderna y Merck reduce muerte y recurrencia del melanoma en 42%
+Moderna y Merck publicaron resultados preliminares que muestran que su vacuna personalizada de ARNm contra el cáncer redujo en un 42% el riesgo de muerte o recurrencia en pacientes con melanoma, tras informes previos de que el ensayo alcanzó su criterio de valoración principal. Estos resultados destacan el potencial de las vacunas personalizadas de ARNm contra el cáncer para mejorar los desenlaces en melanoma de alto riesgo cuando se combinan con inmunoterapia estándar, lo que podría reconfigurar el tratamiento adyuvante si se confirma en estudios en etapas avanzadas y revisados por pares. El anuncio se basa en datos preliminares y aún no ha sido revisado por pares; el resumen proporcionado no detalla la fase del ensayo, el número de pacientes ni la duración del seguimiento, por lo que la reducción del 42% debe interpretarse con cautela.
+
+Pasamos a la siguiente noticia.
+
+Meta desacata orden judicial brasileña para terminar favoritismo a Bolsonaro
+Meta supuestamente no acató una orden judicial brasileña que exigía poner fin al supuesto favoritismo hacia el expresidente Jair Bolsonaro. Además, la IA de Meta generó respuestas que coincidieron con números electorales brasileños, lo que avivó las denuncias de sesgo algorítmico. La disputa pone de relieve las tensiones entre las plataformas tecnológicas globales y los reguladores nacionales en torno a la influencia política y la transparencia algorítmica. Podría sentar precedentes sobre cómo los países pueden hacer cumplir normas de moderación de contenido y sesgo en las grandes plataformas. La petición judicial citaría solo dos casos en los que la IA de Meta respondió '13' y '22' a solicitudes de números aleatorios, que corresponden a códigos de partidos brasileños, y las instrucciones no mencionaban elecciones. Esto debilita la afirmación de sesgo sistemático.
+
+Pasamos a la siguiente noticia.
+
+Programas y lenguajes pequeños
+El artículo examina lenguajes y programas pequeños, y la discusión en Hacker News aporta ejemplos notables como intérpretes mínimos y alternativas simples a la compilación a bytecode. Los comentaristas compartieron programas diminutos específicos en uxn y Cálculo Lambda Binario, y discutieron la generación directa de código máquina en lugar de bytecode. Explorar programas y lenguajes mínimos desafía las suposiciones sobre la complejidad necesaria y puede conducir a sistemas más eficientes y fáciles de entender. Esto es relevante para desarrolladores que trabajan en sistemas embebidos con restricciones, herramientas educativas y aplicaciones críticas de rendimiento. Ejemplos notables de la discusión incluyen un decodificador hexadecimal de 39 bytes y un convertidor JSON a NDJSON de 125 bytes en uxn, un autointérprete de 21 bytes para Cálculo Lambda Binario, y un juego de cartas de 1853 bytes con gráficos y sonido. Un comentarista argumenta que usar código máquina como bytecode simplifica el proceso de compilación y mejora la velocidad, mientras que otros señalan los beneficios de portabilidad del bytecode.
+
+Pasamos a la siguiente noticia.
+
+Wikipedia local: Wikipedia, pero solo para cosas a media hora de camino a pie desde ti
+Local Wikipedia permite consultar artículos de Wikipedia sobre lugares y cosas cercanas a una distancia de media hora a pie, generando una interesante discusión comunitaria sobre proximidad y relevancia.
+
+Pasamos a la siguiente noticia.
+
+Recurso académico explora por qué la física cuántica es difícil de entender
+Se compartió y discutió una página académica de 2018 de la Universidad de Southampton que examina las dificultades conceptuales de la física cuántica, lo que llevó a los lectores a sugerir métodos de aprendizaje alternativos. La discusión muestra que las introducciones tradicionales a la mecánica cuántica pueden abrumar a los estudiantes y señala enfoques más accesibles, lo que podría mejorar la educación científica y ampliar la comprensión de los conceptos cuánticos. Los comentaristas recomiendan aprender mecánica cuántica mediante álgebra lineal de sistemas de uno y dos cúbits a un nivel de precálculo, y mencionan libros como Basic Concepts of Quantum Mechanics de Tarasov y Picturing Quantum Processes de Coecke.
+
+Pasamos a la siguiente noticia.
+
+Moonshot AI lanza Kimi K3.1 Pro, pesos abiertos el 4 de noviembre
+Moonshot AI lanzó Kimi K3.1 Pro en su API el 23 de octubre de 2026, con benchmarks competitivos frente a Claude Opus 5.5 y GPT-6 Astra, y precios de $2 por millón de tokens de entrada y $10 por millón de tokens de salida. La compañía promete pesos abiertos completos para el 4 de noviembre de 2026, y también ofrece una versión Highspeed que es 2-3 veces más rápida al doble de precio. Este lanzamiento indica que los modelos de pesos abiertos de laboratorios chinos ahora pueden rivalizar con los modelos propietarios de frontera, lo que podría reducir costos y aumentar la accesibilidad para los desarrolladores de IA. Los precios agresivos pueden presionar a los proveedores estadounidenses a ajustar sus tarifas. Kimi K3.1 Pro cuenta con una ventana de contexto de 1 millón de tokens y es un sucesor post-entrenado de Kimi K3, según OpenRouter. Si bien el modelo tendrá pesos abiertos, la licencia personalizada de Moonshot puede requerir compartir ingresos de hasta el 30% para proveedores de inferencia que generen más de $20 millones anuales, como con los modelos Kimi anteriores.
+
+Pasamos a la siguiente noticia.
+
+Simon Willison reflexiona sobre la pérdida del placer de programar
+Simon Willison compartió el ensayo de Jeremy Scheff "Mi obituario de la programación", que destaca cómo los agentes de codificación y los LLM han eliminado el placer de resolver acertijos que muchos programadores valoraban. El artículo contrasta a quienes se centran en construir sistemas con quienes disfrutaban resolviendo problemas de lógica. Esta reflexión captura el impacto emocional y profesional de las herramientas de codificación con IA en los desarrolladores de software, señalando un cambio en lo que hace satisfactoria la programación. Es relevante para la industria tecnológica y para los desarrolladores que deben adaptar sus habilidades y roles. El artículo cita la observación de Jeremy Scheff de que antes la programación ofrecía trabajo remunerado en acertijos de lógica difíciles; con los agentes de codificación, los aspectos estratégicos y de resolución de problemas se reducen. Simon Willison señala que los LLM son un "regalo" para quienes se preocupan por construir sistemas, pero una pérdida real para quienes disfrutaban de los acertijos.
+
+Pasamos a la siguiente noticia.
+
+La actualización de privacidad de Google podría usar Gmail para anuncios
+Google ha actualizado su política de privacidad para indicar que el contenido de Gmail podría utilizarse para la segmentación de anuncios si los usuarios activan la función Personal Intelligence. Este cambio suscita preocupaciones de privacidad para los usuarios de Gmail, ya que el contenido del correo personal podría usarse para orientar anuncios, lo que hace más importantes la transparencia y el consentimiento del usuario. Personal Intelligence es una función opcional de Gemini que conecta aplicaciones como Gmail, Fotos, Búsqueda y YouTube para ofrecer respuestas personalizadas. Los usuarios controlan qué aplicaciones vincular, pero la política actualizada aclara que activarla también puede permitir la segmentación de anuncios basada en los datos vinculados.
+
+Pasamos a la siguiente noticia.
+
+Reactor nuclear emblemático de EE. UU. enfrenta repetidos problemas de seguridad
+Un contratista cayó en la cavidad del reactor y un haz de barras de combustible estuvo a punto de volcarse en un proyecto emblemático de reinicio nuclear en EE. UU., sumándose a una serie de incidentes de seguridad. Los repetidos problemas de seguridad en un reinicio nuclear de alto perfil podrían minar la confianza pública y el respaldo regulatorio a la energía nuclear en un momento en que las autoridades la promueven como fuente confiable y baja en carbono. Los incidentes incluyen la caída de un contratista en la cavidad del reactor y un haz de barras de combustible que casi se volcó; el extracto proporcionado no identifica la central específica, las lesiones ni las fechas exactas.
+
+Pasamos a la siguiente noticia.
+
+Arquitectura de memt-1.0: Gated DeltaNet-2 y mixture-of-storage logran memoria de agente 66 veces más compacta
+memt-1.0 integra la memoria directamente en la capa de cómputo del modelo mediante gated DeltaNet-2 con un mecanismo estable de actualización de memoria a nivel de token y una capa de mixture-of-storage, en lugar de usar apilamiento incremental de prompts o pipelines RAG externos. Con un historial de 128k tokens, memt-1.0-nano logra aproximadamente 1,86x de aceleración de inferencia de extremo a extremo y una reducción del 66x en el almacenamiento persistente en comparación con una configuración de caché KV de contexto completo. Esta arquitectura podría ayudar a los agentes de horizonte largo a escapar del crecimiento lineal de memoria de las cachés KV, reduciendo significativamente los costos de almacenamiento y latencia sin sacrificar el razonamiento general. Podría permitir una memoria persistente más escalable para aplicaciones de agentes, reemplazando potencialmente el RAG externo o el apilamiento de contexto. El pipeline de entrenamiento en dos etapas —preentrenamiento continuado seguido de post-entrenamiento a lo largo de 34 mil millones de tokens— mantiene el razonamiento general competitivo mientras supera a las líneas base de memoria paramétrica existentes. La arquitectura emplea un mecanismo estable de actualización de memoria a nivel de token en cada turno, combinado con una capa de mixture-of-storage para escalar la capacidad.
+(R) La mente colmena es un único agente de aprendizaje por refuerzo: Derivando la equivalencia exacta entre la dinámica de enjambres y los bandidos multibrazo
+
+Pasamos a la siguiente noticia.
+
+Se demuestra una equivalencia matemática exacta entre la toma de decisiones colectiva por imitación local en enjambres y un agente de aprendizaje por refuerzo en un problema de bandidos multibrazo.
+
+Pasamos a la siguiente noticia.
+
+Transformer musical preentrenado improvisa en vivo mediante sesgos de muestreo sin fine-tuning
+Un usuario logró que el Anticipatory Music Transformer improvisara en vivo junto a un teclado MIDI ajustando los sesgos en los logits antes del muestreo, sin necesidad de fine-tuning. El sistema rastrea tonalidad, acorde y tempo, se ejecuta en un Jetson Orin Nano y el código está disponible en GitHub. Demuestra que es posible una colaboración musical humano-IA en tiempo real usando un modelo preentrenado y un control ligero, sin reentrenamiento costoso. Esto podría facilitar herramientas interactivas de creación musical y aplicaciones en vivo con modelos generativos. El método agrega sesgos a los logits de salida: penaliza notas fuera de tonalidad, refuerza tonos y tensiones del acorde, suprime notas cercanas a las manos del intérprete y fomenta la continuidad interválica con la última frase. El muestreo se adelanta aproximadamente un segundo y se vuelve a muestrear al cambiar el acorde; los desplazamientos están ajustados manualmente de oído.
+
+Pasamos a la siguiente noticia.
+
+Repensar la memoria de los LLM: saber qué olvidar importa más que recordar
+Una discusión en r/MachineLearning cuestiona si la investigación sobre memoria en LLM se centra demasiado en almacenar más información y poco en actualizar o descartar datos contradictorios, usando el ejemplo de un agente de programación donde un tiempo de espera (timeout) de una API cambia de 30 a 5 segundos. Examina arquitecturas como RAG, atención lineal, DeltaNet y BDH (Dragon Hatchling). La información obsoleta o contradictoria puede hacer que los agentes y asistentes basados en LLM actúen según conocimiento desactualizado, algo crítico en entornos dinámicos como el desarrollo de software o datos en tiempo real. Abordar los mecanismos de actualización de memoria podría mejorar la fiabilidad y seguridad de los sistemas de IA implementados. En Transformers y RAG, la información antigua y nueva puede coexistir, obligando al modelo a resolver conflictos en el momento de la lectura. La atención lineal simple acumula asociaciones en un estado compartido sin eliminar las antiguas; DeltaNet usa actualizaciones basadas en error de predicción, mientras que BDH (Dragon Hatchling) emplea plasticidad sináptica de tipo hebbiano, pero la cuestión de cuándo actualizar versus retener recuerdos sigue abierta.
+
+Pasamos a la siguiente noticia.
+
+Next-Concept Modeling: códigos discretos jerárquicos aceleran la generación de texto 31 veces
+Un nuevo artículo presenta Next-Concept Modeling (NCM), un marco de dos etapas de grueso a fino que codifica texto en una jerarquía de códigos discretos mediante un VQ-VAE residual multiescala. En lugar de predecir tokens de forma secuencial, NCM genera primero el nivel más grueso y luego predice todos los códigos dentro de cada nivel más fino en paralelo, reportando una generación hasta 31 veces más rápida que los modelos de lenguaje de difusión en ciertos benchmarks. Esto podría reducir significativamente la latencia de inferencia de los modelos de lenguaje, haciendo que la generación de texto a gran escala y en tiempo real sea más eficiente. También supone un alejamiento de la generación autorregresiva token a token hacia enfoques jerárquicos paralelos, compitiendo con los modelos de lenguaje de difusión en el panorama emergente de la generación no autorregresiva rápida. NCM es un marco de dos etapas: un VQ-VAE residual multiescala codifica el texto en una jerarquía de códigos discretos, y un transformer genera cada nivel secuencialmente de grueso a fino mientras predice todos los códigos dentro de un nivel en paralelo. La aceleración de 31 veces reportada es en comparación con modelos de lenguaje de difusión en benchmarks específicos, y los detalles sobre tamaño del modelo, datos de entrenamiento y compromisos de calidad requieren revisar el artículo completo.
+
+Pasamos a la siguiente noticia.
+
+Carbon-X: modelo abierto de 14.8B entrenado en ADN y texto
+Se ha liberado Carbon-X, un modelo decodificador de 14.8B parámetros bajo licencia Apache 2.0. Procesa ADN crudo en un chat normal y responde en inglés, compartiendo un único flujo de tokens para texto y ADN mediante tokens de 6-mer, y fue entrenado de forma intermedia con 302B tokens. Este modelo abierto acerca el análisis de secuencias de ADN al rendimiento del propietario GPT-6.1 Sol (66,7% frente a 67,5% de media en cinco benchmarks de ADN), lo que permite un análisis local y que preserva la privacidad de conjuntos de datos genómicos sensibles sin depender de la nube. Su licencia permisiva Apache 2.0 reduce las barreras para la investigación y el uso comercial en bioinformática. Los pesos caben en una única GPU de 80 GB en bfloat16 y el modelo logra un 66,7% de media en cinco benchmarks de ADN con el pensamiento desactivado. La ficha del modelo indica que no ha sido validado clínicamente y que las operaciones exactas de secuencias deben seguir manejándose con código.
+
+Pasamos a la siguiente noticia.
+
+FreeDNS: servicio gratuito de DNS estable tras décadas, pero sin PSL
+FreeDNS sigue activo y estable tras casi dos décadas, según los comentarios de la comunidad, sin cambios importantes; sin embargo, sus dominios no figuran en la lista de sufijos públicos, lo que puede provocar problemas de seguridad con las cookies. Como servicio de DNS gratuito y duradero, FreeDNS reduce las barreras para pruebas y proyectos personales; la ausencia de entrada en la PSL afecta al aislamiento de cookies en el navegador, lo cual es relevante para quienes despliegan aplicaciones en sus subdominios y para el ecosistema de DNS gratuito. FreeDNS ofrece subdominios gratuitos, DNS dinámico, IPv6 y DNS de respaldo; los comentarios señalan que no tiene entrada en la PSL y sugieren alternativas como desec.io, nic.eu.org y dns.he.net.
+
+Pasamos a la siguiente noticia.
+
+Quick Study de Simon Willison convierte fotos en pinturas al óleo simuladas
+Simon Willison presentó Quick Study, una herramienta en el navegador que usa canvas de HTML y detección de bordes de Sobel para repintar rápidamente una foto cargada como una pintura al óleo simulada en pocos segundos, creada a partir de una indicación para Claude Opus 5.5 High. Muestra programación creativa y generación de herramientas asistida por IA, demostrando cómo la detección de bordes puede producir efectos artísticos sin dependencias pesadas; puede inspirar experimentos similares de procesamiento de imágenes en navegadores web. Quick Study utiliza detección de bordes de Sobel para guiar trazos de pincel simulados y no emplea bibliotecas externas más allá de Google Fonts; se basa en el experimento anterior Pelican Watercolor de Simon Willison con P5.js.
+
+Pasamos a la siguiente noticia.
+
+Battle Drones: un RTS creado con vibe coding y multijugador por audio
+Simon Willison ha lanzado Battle Drones, un RTS basado en navegador que desarrolló mediante vibe coding con agentes de IA a lo largo de 12 iteraciones principales y 321 commits. Incluye modelos 3D, niebla de guerra, varios mapas y multijugador que sincroniza el estado entre dispositivos cercanos mediante audio. Esto demuestra cómo el 'vibe coding' asistido por IA puede producir rápidamente un juego jugable y divertido con funciones multijugador, reduciendo las barreras para el desarrollo indie. Destaca el uso novedoso del audio para sincronizar el multijugador local cuando no hay conexión de red disponible. Battle Drones se construyó principalmente con Claude Code e incluye 9 edificios, 7 vehículos terrestres, 6 vehículos aéreos, 3 unidades de infantería y 6 mapas. La función multijugador por audio sincroniza dos dispositivos dentro del alcance del micrófono, aunque más tarde se añadió multijugador en línea debido a problemas.
+
+Pasamos a la siguiente noticia.
+
+Ucrania aprende a combatir sin Starlink mientras Musk usa los satélites políticamente
+Ucrania ha modificado su tecnología de drones y de combate para reducir la dependencia de las comunicaciones satelitales de Starlink. Este cambio es importante porque Starlink, operado por SpaceX, ha sido una columna vertebral de comunicaciones para el ejército ucraniano, y reducir la dependencia de un único proveedor comercial disminuye el riesgo geopolítico y operativo. El artículo no especifica qué tecnologías alternativas está adoptando Ucrania, pero señala el alejamiento de Starlink, que opera una constelación de satélites en órbita terrestre baja con aproximadamente 11.150 satélites en octubre de 2026.
+
+Pasamos a la siguiente noticia.
+
+Acceso homebrew en Switch 2 mediante desbordamiento de enteros en SmileBasic
+Los hackers han logrado acceso homebrew en la Nintendo Switch 2 explotando una vulnerabilidad de desbordamiento de enteros en el intérprete de SmileBasic, según Ars Technica. Este exploit de espacio de usuario brinda a los desarrolladores de homebrew un punto de apoyo para ejecutar software personalizado y modificar juegos en la Switch 2, lo que podría dar lugar a un ecosistema homebrew más amplio o a un mayor desarrollo de exploits. El exploit es de nivel de espacio de usuario, no un jailbreak completo del kernel; abusa de un desbordamiento de enteros en el intérprete de SmileBasic para lograr la ejecución de código en el entorno de espacio de usuario.
+
+Pasamos a la siguiente noticia.
+
+Última estimación: 22 lanzamientos de Starship necesarios para apoyar un alunizaje
+La estimación más reciente indica que se requieren 22 lanzamientos de Starship para apoyar un solo alunizaje, principalmente debido a la necesidad de múltiples vuelos de reabastecimiento de combustible en órbita para el módulo lunar. Esto resalta la enorme complejidad logística y el costo operativo de la arquitectura de alunizaje del programa Artemis de la NASA, ya que cada misión tripulada a la Luna depende de un gran número de lanzamientos solo para reabastecer el módulo en órbita. Podría afectar la confiabilidad del calendario y la capacidad de SpaceX para mantener la alta cadencia de lanzamientos requerida. Se espera que los 22 lanzamientos incluyan el depósito de propelente, múltiples vuelos cisterna para llenarlo y el propio Starship HLS; la composición exacta ha cambiado con el tiempo a medida que evoluciona el diseño. El reabastecimiento orbital requiere transferir propelentes criogénicos como oxígeno líquido y metano líquido en el espacio.
+
+Pasamos a la siguiente noticia.
+
+Comcast pierde clientes, tacha de irracionales los precios bajos y recortará empleo con IA
+Comcast registró más pérdidas de clientes de cable y planea recortes de empleo y mayor uso de agentes de IA. La empresa calificó de "irracionales" los precios bajos de sus competidores. Esto refleja la presión de alternativas más baratas sobre los proveedores de cable tradicionales y su apuesta por la automatización con IA para recortar costos, lo que puede afectar la calidad del servicio y el empleo en el sector de telecomunicaciones. El informe no detalla cuántos empleos se eliminarán ni las funciones exactas de los agentes de IA. Se menciona la base de clientes de cable en disminución como causa, pero no se ofrecen cifras concretas de pérdidas en el resumen disponible.
+
+Pasamos a la siguiente noticia.
+
+SpeedCrunch 1.1 lanzada tras una década con corrección de precedencia de operadores
+SpeedCrunch 1.1 ha sido lanzada después de una pausa de diez años, con una corrección en la precedencia de operadores de modo que expresiones como 1/2(-9.8) ahora se evalúan correctamente como -4.9 en lugar de -0.051. Esta actualización corrige un error de larga data que podía producir resultados incorrectos en la multiplicación implícita, mejorando la fiabilidad de una calculadora de código abierto que muchos todavía usan a diario. Sin embargo, algunos usuarios informan de regresiones en la interfaz y retraso en la entrada, lo que genera debate sobre las ventajas y desventajas de la nueva versión. La corrección cambia específicamente cómo el menos unario interactúa con la multiplicación implícita, y el editor de expresiones ahora muestra un signo de multiplicación explícito para aclarar. Algunos usuarios han notado que la caja de entrada se hizo más grande con más espacio vacío y que la escritura se siente lenta en comparación con la versión 0.12.
+battledrones v14 añade Compass Rose, un mapa para cuatro jugadores
+Simon Willison lanzó battledrones v14, que añade el nuevo mapa Compass Rose con soporte para hasta cuatro jugadores; antes todos los mapas estaban limitados a dos. La actualización también amplió el modo multijugador en línea basado en WebSockets para permitir hasta cuatro jugadores humanos, llenando los huecos con IA, y se implementó con ayuda de Claude Opus 5.5. Este lanzamiento muestra cómo un proyecto de juego personal puede añadir rápidamente capacidades multijugador utilizando un asistente de codificación con IA como Claude Opus 5.5, lo que facilita a los desarrolladores individuales ampliar funciones. También ofrece a los jugadores un nuevo mapa de cuatro bandos y colores de robots, mejorando la variedad y la rejugabilidad. El mapa Compass Rose utiliza el bioma de frío y hielo y presenta simetría rotacional cuádruple; los nuevos equipos de robots morados y verdes se suman a los diseños azul y rojo existentes. Se modificó el código de red multijugador para soportar cuatro jugadores en ese mapa, con acceso mediante enlaces compartidos o códigos QR, y hay un enlace de repetición para una batalla de IA entre cuatro bandos con el mutador Goliath Armada.
+
+Pasamos a la siguiente noticia.
+
+Simon Willison cita a Ronacher sobre software heredado y riesgos de IA
+Simon Willison publicó una cita de Armin Ronacher en su blog, destacando la observación de Ronacher de que, a pesar del disfrute de la IA, décadas de software de mala calidad están generando consecuencias. Esto resuena con las preocupaciones actuales sobre la seguridad de la IA, ya que las vulnerabilidades del software heredado pueden ser explotadas o amplificadas por los sistemas de IA, afectando tanto a desarrolladores como a usuarios. La cita fue publicada originalmente en Twitter/X por Armin Ronacher (ID de estado 2113207589978636646) y fue compartida por Willison sin comentarios adicionales; la publicación está etiquetada con seguridad, IA generativa y LLM.
+llm-echo 0.5 actualiza el conteo simulado de tokens para herramientas y razonamiento
+La versión 0.5 del plugin de depuración llm-echo actualiza sus conteos simulados de uso de tokens para considerar llamadas a herramientas, prompts de sistema y tokens de razonamiento. Esto es importante para los desarrolladores que usan llm-echo para depurar integraciones de LLM sin llamar a modelos reales, ya que ahora ofrece estimaciones de uso de tokens más precisas que reflejan el comportamiento real de las APIs. El plugin añade un modelo 'echo' que devuelve los detalles del prompt como JSON sin llamar a una API; el ejemplo muestra 2 tokens de entrada y 24 de salida para un prompt simple con razonamiento activado.
+
+Pasamos a la siguiente noticia.
+
+Expansión de la capa de hielo Laurentide pudo comenzar hace 2.000 años, pero fue cancelada
+Una nueva investigación sugiere que la capa de hielo Laurentide pudo haber comenzado a expandirse hace unos 2.000 años, pero la influencia humana detuvo este recrecimiento impulsado por el enfriamiento natural. Los pequeños restos de la capa de hielo empezaron a ser un poco menos pequeños antes de que el calentamiento causado por el ser humano detuviera la expansión. Este hallazgo destaca cómo la actividad humana ha alterado los ciclos climáticos naturales a largo plazo; sin las emisiones de gases de efecto invernadero, la capa de hielo podría haber vuelto a crecer, afectando el nivel del mar global y los climas regionales. El estudio se centra en la capa de hielo Laurentide, que llegó a cubrir más de 13 millones de kilómetros cuadrados; la evidencia indica que la expansión comenzó hace unos 2.000 años pero fue cancelada por el calentamiento causado por el ser humano.
+
+Pasamos a la siguiente noticia.
+
+NASA actualiza planes de alunizaje y resuelve problema persistente de Orión
+La NASA anunció actualizaciones en sus planes de módulo de aterrizaje lunar para las próximas misiones Artemisa y afirmó haber resuelto un problema persistente de la nave Orión. Un funcionario de la NASA destacó que la agencia cuenta con el mandato, los recursos y el apoyo de las partes interesadas para avanzar. Estas actualizaciones son importantes para el objetivo del programa Artemisa de devolver seres humanos a la Luna y establecer una presencia sostenible; resolver el problema de Orión elimina un obstáculo clave para las misiones lunares tripuladas. Los proveedores comerciales de módulos de aterrizaje, SpaceX y Blue Origin, se verán directamente afectados por los planes revisados. No se proporcionaron detalles técnicos específicos sobre las actualizaciones del plan del módulo de aterrizaje ni sobre el problema de Orión en el contenido disponible. Según Wikipedia, la NASA planea probar uno o ambos vehículos del sistema de aterrizaje humano en órbita terrestre a mediados de 2027, con el primer alunizaje tripulado previsto para 2028.
+
+Pasamos a la siguiente noticia.
+
+Spotify exigirá verificación por código QR en planes familiares
+Spotify está intensificando la aplicación de su política de planes familiares, que exige que todos los miembros vivan en la misma dirección; ahora se podría solicitar escanear un código QR para verificar la convivencia. Este cambio busca frenar el uso compartido no autorizado de suscripciones familiares, lo que podría aumentar los ingresos de Spotify, pero podría añadir fricciones a los usuarios legítimos que deban demostrar convivencia. Los detalles sobre cómo funcionará exactamente la verificación con código QR no están claros, y se desconoce si afectará a todos los suscriptores de planes familiares o solo a los señalados para investigación.
+
+Pasamos a la siguiente noticia.
+
+Intel obtiene exención para robots extranjeros en fábricas de chips de EE.UU.
+Intel ha recibido una exención del gobierno de EE. UU. para seguir usando robots móviles autónomos de fabricación extranjera en sus plantas de fabricación de semiconductores, los cuales la empresa considera fundamentales para la producción de chips. La exención pone de relieve las tensiones entre las restricciones de seguridad nacional y la dependencia de la industria de semiconductores de robótica extranjera especializada, lo que podría sentar un precedente para otros fabricantes de chips que enfrentan interrupciones similares en la cadena de suministro. La prohibición surge de una normativa de la FCC que añadió 'dispositivos robóticos avanzados' a su Lista Cubierta, bloqueando nuevas autorizaciones de equipos para robots de fabricación extranjera; la exención de Intel se aplica a robots móviles autónomos utilizados para transportar obleas dentro de las fábricas.
+
+Pasamos a la siguiente noticia.
+
+Knicks envió a empleados falsa oferta de anillos de campeonato en prueba de phishing
+Según un informe, los New York Knicks realizaron una prueba interna de phishing con una falsa oferta de anillos de campeonato, un cebo especialmente cruel para los empleados. Esto ilustra hasta dónde llegan las organizaciones para evaluar la susceptibilidad de los empleados a la ingeniería social; aunque las simulaciones de phishing son habituales, los cebos emocionalmente manipuladores pueden generar preocupaciones sobre la confianza y el bienestar de los empleados. Las simulaciones de phishing suelen implicar correos engañosos enviados internamente para medir si los empleados hacen clic en enlaces o introducen credenciales, pero el informe sobre los Knicks no ofreció detalles técnicos sobre la página de destino o el seguimiento.
+
+Pasamos a la siguiente noticia.
+
+Estudiante de posgrado reflexiona sobre publicaciones de pregrado en conferencias A sin supervisión
+Un estudiante de posgrado en Reddit publicó una reflexión sobre el creciente número de estudiantes de pregrado que publican en conferencias A sin supervisión. La tendencia plantea interrogantes sobre la mentoría, la calidad de la investigación y la equidad en el aprendizaje automático académico, ya que los estudiantes de pregrado sin supervisión pueden carecer de profundidad, pero su independencia es impresionante y podría cambiar las normas de formación de posgrado. La publicación no incluye comentarios, por lo que no se conoce la opinión de la comunidad; se trata de una observación breve, no de un informe técnico, y el autor es un estudiante de posgrado que se siente intimidado por los logros de los estudiantes de pregrado.
+
+Pasamos a la siguiente noticia.
+
+Discusión en Reddit: ¿Está muerta la IA simbólica y podría resurgir?
+Un usuario de Reddit en r/MachineLearning preguntó si la IA simbólica está muerta, señalando que nuevas investigaciones siguen reintroduciendo estructuras de IA simbólica en el aprendizaje automático. Sugiere que la IA simbólica podría resurgir si se resuelven problemas como la autoinstanciación y los bucles de retroalimentación, y menciona que usar varias redes de reservorio aleatorias con algo de matemáticas puede crear señales fuertes para las partes componentes. Esta discusión destaca la relevancia continua de la IA simbólica en la era del aprendizaje profundo, a medida que los enfoques híbridos neuro-simbólicos ganan terreno. Resolver la autoinstanciación y los bucles de retroalimentación podría desbloquear nuevas capacidades en sistemas de IA interpretables y basados en razonamiento. La IA simbólica fue el paradigma dominante desde los años 1950 hasta los 1990, pero decayó por cuellos de botella en la adquisición de conocimiento y fragilidad; las redes neuronales resurgieron con fuerza después de 2012. El usuario propone que combinar varias redes de reservorio aleatorias —una forma de red neuronal recurrente con dinámica fija— con análisis matemático puede ayudar a identificar partes componentes, pero la autoinstanciación y los bucles de retroalimentación siguen siendo desafíos sin resolver.
+
+Pasamos a la siguiente noticia.
+
+Buscan métodos de alta sensibilidad para detectar estenosis coronaria en angiogramas
+Un profesional de aprendizaje automático compartió un proyecto para detectar estenosis en arterias coronarias en angiogramas de rayos X, priorizando una alta sensibilidad y tolerando algunos falsos positivos. Descubrió que YOLO funcionaba bien dentro del dominio, pero fallaba al generalizar entre conjuntos de datos debido a diferencias en los formatos de anotación de las cajas, y está considerando un enfoque basado en perfiles de radio a lo largo de las líneas centrales de los vasos más una red de filtrado. Una detección de estenosis con alta sensibilidad podría ayudar a los cardiólogos en el cribado de angiogramas coronarios, donde omitir un estrechamiento es más riesgoso que marcar falsos positivos. La publicación también resalta un desafío común en la IA médica: evaluar modelos cuando las etiquetas de los expertos están incompletas, lo que afecta la confianza y el despliegue en el mundo real. El autor dispone de segmentación de vasos y líneas centrales, y observó que el fallo de YOLO entre conjuntos de datos se debía en parte a la falta de coincidencia en las anotaciones: uno usaba cajas de tamaño fijo alrededor de un punto y el otro cajas ajustadas a la lesión. Propone calcular perfiles de radio del vaso a lo largo de las líneas centrales para marcar estrechamientos y luego usar una red para filtrar candidatos, y señala que evaluar la sensibilidad con etiquetas médicas incompletas probablemente arroje resultados demasiado optimistas.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
