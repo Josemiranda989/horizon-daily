@@ -1,0 +1,48 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 8 de noviembre de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+Lo que ejecuto en mi homelab OpenStick de $10 USD
+
+Pasamos a la siguiente noticia.
+
+El autor describe qué servicios puede alojar en un dispositivo OpenStick de 10 dólares, demostrando la viabilidad de self-hosting con hardware mínimo.
+
+Pasamos a la siguiente noticia.
+
+La función 'No preguntar de nuevo' de Claude Code expone contraseñas en 1.122 archivos públicos
+Apiiro halló 1.122 archivos públicos de GitHub con configuraciones locales de Claude Code que guardaban comandos aprobados con contraseñas y claves API en texto plano después de que los usuarios pulsaran "Sí, y no volver a preguntar". Esto pone de relieve cómo los agentes de codificación de IA pueden filtrar secretos sin querer cuando se suben archivos de configuración local al control de versiones, afectando a desarrolladores y organizaciones que usan Claude Code y exponiendo credenciales a cualquiera que escanee repositorios públicos. La exposición proviene de archivos .claude/settings.local.json creados y subidos manualmente; Claude Code los añade automáticamente a .gitignore cuando los crea él. Los 1.122 archivos contenían secretos como contraseñas directamente en los comandos aprobados, y Anthropic está estudiando cómo prevenirlo, aunque históricamente ha dejado el borrado de secretos a herramientas específicas.
+
+Pasamos a la siguiente noticia.
+
+Desarrollador pasa de Claude al harness de terminal Pi para programar con LLM
+El autor del artículo describe su cambio de Claude de Anthropic a Pi, un harness de terminal personalizable para modelos de lenguaje de gran tamaño, y la publicación generó una discusión sustancial con 240 comentarios. Este cambio destaca una tendencia creciente entre desarrolladores de usar herramientas basadas en terminal que ofrecen mayor control y personalización sobre los flujos de trabajo con LLM, pasando de interfaces de chat directas a orquestar múltiples agentes y reducir interrupciones. Pi es un harness de codificación de terminal minimalista que admite extensiones, habilidades, plantillas de avisos y temas, y puede empaquetarse y compartirse mediante npm o git. Los comentarios de la comunidad señalan limitaciones como la falta de soporte integrado para subagentes y posibles violaciones de los Términos de Servicio al usarse con una suscripción de Anthropic.
+
+Pasamos a la siguiente noticia.
+
+Cómo expresar cualquier entero con cuatro doses (2025)
+Un artículo de 2025 de Eli Bendersky presenta un método para expresar cualquier entero usando exactamente cuatro doses y operaciones matemáticas, lo que generó una discusión en Hacker News con 156 puntos y 38 comentarios. El artículo reaviva el interés por un clásico rompecabezas de matemáticas recreativas, ilustrando cómo la elección de reglas afecta la expresividad y generando debates en la comunidad de HN sobre notación matemática y variantes del problema. El hilo de HN señala que las raíces cuadradas usan implícitamente un 2 (como en raíz cúbica o cuarta), que la concatenación como 22 es arbitraria en base 10, y menciona un problema de entrevista de ITA Software que pide el menor entero no expresable con el dígito K usado N veces bajo operaciones básicas.
+
+Pasamos a la siguiente noticia.
+
+Datasette deja de servir link rel=next a Firefox para evitar prefetch innecesario
+Simon Willison descubrió que las páginas de tabla de Datasette provocaban que Firefox precargara la página siguiente mediante un encabezado HTTP link rel=next, y abrió la incidencia 3046 para dejar de servir ese encabezado en páginas HTML. Esto elimina carga innecesaria en el servidor y consumo de ancho de banda, ya que solo una pequeña fracción de usuarios hace clic en siguiente; pone de relieve un comportamiento de navegador de larga data que puede perjudicar el rendimiento web. Firefox tiene un error abierto (Bugzilla 175418) sobre este comportamiento de precarga desde hace más de 24 años, y Willison había escrito al respecto en 2002; la solución es no emitir encabezados link rel=next en las respuestas de páginas HTML de Datasette.
+
+Pasamos a la siguiente noticia.
+
+GRFNet: modelo PyTorch ligero para clasificación de series temporales multicanal
+Un desarrollador presentó GRFNet, un modelo PyTorch de código abierto para clasificación de series temporales multicanal. Combina núcleos convolucionales aleatorios estilo ROCKET con filtros espaciales aprendidos, logrando solo 3.847 parámetros para una configuración de EEG de 22 canales y 4 clases. El modelo aborda desafíos clave del EEG, como conjuntos de datos pequeños y alta variabilidad entre sujetos, mediante una arquitectura de pocos parámetros que podría generalizar mejor. Su capacidad de adaptarse a cualquier longitud de entrada y frecuencia de muestreo podría hacerlo ampliamente útil para decodificación de EEG y otras tareas de series temporales multicanal. La arquitectura aprende filtros espaciales que mezclan los canales de entrada, opcionalmente inicializados a partir de las posiciones de los electrodos, y luego pasa los componentes por un banco de convoluciones dilatadas aleatorias en su mayoría congeladas con algunos núcleos aprendibles. Las estadísticas de resumen se combinan mediante una puerta aprendida y se clasifican por una cabeza pequeña; el autor planea una evaluación independiente del sujeto en PhysioNet EEGMMIDB y comparaciones con EEGNet y ShallowConvNet.
+
+Pasamos a la siguiente noticia.
+
+Usuario de Reddit propone usar modelos de difusión para generar pesos de redes neuronales
+Un usuario de Reddit presentó una prueba de concepto que entrena un modelo de difusión para generar pesos de redes neuronales en lugar de imágenes, con el objetivo de crear redes a partir de descripciones en lenguaje natural como dibujar un hombre o jugar Pong. El experimento, construido con ZCode de Z.ai y el modelo GLM, está disponible en GitHub y ha alcanzado 3000 de 4000 pasos de entrenamiento en una CPU de portátil. Si tiene éxito, este enfoque podría permitir que la IA generativa produzca directamente redes neuronales funcionales para tareas específicas, evitando el entrenamiento convencional y expandiéndose más allá de la generación de imágenes o texto. Sin embargo, el concepto se superpone con investigaciones existentes sobre hiperredes y búsqueda de arquitecturas neuronales, y los resultados preliminares carecen de validación rigurosa. La prueba de concepto trata los pesos de la red neuronal como la distribución de datos objetivo para un proceso de difusión, en lugar de las intensidades de píxeles como en la generación de imágenes. El repositorio de GitHub del autor (github.com/vagrillo/nngen) incluye una aplicación web para pruebas, pero el entrenamiento está incompleto y solo se muestran los mejores resultados preliminares.
+
+Pasamos a la siguiente noticia.
+
+Modelo VLA entrenado localmente con codificador de visión de atención mínima
+Un usuario de Reddit compartió el progreso de un modelo de visión-lenguaje-acción (VLA) entrenado localmente que utiliza un codificador de visión basado en atención mínima, operando directamente sobre píxeles RGB crudos de 128x128. El modelo mantiene una matriz de estado recurrente de 768x768 y fue entrenado en una sola GPU RTX 3060 de 12 GB. Este proyecto demuestra que un modelo VLA puede entrenarse en una GPU de consumo sin un codificador de visión preentrenado, lo que podría hacer que estos modelos sean más accesibles para aficionados y laboratorios pequeños. También explora una alternativa a los codificadores de visión basados en transformers dominantes, lo que podría inspirar investigación en agentes multimodales ligeros. El número total de parámetros es de 25.561.354, de los cuales 12.976.128 están dedicados a un decodificador de salida de vocabulario heredado de 49.000 tokens; el modelo se entrenó inicialmente con datos de lenguaje y luego se ajustó para tareas VLA. Procesa entradas de resolución variable durante la inferencia y muestra valores de atención por píxel para la resolución de problemas, pero el autor no comparó la velocidad de arranque con un punto de control nuevo.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
