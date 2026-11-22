@@ -1,0 +1,95 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 15 de noviembre de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+SpaceX atrapa la Starship al finalizar el vuelo 15
+
+Pasamos a la siguiente noticia.
+
+SpaceX logró atrapar la nave Starship al finalizar el vuelo 15, un hito crucial hacia la reutilización completa del sistema de lanzamiento.
+
+Pasamos a la siguiente noticia.
+
+Apps de Lovable exponen datos de pasaporte y más de 200K mensajes privados
+Una investigación de seguridad revela que aplicaciones creadas con Lovable, un constructor de aplicaciones con IA, están filtrando datos personales sensibles—incluidos detalles de pasaporte y más de 200.000 mensajes privados—debido a configuraciones incorrectas de Row-Level Security (RLS) en Supabase. Esto pone de manifiesto un grave riesgo de seguridad en el código generado por IA: los usuarios que despliegan estas aplicaciones pueden exponer datos sensibles sin saberlo, lo que afecta la privacidad, el cumplimiento normativo y la confianza en las plataformas low-code/no-code. La causa raíz son políticas de Row-Level Security insuficientes o ausentes en la base de datos Supabase subyacente; según la discusión, Lovable escanea las aplicaciones en busca de estos problemas y ofrece correcciones automáticas, pero las implementaciones mal configuradas siguen siendo accesibles mediante una simple inspección de red en el navegador.
+
+Pasamos a la siguiente noticia.
+
+Tribunal niega desestimar caso de fijación de precios de DRAM
+Un tribunal denegó una moción de desestimación en la demanda por fijación de precios de DRAM contra Samsung, SK Hynix y Micron, permitiendo que las reclamaciones antimonopolio avancen. La decisión permite que una importante demanda antimonopolio contra los tres principales proveedores de DRAM siga adelante, lo que podría afectar los precios mundiales de la memoria y las prácticas de la industria en un mercado ya tensado por la demanda de IA. La sentencia no determina culpabilidad; solo permite que el caso avance más allá de la fase de moción de desestimación. Las tres empresas controlan la gran mayoría del mercado mundial de DRAM.
+
+Pasamos a la siguiente noticia.
+
+PyPI lanza páginas de proyecto rediseñadas con señales de seguridad claras
+PyPI ha completado una actualización de su interfaz que rediseña las páginas de proyecto para mostrar de forma destacada señales de seguridad, como la procedencia y la publicación de confianza, facilitando a los usuarios evaluar la fiabilidad de los paquetes. Esta mejora fortalece la cadena de suministro de software de Python al hacer más visibles la procedencia y las señales de confianza, lo que ayuda a los desarrolladores a evitar paquetes maliciosos o comprometidos y fomenta la adopción de prácticas de publicación seguras. Las nuevas páginas destacan señales como la publicación de confianza (basada en OIDC y sin claves) y las atestaciones de procedencia (p. ej., SLSA o sigstore), pero estas señales detectan cuentas comprometidas en lugar de proyectos maliciosos desde su origen.
+
+Pasamos a la siguiente noticia.
+
+Benchmark: PocketBase + SQLite en VPS de $4/mes logra 1,420 RPS con WAL y Litestream
+Un desarrollador evaluó una configuración de PocketBase + SQLite en un VPS Hetzner CX22 de $4 al mes, logrando 1.420 solicitudes por segundo con latencia P99 inferior a 8 ms usando modo WAL y ajustes de PRAGMA. La configuración incluye Litestream transmitiendo los marcos WAL de SQLite a Cloudflare R2 para recuperación continua ante desastres con un RPO inferior a 1 segundo. Esto demuestra que un backend SQLite autoalojado puede manejar cargas de trabajo con predominio de lecturas a nivel de producción por una fracción del costo de PostgreSQL administrado, reduciendo la latencia al eliminar los saltos de red y simplificando el despliegue. Es especialmente relevante para desarrolladores independientes y entusiastas del autoalojamiento que buscan evitar costosos servicios de bases de datos administradas. El benchmark utilizó k6 con 200 usuarios concurrentes, atacando endpoints de lectura autenticados y logrando 100% de estado 200, latencia media de 2,84 ms y P95 de 5,2 ms. Los ajustes clave de PRAGMA de SQLite incluyen modo WAL, synchronous=NORMAL, busy_timeout=5000, cache_size de 64 MB, mmap_size de 256 MB y temp_store=MEMORY; Litestream transmite a Cloudflare R2 con intervalo de sincronización de 1 segundo y retención de 30 días.
+
+Pasamos a la siguiente noticia.
+
+Cómo Wozniak programó a mano el BASIC del Apple I sin hardware
+El artículo explica que Steve Wozniak escribió a mano el intérprete BASIC del Apple I en ensamblador del 6502 en papel antes de tener una computadora funcional, una práctica común entre aficionados en los años setenta. Los miembros de la comunidad describen cómo ellos también escribían código ensamblador a mano, memorizaban códigos de operación y probaban los programas directamente en el hardware objetivo. Esto ilustra cómo los pioneros de los microcomputadores trabajaban sin herramientas modernas de desarrollo, confiando en un profundo conocimiento del hardware. Proporciona contexto histórico para la retrocomputación y destaca la simplicidad de los conjuntos de instrucciones de 8 bits frente a los procesadores modernos. El Integer BASIC de Wozniak fue escrito para el 6502, usaba solo enteros por velocidad y luego se incluyó en la ROM del Apple II. El ensamblado a mano requería conocer valores hexadecimales de códigos de operación como A9 para LDA, y el código se ingresaba a menudo mediante un monitor de lenguaje de máquina.
+
+Pasamos a la siguiente noticia.
+
+Documental de KDE celebra la historia y comunidad del escritorio de software libre
+Se ha publicado un video documental sobre el entorno de escritorio KDE, que ofrece una mirada profunda a su historia, desarrollo y logros comunitarios. Este documental destaca el papel de KDE como proyecto de escritorio de código abierto emblemático, mostrando cómo un esfuerzo impulsado por la comunidad puede competir con gigantes propietarios como Microsoft y Apple mientras defiende la libertad del usuario y la personalización. El video está disponible en la URL proporcionada y celebra los hitos de KDE, su evolución técnica (incluida su base en C++/Qt) y el espíritu colaborativo que ha sostenido el proyecto durante décadas. No se ofrecen detalles específicos de producción, pero el documental se presenta como un homenaje a la comunidad KDE.
+
+Pasamos a la siguiente noticia.
+
+Un árbol genealógico de los títulos laborales en software
+La entrada de blog presenta un análisis genealógico de los títulos laborales en software, mostrando cómo roles como Desarrollador, Ingeniero, DevOps e Ingeniero de Confiabilidad del Sitio han evolucionado y se han diversificado. Ha provocado un amplio debate sobre si estos títulos aún conservan un significado claro. Los títulos laborales influyen en la contratación, la negociación salarial y la identidad profesional, por lo que la ambigüedad puede generar expectativas desalineadas y fricciones en la carrera. A medida que metodologías como Agile y DevOps cambian o decaen, comprender la evolución de los títulos ayuda a los profesionales a navegar un mercado laboral cada vez más fragmentado. El artículo usa una metáfora de árbol genealógico para mostrar el linaje y la ramificación entre roles. Los comentarios de la comunidad destacan que títulos como Ingeniero DevOps, SRE y Scrum Master a menudo significan cosas distintas según la organización y la región, y algunos profesionales los consideran vacíos u obsoletos.
+datasette-llm 0.1a11 añade soporte para endpoints compatibles con OpenAI
+El lanzamiento de datasette-llm 0.1a11 incorpora soporte para endpoints compatibles con OpenAI, lo que permite a Datasette utilizar LLMs alojados en servicios como LM Studio, Ollama y llama.cpp, incluidos modelos locales. Esto permite a los desarrolladores ejecutar Datasette con modelos de lenguaje alojados localmente, lo que mejora la privacidad, reduce la latencia y posibilita el uso sin conexión, aprovechando el ecosistema existente compatible con OpenAI. La configuración se realiza mediante la clave plugins.datasette-llm.default_model, que acepta un objeto JSON con los campos model, model_name y api_base; el ejemplo incluido utiliza el modelo Qwen 3.8-27b a través de LM Studio en y se ejecuta con uvx junto a datasette-agent.
+
+Pasamos a la siguiente noticia.
+
+Infisical limita roles personalizados a Enterprise para autohospedados en parche
+Infisical incorporó un commit el 1 de abril titulado 'feat: custom roles as enterprise-only feature' (e4880e71ed) y lo lanzó en la versión de parche v0.159.6; luego actualizó la documentación en junio (PR 7078). Los usuarios autohospedados con plan gratuito ya no pueden crear nuevos roles personalizados ni editar los existentes, aunque los roles creados anteriormente siguen funcionando. Esto elimina una función crítica de mínimo privilegio en los despliegues autohospedados gratuitos, obligando a los usuarios a otorgar acceso total de 'Miembro' o pagar por Enterprise, una elección inaceptable para un gestor de secretos. La medida ha provocado rechazo en la comunidad y puede dañar la confianza en las credenciales de código abierto de Infisical. La restricción se aplica en el código, como muestra el mensaje de error: 'Failed to update custom role due to plan RBAC restriction. Upgrade to Infisical Enterprise plan to update custom roles.' Los roles existentes siguen funcionando pero no se pueden modificar; el cambio fue desencadenado inicialmente por el bot de dependencias Renovate al actualizar la instancia.
+
+Pasamos a la siguiente noticia.
+
+Una lista de mis juegos modernos favoritos para NES
+El autor publicó una selección personal de juegos modernos desarrollados para la Nintendo Entertainment System, mostrando títulos homebrew recientes para la clásica consola de 8 bits. Esto resalta una comunidad homebrew activa y demuestra que las herramientas de desarrollo mejoradas están haciendo que la creación de juegos para NES sea más accesible que nunca, lo que podría atraer a nuevos desarrolladores a plataformas retro. El artículo en sí es una lista personal sin especificaciones técnicas, pero la discusión adjunta hace referencia a la charla de Frank Cigaldi de 2019 sobre el uso continuado de la NES y señala que las herramientas modernas han reducido significativamente la barrera de entrada.
+datasette-vega 0.7: plugin de gráficos Vega-Lite actualizado para Datasette y Datasette Lite
+Simon Willison lanzó datasette-vega 0.7, un plugin para renderizar gráficos Vega-Lite a partir de tablas o resultados de consultas personalizadas en Datasette. Es la primera versión desde julio de 2018 y añade compatibilidad con las últimas alphas de Datasette y ajustes cosméticos para Datasette Lite. Esta versión reactiva un plugin de visualización que llevaba años sin actualizarse y lo hace utilizable directamente en el navegador mediante Datasette Lite, que ahora admite plugins de JavaScript. Amplía la exploración de datos y la creación de gráficos sin servidor para los usuarios de Datasette. El plugin usa Vega-Lite, una gramática de alto nivel para gráficos interactivos, y funciona tanto en vistas de tabla como en consultas SQL personalizadas. La demo en vivo del README ahora enlaza a una instancia de Datasette Lite que muestra un gráfico de barras con datos de seguridad aérea y opciones de gráfico configurables.
+
+Pasamos a la siguiente noticia.
+
+Juegos en la nube autogestionados en AWS: experiencia y desafíos
+Un usuario de self-hosting detalla cómo ejecuta un PC de juegos en la nube en instancias spot de AWS con GPU por 0,25–0,35 USD/hora, usando Sunshine + Moonlight a través de Tailscale y Steam con Proton. Reporta costos más bajos de lo esperado, pero enfrentó desafíos con apagado automático, disponibilidad spot, cuotas de GPU y almacenamiento persistente, y pregunta si otros usarían una herramienta de automatización. Esto resalta las ventajas e inconvenientes de los juegos en la nube autogestionados frente a servicios comerciales como GeForce NOW: las configuraciones propias en AWS pueden ser más baratas y flexibles, pero requieren controles de costos, planificación de capacidad spot y gestión de cuotas. Si una herramienta de automatización reduce esas barreras, podría hacer los juegos en la nube más accesibles para los autohospedadores y desafiar a las plataformas centralizadas. La configuración técnica incluye Sunshine (anfitrión de streaming de juegos autohospedado) con el cliente Moonlight, conectados mediante la VPN mallada Tailscale; los juegos se ejecutan en Linux usando la capa de compatibilidad Proton para títulos de Windows. El precio de las instancias spot es de 0,25–0,35 USD/hora, pero el usuario señala que la máquina debe apagarse automáticamente de forma fiable y que la capacidad spot de GPU puede no estar disponible en horas pico en su región.
+
+Pasamos a la siguiente noticia.
+
+Usuario pregunta si pixelserv-tls sigue evitando la detección de bloqueadores en 2026
+Un usuario de Reddit que utiliza Unbound con listas de bloqueo de oisd.nl informa ver banners de «detectamos un bloqueador de anuncios» y pregunta si pixelserv-tls, que sirve imágenes de reemplazo de 1 píxel localmente, sigue funcionando en 2026; también pide otros consejos para bloqueo de anuncios a nivel de red. Esto refleja los desafíos actuales del bloqueo de anuncios basado en DNS autoalojado a medida que los sitios web mejoran la detección, lo que resalta la necesidad de técnicas que evolucionen para preservar la privacidad y la experiencia del usuario sin interrupciones. El usuario utiliza el DNS Unbound con listas de bloqueo de oisd.nl y ocasionalmente se encuentra con avisos de bloqueador de anuncios; pixelserv-tls es un servidor HTTP/1.1 mínimo que sirve un píxel de 1x1 y admite TLSv1.0/1.2/1.3, pero los resultados de búsqueda no incluyen pruebas recientes que confirmen su eficacia en 2026.
+
+Pasamos a la siguiente noticia.
+
+8 meses usando un MacBook Pro 2014 como servidor casero y sus mejoras
+El autor comparte una actualización de 8 meses sobre el uso de un MacBook Pro 2014 como servidor casero, detallando mejoras como cambiar de Wi-Fi a Ethernet para una transmisión más rápida en Plex, añadir Pi-hole para bloquear anuncios en toda la red y establecer una rutina mensual de actualizaciones de seguridad tras los recientes exploits de Plex. Esto demuestra un enfoque práctico y de bajo costo para reutilizar hardware antiguo en servicios autoalojados como Plex y Pi-hole, lo cual es relevante para la comunidad de autoalojamiento; destaca problemas comunes (buffering, seguridad) y soluciones que otros pueden aprender. Las mejoras específicas incluyen pasar de Wi-Fi a Ethernet para transferencias de archivos 10 veces más rápidas y solucionar el buffering de 4K en Plex, planear reemplazar discos de 10 años por dos discos de 4TB (uno para copia de seguridad) pero retrasarlo por el aumento de precios, y desactivar el reenvío de puertos, UPnP y acceso remoto de Plex en favor de Tailscale para acceso remoto.
+
+Pasamos a la siguiente noticia.
+
+Inkheart 1.5 - Renovación de interfaz, búsqueda de texto completo y pestañas de documentos múltiples
+
+Pasamos a la siguiente noticia.
+
+Inkheart 1.5, una aplicación autoalojada para bibliotecas PDF, presenta una renovación de interfaz, búsqueda de texto completo y pestañas de documentos múltiples.
+
+Pasamos a la siguiente noticia.
+
+Usuario busca cliente de correo web con notificaciones en tiempo real
+Un usuario de Reddit en r/selfhosted busca un cliente de correo web que pueda enviar notificaciones de correo en tiempo real tanto a Linux como a Android, para evitar tener Thunderbird ejecutándose constantemente e iniciar sesión por separado en cada dispositivo. La solicitud pone de relieve un problema común para los usuarios de correo autoalojado: equilibrar las notificaciones en tiempo real con la comodidad en múltiples dispositivos. Una solución de correo web adecuada podría mejorar la experiencia del usuario y reducir el uso de recursos en las máquinas locales. El usuario desea específicamente notificaciones en Linux y Android y señala que el correo web resolvería automáticamente el problema de los inicios de sesión separados. La solución técnica subyacente para las notificaciones de correo en tiempo real suele ser IMAP IDLE, que permite al servidor enviar actualizaciones al cliente sin necesidad de sondeo.
+
+Pasamos a la siguiente noticia.
+
+Plan para recuperación segura de bóveda Bitwarden autohospedada tras pérdida total
+El autor describe una estrategia de recuperación ante desastres para su gestor de contraseñas Vaultwarden autohospedado: exporta la bóveda, la cifra con age usando una contraseña larga y compleja que recuerda, la almacena en la nube pública con un enlace protegido por otra contraseña y publica el enlace en su sitio web. Pide críticas o mejores ideas, considerando también una copia USB cifrada con un amigo o familiar. Esto aborda la gestión de claves y la recuperación ante pérdida total en servicios autohospedados, un escenario a menudo descuidado por quienes confían en copias locales en caché. La compensación entre disponibilidad y seguridad es clave para la comunidad de autohospedaje. El plan utiliza cifrado age (herramienta moderna y simple) y una exportación JSON protegida por contraseña, además de un enlace público en la nube con otra contraseña; no se mencionan hardware de confianza ni división de claves. Una preocupación es que la bóveda cifrada expuesta públicamente depende de la fortaleza de las contraseñas y del secreto del enlace; la alternativa USB con un amigo es más segura pero menos fiable.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
