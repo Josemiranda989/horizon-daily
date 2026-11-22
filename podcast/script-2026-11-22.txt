@@ -1,0 +1,50 @@
+Daily, el resumen diario de tecnología e inteligencia artificial.
+Edición del 22 de noviembre de 2026.
+
+Comenzamos con las noticias más destacadas del día.
+
+Verificación formal de la Hipótesis de Riemann en Lean con Claude
+Se ha anunciado una verificación formal en el asistente de pruebas Lean de una demostración de la Hipótesis de Riemann, con la ayuda del asistente de IA Claude y la participación de expertos humanos. Es significativo porque resolvería uno de los problemas abiertos más famosos de las matemáticas y demuestra cómo la IA puede colaborar con humanos para formalizar grandes áreas de las matemáticas. Los comentarios señalan que la prueba requirió formalizar una gran parte de las matemáticas modernas, y la verificación utiliza múltiples núcleos independientes con pruebas de consistencia, lo que reduce pero no elimina la posibilidad de un error sutil.
+
+Pasamos a la siguiente noticia.
+
+Detonando una pila de azida de plomo
+El artículo describe la peligrosa situación de una gran cantidad de azida de plomo acumulada durante 20 años y los desafíos para su eliminación segura, generando un debate sobre responsabilidad y protocolos de manejo de materiales explosivos.
+
+Pasamos a la siguiente noticia.
+
+El mix energético de Anthropic en 2028: 87% gas, 11% carbón
+Un nuevo análisis del Better Data Center Project indica que en 2028 el 87% de la electricidad de Anthropic provendrá de gas natural y el 11% de carbón, quedando solo un 2% para otras fuentes. Esta dependencia de combustibles fósiles contradice las narrativas de sostenibilidad de las empresas de IA y podría aumentar significativamente las emisiones de carbono, empeorando el cambio climático. También genera preocupación por la sobrecarga de la red eléctrica y el aumento del costo de la electricidad para las comunidades locales. El artículo destaca que el 98% de la energía de Anthropic en 2028 provendría de combustibles fósiles (gas y carbón combinados), dejando solo un 2% para otras fuentes. El análisis aparece en el sitio web del Better Data Center Project, con fecha del 16 de noviembre de 2026.
+
+Pasamos a la siguiente noticia.
+
+Toyota, Nissan y Honda estandarizarán piezas para reducir costos
+Toyota, Nissan y Honda planean estandarizar piezas automotrices para reducir costos de fabricación y competir mejor con fabricantes chinos como BYD. Esta medida busca ayudar a los fabricantes japoneses a cerrar la brecha de costos con rivales chinos verticalmente integrados, reduciendo potencialmente los precios de los vehículos y mejorando la eficiencia de la cadena de suministro. El plan podría implicar diseños compartidos similares a la transmisión automática de 6 velocidades de GM y Ford, donde los componentes mecánicos clave son comunes pero la electrónica es específica de cada empresa. Se informa que BYD produce entre el 75% y el 85% de sus piezas internamente, lo que le otorga una ventaja de costos significativa que los fabricantes japoneses intentan compensar.
+
+Pasamos a la siguiente noticia.
+
+Inkling-2-Mini cuantizado corre en 5,4 GB de memoria
+Un repositorio de GitHub demuestra la ejecución de una versión cuantizada de Inkling-2-Mini usando solo 5,4 GB de memoria, lo que genera debate en la comunidad sobre su rendimiento práctico. Reducir los requisitos de memoria de decenas de gigabytes a 5,4 GB podría permitir la inferencia local de LLMs de código abierto en hardware de consumo, reduciendo la brecha de capacidades con los modelos de frontera. Los puntos de referencia de la comunidad indican una generación lenta: aproximadamente un tercio de la velocidad de Qwen 27B en la CPU de un usuario, 40–45 tokens/s en una 5070 Ti con contexto de 128k tras corregir llama.cpp, y 20–25 tokens/s en una 3060. El README se describe como desordenado y la afirmación principal de '12X mejor' no parece aplicar a Inkling-2-Mini.
+
+Pasamos a la siguiente noticia.
+
+OpenRouter revela incidentes de procesamiento de datos en proveedores de inferencia
+OpenRouter anunció que ocurrieron incidentes de procesamiento de datos en su plataforma con proveedores de inferencia, lo que generó preocupación sobre el manejo de datos de los usuarios. Esto es importante porque erosiona la confianza en los proveedores de inferencia de IA y pone de manifiesto brechas en la debida diligencia, las políticas de retención de datos y los compromisos de cero retención de datos (ZDR); las empresas y los desarrolladores deberán reevaluar sus opciones de enrutamiento. Entre los detalles destacados, algunos usuarios descubrieron que ciertos proveedores de OpenRouter reenvían las solicitudes a servicios intermedios como MiniMax en lugar de realizar la inferencia directamente, y se informó de otro incidente de filtración de prompts con Together AI. OpenRouter ha adoptado medidas iniciales, pero carece de garantías legales exigibles.
+
+Pasamos a la siguiente noticia.
+
+PcapAnalyzer: herramienta autoalojada detecta 27 problemas comunes de red
+PcapAnalyzer, una herramienta autoalojada disponible en GitHub, analiza archivos pcap y detecta 27 tipos de problemas comunes de red. Al ofrecer 27 detectores integrados, ayuda a ingenieros de redes y analistas de seguridad a identificar rápidamente problemas recurrentes en capturas de paquetes sin inspección manual ni dependencia repetida de LLMs. La herramienta es autoalojada, pero si se usa su función de análisis con IA, los detalles sensibles de la captura (IPs, MACs, datos) podrían enviarse a un tercero a menos que se realice redacción; un comentarista sugirió PacketSnitch como alternativa que maneja esta preocupación.
+
+Pasamos a la siguiente noticia.
+
+Graham Dumpleton presenta Muru: un servidor Rust asistido por IA para Python ASGI/WSGI
+Graham Dumpleton, creador de mod_wsgi, ha presentado Muru, un nuevo servidor en Rust asistido por IA diseñado para ejecutar aplicaciones Python ASGI y WSGI tanto en desarrollo como en producción. Durante las últimas tres semanas ha publicado una serie detallada de artículos que documentan el desarrollo del proyecto, incluyendo características como 'importar una vez, bifurcar muchas', HTTPS en desarrollo y ejecutar WSGI y ASGI juntos. Muru aporta el rendimiento y la fiabilidad de Rust al alojamiento de aplicaciones web Python, abordando problemas de producción basados en los 20 años de experiencia de Dumpleton con mod_wsgi. Su registro detallado de desarrollo y su metodología asistida por IA podrían influir en cómo se diseñan y documentan los futuros servidores de aplicaciones Python. La serie de publicaciones del proyecto cubre capacidades como lanzamientos sin tiempo de inactividad, despliegues canarios sin malla de servicios, escalado a cero, integración con Kubernetes y una barra de herramientas de desarrollo con trazabilidad integrada. Dumpleton destaca el uso de la IA como ayuda para el desarrollo, confiando en su propio criterio y experiencia para garantizar que el software sea fiable.
+
+Pasamos a la siguiente noticia.
+
+Simulador de Sándwiches
+Un simulador en línea para crear sándwiches personalizados ha captado la atención de la comunidad de Hacker News, obteniendo 299 puntos y 103 comentarios. Este juguete web casual demuestra el atractivo de las herramientas en línea simples y creativas y generó un compromiso considerable en la comunidad, aunque tiene poco impacto en campos técnicos como la ingeniería de software o la IA/ML. El simulador permite apilar ingredientes para construir sándwiches personalizados y compartirlos mediante URL únicas; los usuarios señalan limitaciones como no poder colocar Nutella sobre el queso o añadir una rebanada de pan superior y cortar el sándwich.
+
+Esto fue todo por hoy. Soy Elena, y esto fue Daily, tu resumen diario de tecnología.
+Nos escuchamos mañana.
